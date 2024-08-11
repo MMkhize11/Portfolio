@@ -16,13 +16,14 @@ import Experience from "@/components/experience";
 import { ContactUs } from "@/components/contact-us";
 import Link from "next/link";
 import { Hero } from "@/components/hero";
-
+import { promises as fs } from 'fs';
 export default async function Home() {
-  const res = await fetch(
-    "https://portfolio-backend-30mp.onrender.com/api/v1/get/user/65b3a22c01d900e96c4219ae"
-  );
+ 
 
-  const { user } = (await res.json()) as UserObject;
+  const file = await fs.readFile(process.cwd() + '/src/data/profile.json', 'utf8');
+  const data = JSON.parse(file);
+  
+  const { user } = data as UserObject;
   if (!user) return null;
   const {
     about,

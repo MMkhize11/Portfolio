@@ -43,9 +43,7 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
                       {singleProject.title}
                     </h5>
                     <div className="flex items-center gap-4">
-                      <Link href={singleProject.githuburl}>
-                        <Github />
-                      </Link>
+                  
                       <Link href={singleProject.liveurl}>
                         <ExternalLink />
                       </Link>
@@ -62,10 +60,7 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
                     ))}
                   </div>
                   <p className="text-white/50">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusantium, tempora. Officiis eveniet harum nemo sed sint
-                    distinctio fugiat earum cumque aliquid in magnam nam odio
-                    molestias architecto veniam, asperiores voluptates?
+                  {singleProject.description}
                   </p>
                 </div>
               </div>
