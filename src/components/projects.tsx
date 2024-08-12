@@ -80,7 +80,7 @@ const ProjectContainer = () => {
   );
 };
 
-const Card = ({ title, image }: Project) => {
+const Card = ({ title, image,description }: Project) => {
   const [hover, setHover] = useState(false);
   const { setVariant } = useCursorVariants();
 
@@ -126,7 +126,7 @@ const Card = ({ title, image }: Project) => {
             animate={{ y: hover ? -10 : 0, opacity: hover ? 1 : 0 }}
             className="absolute text-white/50"
           >
-            Lorem ipsum dolor sit amet.
+          {description}
           </motion.p>
         </div>
       </div>
@@ -135,7 +135,7 @@ const Card = ({ title, image }: Project) => {
         width={500}
         height={500}
         alt={title}
-        className="object-cover h-full w-full object-center rounded-xl md:rounded-t-3xl"
+        className="object-cover h-full w-full object-center rounded-xl md:rounded-t-3xl  mt-2"
       />
     </motion.div>
   );
