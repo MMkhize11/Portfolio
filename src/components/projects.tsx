@@ -132,7 +132,7 @@ const Card = ({ title, image,description }: Project) => {
       </div>
       <Image
         src={image.url}
-        width={500}
+        width={600}
         height={500}
         alt={title}
         className="object-cover h-full w-full object-center rounded-xl md:rounded-t-3xl  mt-2"

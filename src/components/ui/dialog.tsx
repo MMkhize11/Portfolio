@@ -18,10 +18,10 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
     <>
       {showDialog && (
         <div
-          className="fixed inset-0 bg-black/50 backdrop-blur-md z-50 grid place-items-center"
+          className="fixed inset-0 bg-black/50 backdrop-blur-md z-50 grid place-items-center "
           onClick={(e) => e.target === e.currentTarget && setShowDialog(false)}
         >
-          <div className="bg-black/80 w-11/12 md:w-1/2 h-4/5 md:h-[90%] overflow-hidden rounded-xl">
+          <div className="bg-black/80 w-11/12 md:w-1/2 h-4/5 md:h-[93%] overflow-hidden rounded-xl overflow-y-auto">
             {singleProject && (
               <div className="relative ">
                 <button
@@ -32,7 +32,7 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
                 </button>
                 <Image
                   src={singleProject.image.url}
-                  width={300}
+                  width={500}
                   height={300}
                   alt={singleProject.title}
                   className="w-full h-full aspect-video md:aspect-[12/6] object-cover object-center"
@@ -42,6 +42,7 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
                     <h5 className="text-4xl font-bold">
                       {singleProject.title}
                     </h5>
+                    
                     <div className="flex items-center gap-4">
                   
                       <Link href={singleProject.liveurl}>
@@ -62,6 +63,20 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
                   <p className="text-white/50">
                   {singleProject.description}
                   </p>
+
+                  <div className="flex overflow-x-auto space-x-4 p-4">
+      {singleProject.projectImages.map((img, index) => (
+        <div key={index} className="flex-shrink-0">
+          <Image
+            src={img.url}
+            alt=""
+            width={100}
+            height={150}
+            className="rounded-lg object-cover"
+          />
+        </div>
+      ))}
+    </div>
                 </div>
               </div>
             )}

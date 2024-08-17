@@ -19,7 +19,9 @@ interface ProjectContextProps {
   setFilteredProjects: Dispatch<SetStateAction<Project[]>>;
   setSort: Dispatch<SetStateAction<boolean>>;
   singleProject: Project | null;
+
   setSingleProject: Dispatch<SetStateAction<Project | null>>;
+
 }
 
 const ProjectsContext = createContext<ProjectContextProps>({
@@ -31,7 +33,10 @@ const ProjectsContext = createContext<ProjectContextProps>({
   setFilteredProjects: () => {},
   setSort: () => {},
   singleProject: null,
+
   setSingleProject: () => {},
+
+
 });
 
 // ProjectsProvider component to manage and expose context values
@@ -80,7 +85,9 @@ const ProjectsProvider = ({
     setFilteredProjects,
     setSort,
     singleProject,
+ 
     setSingleProject,
+   
   };
 
   return (

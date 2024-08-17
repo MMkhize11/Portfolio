@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Dispatch, SetStateAction, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { formatDate } from "@/utils";
-import { SlideIn, Transition } from "./ui";
+import { SectionHeading, SlideIn, Transition } from "./ui";
 
 interface AboutProps {
   about: AboutType;
@@ -27,6 +27,9 @@ const About = ({ about, timeline }: AboutProps) => {
       <div>
         <h3 className="md:text-5xl text-2xl font-bold overflow-hidden uppercase pb-8">
           <SlideIn>{about.quote}</SlideIn>
+          <p className="text-l md:text-4l text-foreground/50">
+       {about.scripture}
+          </p>
         </h3>
         <Transition viewport={{ once: true }}>
           <p className="text-xl md:text-4xl text-foreground/50">
@@ -34,6 +37,11 @@ const About = ({ about, timeline }: AboutProps) => {
           </p>
         </Transition>
         <div className="pt-10">
+        <SectionHeading className="pl-4 md:px-12 py-20">
+        <SlideIn className="text-white/40">Experience</SlideIn>
+        <br />
+        <SlideIn>History</SlideIn>
+      </SectionHeading>
           <div className="py-10 overflow-hidden grid w-full">
             {education.map((edu, index) => (
               <Transition key={edu._id}>
@@ -87,7 +95,7 @@ const TimelineCard = ({
     >
       <span>0{index + 1}</span>
       <span className="text-xl md:text-3xl font-bold flex-1">
-        {timeline.jobTitle}
+        {timeline.jobTitle}  - {timeline.company_name}
       </span>
       <div className="relative size-6 flex items-center justify-center">
         <span className="bg-primary w-4 md:w-6 h-0.5 absolute" />

@@ -27,6 +27,7 @@ export interface About {
   subTitle: string;
   description: string;
   quote: string;
+  scripture: string;
   exp_year: string;
   address: string;
   some_total: string;
@@ -58,6 +59,7 @@ export interface Project {
   image: Image;
   description: string;
   techStack: string[];
+  projectImages: Image[];
   _id: string;
   enabled: boolean;
 }
@@ -90,6 +92,7 @@ export interface Testimonial {
   review: string;
   position: string;
   enabled: boolean;
+  companyUrl: string;
   _id: string;
 }
 
@@ -101,6 +104,7 @@ export interface Timeline {
   endDate: string;
   jobTitle: string;
   jobLocation: string;
+  companyUrl?: string;
   bulletPoints: string[];
   forEducation: boolean;
   enabled: boolean;
