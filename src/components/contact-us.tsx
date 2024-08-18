@@ -42,8 +42,7 @@ const { register, handleSubmit } = useForm<FormData>();
   function handleSendEmail(data:FormData) {
     setLoading(true)
 
-    console.log(`form data  45 ${JSON.stringify(data)}`)
-    // await sendEmail('recipient@example.com', 'Test Email', '<p>Hello, this is a test email!</p>');
+ 
     fetch('/api/email',{
       method:'POST',
       headers: {
