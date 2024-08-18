@@ -17,6 +17,8 @@ import { ContactUs } from "@/components/contact-us";
 import Link from "next/link";
 import { Hero } from "@/components/hero";
 import { promises as fs } from 'fs';
+import TestimonialSection from "@/components/testimonialCard";
+import { TestimonialsProvider } from "@/utils/testimonial-context";
 
 export default async function Home() {
  
@@ -122,12 +124,16 @@ export default async function Home() {
       {/* ===PROJECTS SECTION=== */}
       <Projects data={projects} />
       {/* ===TESTIMONIALS SECTION=== */}
-      <section className="py-20 relative" id="testimonials">
+      <section className="md:p-8 p-4 relative" id="testimonials">
         <span className="blob size-1/2 absolute -top-20 left-0 blur-[100px] -z-10" />
         <SectionHeading className="md:pl-28">
-          <SlideIn className="text-white/40">What My</SlideIn> <br />
-          <SlideIn className="">Clients Say</SlideIn>
+          <SlideIn className="text-white/40">What clients</SlideIn> <br />
+          <SlideIn className=""> say about me </SlideIn>
         </SectionHeading>
+        {/* <TestimonialsProvider  data={testimonials}>
+        <TestimonialSection></TestimonialSection>
+        </TestimonialsProvider> */}
+        <Testimonials data={testimonials} speed="normal" pauseOnHover />
         {/* <Testimonials data={testimonials} speed="normal" pauseOnHover />
         <Testimonials
           data={testimonials}
@@ -139,12 +145,12 @@ export default async function Home() {
       </section>
 
       {/* ===CONTACT US=== */}
-      {/* <div
+      <div
         className="rounded-t-[2rem] md:rounded-t-[3rem] overflow-hidden"
         id="contact"
       >
         <ContactUs email={email} about={about} social_handle={social_handles} />
-      </div> */}
+      </div>
     </main>
   );
 }

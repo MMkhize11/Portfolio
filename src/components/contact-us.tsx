@@ -1,5 +1,5 @@
 "use client";
-
+import { FC } from 'react';
 import { motion } from "framer-motion";
 import {
   Input,
@@ -9,17 +9,54 @@ import {
   TextReveal,
   Transition,
 } from "./ui";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { cn } from "@/utils/cn";
 import { About, SocialHandle } from "@/utils/interfaces";
 import Link from "next/link";
-
+import nodemailer from 'nodemailer';
+import sendEmail from "@/utils/email";
+import { useForm } from 'react-hook-form';
 interface ContactProps {
   email: string;
   social_handle: SocialHandle[];
   about: About;
 }
+
+
+export type FormData = {
+  name: string;
+  from:string;
+  subject: string;
+  message: string;
+};
+
+
+
 export const ContactUs = ({ email, social_handle, about }: ContactProps) => {
+
+const [loading,setLoading] = useState<boolean>(false);
+const { register, handleSubmit } = useForm<FormData>();
+
+
+
+  function handleSendEmail(data:FormData) {
+    setLoading(true)
+
+    console.log(`form data  45 ${JSON.stringify(data)}`)
+    // await sendEmail('recipient@example.com', 'Test Email', '<p>Hello, this is a test email!</p>');
+    fetch('/api/email',{
+      method:'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+
+    }).then(response => response.json()).then(data=>console.log(`data returned  ${JSON.stringify(data)}`)).catch(error => console.log(`error  ${JSON.stringify(error)}`)).finally(()=>setLoading(false));
+
+  };
+
+  
+  
   return (
     <motion.section className="relative">
       <span className="blob size-1/2 absolute top-20 right-0 blur-[100px]" />
@@ -28,6 +65,7 @@ export const ContactUs = ({ email, social_handle, about }: ContactProps) => {
           <SlideIn className="text-white/40">Interested in talking,</SlideIn>{" "}
           <br /> <SlideIn>let’s do it.</SlideIn>
         </SectionHeading>
+        <form onSubmit={handleSubmit(handleSendEmail)}>
         <div className="grid md:grid-cols-2 gap-10 md:pt-16">
           <div className="space-y-4">
             <div className="flex gap-4">
@@ -36,6 +74,7 @@ export const ContactUs = ({ email, social_handle, about }: ContactProps) => {
                   id="full-name"
                   placeholder="Full name"
                   className="border-0 border-b rounded-none"
+                  {...register('name',{required:true})}
                 />
               </Transition>
               <Transition className="w-full">
@@ -44,6 +83,7 @@ export const ContactUs = ({ email, social_handle, about }: ContactProps) => {
                   placeholder="Email"
                   type="email"
                   className="border-0 border-b rounded-none"
+                  {...register('from',{required:true})}
                 />
               </Transition>
             </div>
@@ -51,6 +91,7 @@ export const ContactUs = ({ email, social_handle, about }: ContactProps) => {
               <Transition>
                 <Input
                   id="subject"
+                  {...register('subject',{required:true})}
                   placeholder="Enter the subject"
                   className="border-0 border-b rounded-none"
                 />
@@ -62,17 +103,20 @@ export const ContactUs = ({ email, social_handle, about }: ContactProps) => {
                   className="min-h-[100px] rounded-none border-0 border-b resize-none"
                   id="message"
                   placeholder="Enter your message"
+                  {...register('message',{required:true})}
                 />
               </Transition>
             </div>
             <div>
               <Transition>
-                <motion.button
+                <motion.button      onClick={()=>{
+                 handleSubmit(handleSendEmail)
+                }}
                   whileHover="whileHover"
                   initial="initial"
                   className="border border-white/30 px-8 py-2 rounded-3xl relative overflow-hidden"
                 >
-                  <TextReveal className="uppercase">discuss project</TextReveal>
+                  <TextReveal className="uppercase">Lets Chat</TextReveal>
                 </motion.button>
               </Transition>
             </div>
@@ -111,6 +155,7 @@ export const ContactUs = ({ email, social_handle, about }: ContactProps) => {
             </div>
           </div>
         </div>
+      </form>
       </div>
       <footer className="flex items-center justify-between md:px-8 px-2 py-4 text-sm">
         <Transition>

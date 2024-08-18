@@ -5,7 +5,8 @@
             "name": "Mpumelelo Mkhize",
             "title": "AKA Khabazela the tech translator",
             "subTitle": "Lover of all things software , tech and AI",
-            "description": "A Software Developer that loves constantly learning new things and helping solve problems through the use of tech while . A sports junkie who enjoys and a good plate of food LOL  ",
+            "description": "A Jack of all trades  that loves God,  constantly learning new things and helping solve problems through the use of tech while still having a laugh and having fun  . A sports junkie who enjoys  the thrill of competition and winning , most importantly  i enjoy a good plate of food.  ",
+
      
             "quote": "Proverbs 1:5",
             "scripture":"Let the wise hear and increase in learning,            and the one who understands obtain guidance,",
@@ -68,13 +69,13 @@
                 "_id": "65f1fe4e0556c3f887e9db22"
             },
             {
-                "company_name": "Argility",
+                "company_name": "Argility  (Current)",
                 "summary": "Contributed to the Development of Numerous releases of existing Platforms and Projects",
                 "sequence": 3,
                 "companyUrl":"",
                 "startDate": "2022-06-11T00:00:00.000Z",
                 "endDate": "2024-08-13T00:00:00.000Z",
-                "jobTitle": "Solutions Developer",
+                "jobTitle": "Solutions Developer  ",
                 "jobLocation": " Rosebank , Johannesburg",
                 "bulletPoints": [
                     "Implemented user interface components using angular 2 and Typescript",
@@ -543,7 +544,7 @@
                 }
             },
             {
-                "name": "Public Speaking",
+                "name": "Master of Ceremonies (MC)",
                 "charge": "Lets Talk",
                 "desc": "   ",
                 "image": {
@@ -564,7 +565,7 @@
                 "review": "I had the pleasure of working closely with Mpumelelo on a challenging project. He is a highly skilled developer who consistently delivered excellent results. His ability to understand complex requirements and implement efficient solutions was truly impressive. I would highly recommend him to any organization looking for a talented developer.",
                 "position": "Founder Of Value ed ",
                 "enabled": true,
-                "companyUrl":"",
+                "companyUrl":"https://www.linkedin.com/in/vikelarankin/",
                 "_id": "Vik1"
             },
             {
@@ -573,10 +574,10 @@
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357705657-aimydg.png"
                 },
                 "name": "Tshego Sebogodi ",
-                "review": "Working with Mpumelelo has been a fantastic experience. He consistently goes above and beyond in assisting with our website and resolving any tech issues we encounter. His expertise, quick response time, and dedication have been invaluable to our team. I highly recommend Mpumelelo for anyone in need of reliable and efficient tech support.\n",
-                "position": "CEO of Value Ed",
+                "review": "Working with Mpumelelo has been outstanding.His expertise, swift responses, and commitment to resolving our tech issues have been invaluable.I highly recommend him for anyone seeking dependable and effective tech support.\n",
+                "position": "CEO Value Ed",
                 "enabled": true,
-                "companyUrl":"",
+                "companyUrl":"https://www.linkedin.com/in/tshego-sebogodi/",
                 "_id": "Tshego1"
             },
             {
@@ -585,25 +586,14 @@
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357683739-tqeav.png"
                 },
                 "name": "Joshua Dylan",
-                "review": "Working with Mpumi through our projects at JD Creations has been an absolute pleasure. His technical expertise, reliability, and trustworthiness have consistently driven our success. As a valued member of the Creatre Community, Mpumi’s passion for technology and his commitment to making a positive impact on our continent are truly inspiring.                He’s not just a skilled developer but also a visionary who understands the power of collaboration and community. I highly recommend Mpumi to anyone looking for a partner who delivers exceptional results while staying focused on the bigger picture.\n\n",
-                "position": "CEO of JD Creations",
-                "companyUrl":"",
+                "review": "Collaborating with Mpumi at JD Creations has been a delight. His technical skill, reliability, and dedication have greatly contributed to our success. Mpumi's passion for technology and commitment to positive impact are inspiring. He’s not just a skilled developer but a visionary who values collaboration and community. I highly recommend Mpumi for exceptional results and a big-picture focus\n\n",
+                "position": "CEO JD Creations",
+                "companyUrl":"https://www.linkedin.com/in/iamjoshdylan/",
                 "enabled": true,
                 "_id": "Josh1"
             },
            
-            {
-                "image": {
-                    "public_id": "dev.img",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357534893-2s9b5d.png"
-                },
-                "name": "LINDA",
-                "review": "Working with Mpumelelo was an absolute delight. Their professionalism and technical prowess were evident from day one. He consistently delivered top-notch code and went above and beyond to ensure the success of our project. I highly recommend him for any development endeavor",
-                "position": "Tech Lead (Deviare)",
-                "companyUrl":"",
-                "enabled": true,
-                "_id": "Linda1"
-            },
+            
             {
                 "image": {
                     "public_id": "les1",

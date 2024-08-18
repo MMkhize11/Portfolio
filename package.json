@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
-    "@types/nodemailer": "^6.4.15",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.15",
     "lucide-react": "^0.360.0",
@@ -19,10 +18,12 @@
     "portfolio": "file:",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.52.2",
     "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
     "@types/node": "20.14.15",
+    "@types/nodemailer": "^6.4.15",
     "@types/react": "18.3.3",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",

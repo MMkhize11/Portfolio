@@ -63,7 +63,7 @@ const TestimonialContainer = () => {
       <button >
     <li  
       key={val._id}
-      className="md:p-6 p-4 bg-secondary md:w-[450px] w-[300px] rounded-2xl space-y-2 relative overflow-hidden z-0"
+      className="md:p-6 p-4 bg-secondary md:w-[500px] w-[375px] rounded-2xl space-y-2 relative overflow-hidden z-0"
     >
       <div className="relative">
         <span className="text-9xl absolute -top-9 -left-2 size-10 text-[#4f4f4f]">
