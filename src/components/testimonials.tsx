@@ -4,11 +4,8 @@ import { Testimonial } from "@/utils/interfaces";
 import Image from "next/image";
 import { InfiniteScroll, Transition } from "./ui";
 
-import { useState } from "react";
-import { ProjectsProvider, useProjects } from "@/utils/project-context";
 import { TestimonialsProvider, useTestimonials } from "@/utils/testimonial-context";
-import { useMediaQuery } from "@/utils/useMediaQuery";
-import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
 interface TestimonialProps {
   data: Testimonial[];
   direction?: "left" | "right";

@@ -141,7 +141,7 @@ const TimelineCard = ({
       </div>
       <ul className="list-disc list-inside">
         {timeline.bulletPoints.map((point, index) => (
-          <li key={index} className="text-foreground/80 max-md:text-sm">
+          <li key={timeline._id+"-"+index} className="text-foreground/80 max-md:text-sm">
             {point}
           </li>
         ))}

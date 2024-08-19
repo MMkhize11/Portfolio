@@ -66,7 +66,7 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
 
                   <div className="flex overflow-x-auto space-x-4 p-4">
       {singleProject.projectImages.map((img, index) => (
-        <div key={index} className="flex-shrink-0">
+        <div key={singleProject.title+"-"+index} className="flex-shrink-0">
           <Image
             src={img.url}
             alt=""

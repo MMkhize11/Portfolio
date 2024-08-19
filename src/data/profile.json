@@ -141,11 +141,11 @@
                 "sequence": 1,
                 "percentage": 86,
                 "image": {
-                    "public_id": "1706288708710-nrq74s",
+                    "public_id": "1706288708710-nrq74spythonSID",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288708710-nrq74s",
-                    "_id": "65b3e645b48589dfcae187a3"
+                    "_id": "pythonSID"
                 },
-                "_id": "65b3e645b48589dfcae187a2"
+                "_id": "65b3e645b48589dfcae187a2pythonSID"
             },
 
             {
@@ -154,11 +154,11 @@
                 "sequence": 2,
                 "percentage": 90,
                 "image": {
-                    "public_id": "1706287104739-pm8en",
+                    "public_id": "1706287104739-pm8enTypeScript",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706287104739-pm8en",
-                    "_id": "65b3e001b48589dfcae18246"
+                    "_id": "65b3e001b48589dfcae18246TypeScript"
                 },
-                "_id": "65b3e001b48589dfcae18245"
+                "_id": "65b3e001b48589dfcae18245TypeScript"
             },
             {
                 "enabled": true,
@@ -166,11 +166,11 @@
                 "sequence": 3,
                 "percentage": 92,
                 "image": {
-                    "public_id": "1706286990341-tznh4",
+                    "public_id": "1706286990341-tznh4Node",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286990341-tznh4",
-                    "_id": "65b3df8fb48589dfcae18205"
+                    "_id": "65b3df8fb48589dfcae18205Node"
                 },
-                "_id": "65b3df8fb48589dfcae18204"
+                "_id": "65b3df8fb48589dfcae18204Node"
             },
             {
                 "enabled": true,
@@ -178,20 +178,20 @@
                 "sequence": 4,
                 "percentage": 70,
                 "image": {
-                    "public_id": "1706286966065-p2yrx9",
+                    "public_id": "1706286966065-p2yrx9Firebase",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286966065-p2yrx9",
-                    "_id": "65b3df76b48589dfcae181c6"
+                    "_id": "65b3df76b48589dfcae181c6Firebase"
                 },
-                "_id": "65b3df76b48589dfcae181c5Fi"
+                "_id": "65b3df76b48589dfcae181c5FiFirebase"
             },  {
                 "enabled": true,
                 "name": "Supabase",
                 "sequence": 5,
                 "percentage": 70,
                 "image": {
-                    "public_id": "1706286966065-p2yrx9",
+                    "public_id": "1706286966065-p2yrx9Supabase",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286966065-p2yrx9",
-                    "_id": "65b3df76b48589dfcae181c6"
+                    "_id": "65b3df76b48589dfcae181c6Supabase"
                 },
                 "_id": "65b3df76b48589dfcae181c5Su"
             },
@@ -202,11 +202,11 @@
                 "sequence": 6,
                 "percentage": 95,
                 "image": {
-                    "public_id": "1706286913147-nwiky8",
+                    "public_id": "1706286913147-nwiky8Flutter",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286913147-nwiky8",
-                    "_id": "65b3df41b48589dfcae1814e"
+                    "_id": "65b3df41b48589dfcae1814eFlutter"
                 },
-                "_id": "65b3df41b48589dfcae1814dFlu"
+                "_id": "65b3df41b48589dfcae1814dFluFlutter"
             },
             {
                 "enabled": true,
@@ -214,11 +214,11 @@
                 "sequence": 7,
                 "percentage": 95,
                 "image": {
-                    "public_id": "1706286913147-nwiky8",
+                    "public_id": "1706286913147-nwiky8Ionic",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286913147-nwiky8",
-                    "_id": "65b3df41b48589dfcae1814e"
+                    "_id": "65b3df41b48589dfcae1814eIonic"
                 },
-                "_id": "65b3df41b48589dfcae1814dIO"
+                "_id": "65b3df41b48589dfcae1814dIOIonic"
             },
             {
                 "enabled": true,
@@ -226,11 +226,11 @@
                 "sequence": 8,
                 "percentage": 95,
                 "image": {
-                    "public_id": "1706286913147-nwiky8",
+                    "public_id": "1706286913147-nwiky8Angular",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286913147-nwiky8",
-                    "_id": "65b3df41b48589dfcae1814e"
+                    "_id": "65b3df41b48589dfcae1814eAngular"
                 },
-                "_id": "65b3df41b48589dfcae1814dAn"
+                "_id": "65b3df41b48589dfcae1814dAnAngular"
             },
             {
                 "enabled": true,
@@ -238,11 +238,11 @@
                 "sequence": 9,
                 "percentage": 95,
                 "image": {
-                    "public_id": "1706286913147-nwiky8",
+                    "public_id": "1706286913147-nwiky8Redis",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286913147-nwiky8",
-                    "_id": "65b3df41b48589dfcae1814e"
+                    "_id": "65b3df41b48589dfcae1814eRedis"
                 },
-                "_id": "65b3df41b48589dfcae1814dRe"
+                "_id": "65b3df41b48589dfcae1814dReRedis"
             },
             {
                 "enabled": true,
@@ -250,11 +250,11 @@
                 "sequence": 10,
                 "percentage": 95,
                 "image": {
-                    "public_id": "1706288679775-y4qwn3",
+                    "public_id": "1706288679775-y4qwn3Javascript",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288679775-y4qwn3",
-                    "_id": "65b3e628b48589dfcae18750"
+                    "_id": "65b3e628b48589dfcae18750Javascript"
                 },
-                "_id": "65b3df24b48589dfcae18114"
+                "_id": "65b3df24b48589dfcae18114Javascript"
             },
             {
                 "enabled": true,
@@ -262,11 +262,11 @@
                 "sequence": 11,
                 "percentage": 95,
                 "image": {
-                    "public_id": "1706286842731-r0eyn",
+                    "public_id": "1706286842731-r0eynGit",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286842731-r0eyn",
-                    "_id": "65b3defbb48589dfcae180de"
+                    "_id": "65b3defbb48589dfcae180deGit"
                 },
-                "_id": "65b3defbb48589dfcae180dd"
+                "_id": "65b3defbb48589dfcae180ddGit"
             },
             {
                 "enabled": true,
@@ -274,11 +274,11 @@
                 "sequence": 12,
                 "percentage": 95,
                 "image": {
-                    "public_id": "1706286821409-21cuqs",
+                    "public_id": "1706286821409-21cuqsGithub",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286821409-21cuqs",
-                    "_id": "65b3dee5b48589dfcae180a9"
+                    "_id": "65b3dee5b48589dfcae180a9Github"
                 },
-                "_id": "65b3dee5b48589dfcae180a8"
+                "_id": "65b3dee5b48589dfcae180a8Github"
             },
            
             {
@@ -287,11 +287,11 @@
                 "sequence": 13,
                 "percentage": 80,
                 "image": {
-                    "public_id": "1706286760237-gh4idq",
+                    "public_id": "1706286760237-gh4idqFastAPI",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286760237-gh4idq",
-                    "_id": "65b3dea8b48589dfcae18045"
+                    "_id": "65b3dea8b48589dfcae18045FastAPI"
                 },
-                "_id": "65b3dea8b48589dfcae18044"
+                "_id": "65b3dea8b48589dfcae18044FastAPI"
             },
             {
                 "enabled": true,
@@ -299,11 +299,11 @@
                 "sequence": 14,
                 "percentage": 90,
                 "image": {
-                    "public_id": "1706286729467-rbblgb",
+                    "public_id": "1706286729467-rbblgbVercel",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286729467-rbblgb",
-                    "_id": "65b3de89b48589dfcae18016"
+                    "_id": "65b3de89b48589dfcae18016Vercel"
                 },
-                "_id": "65b3de89b48589dfcae18015"
+                "_id": "65b3de89b48589dfcae18015Vercel"
             },
            
            
@@ -314,20 +314,20 @@
                 "sequence": 15,
                 "percentage": 97,
                 "image": {
-                    "public_id": "1706286273084-romle",
+                    "public_id": "1706286273084-romleCSS",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286273084-romle"
                 },
-                "_id": "65b3dcc1b48589dfcae17e4d"
+                "_id": "65b3dcc1b48589dfcae17e4dCSS"
             },
             {
                 "name": "HTML",
                 "sequence": 16,
                 "percentage": 98,
                 "image": {
-                    "public_id": "1706286058630-v3ax0a",
+                    "public_id": "1706286058630-v3ax0aHTML",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286058630-v3ax0a"
                 },
-                "_id": "65b3dbeba5c8d2db7b6164bc",
+                "_id": "65b3dbeba5c8d2db7b6164bcHTML",
                 "enabled": true
             }
         ],

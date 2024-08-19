@@ -58,7 +58,7 @@ export default async function Home() {
             .map((skill) =>
               skill.enabled ? (
                 <span
-                  key={skill._id}
+                  key={skill._id+"-1"}
                   className="md:text-7xl text-xl font-semibold uppercase text-white/30"
                 >
                   {skill.name} •
@@ -72,7 +72,7 @@ export default async function Home() {
             .map((skill) =>
               skill.enabled ? (
                 <span
-                  key={skill._id}
+                  key={skill._id+"5"}
                   className="md:text-7xl text-xl font-semibold uppercase text-white/30"
                 >
                   {skill.name} •
@@ -86,7 +86,7 @@ export default async function Home() {
             .map((skill) =>
               skill.enabled ? (
                 <span
-                  key={skill._id}
+                  key={skill._id+"-3"}
                   className="md:text-7xl text-xl font-semibold uppercase text-white/30"
                 >
                   {skill.name} •
