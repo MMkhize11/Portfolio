@@ -57,9 +57,9 @@ const TestimonialContainer = () => {
 
     
     testimonials.map((val,index) => (
-      <button >
+      <button  key={val._id} >
     <li  
-      key={val._id}
+     
       className="md:p-6 p-4 bg-secondary md:w-[500px] w-[375px] rounded-2xl space-y-2 relative overflow-hidden z-0"
     >
       <div className="relative">
