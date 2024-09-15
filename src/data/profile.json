@@ -5,7 +5,7 @@
             "name": "Demystifying Tech, One Translation at a Time",
             "title": "Khabazela the Tech Translator",
             "subTitle": "Lover of all things software , tech and AI",
-            "description": "I am driven by a passion for learning and innovation. I specialize in solving complex challenges through technology, with a focus on delivering impactful solutions. With a love for competition and teamwork, I apply the same winning mindset from sports to the tech world. Outside of work, I enjoy engaging in meaningful connections and, of course, indulging in great food. My approach? Serious about success, but always having fun along the way. ",
+            "description": "I am driven by a passion for learning and innovation. I enjoy solving complex challenges through technology, with a focus on delivering impactful solutions. With a love for competition and teamwork, I apply the same winning mindset from sports to the tech world. Outside of work, I enjoy engaging in meaningful connections and, of course, indulging in great food. My approach? Serious about success, but always having fun along the way. ",
 
      
             "quote": "Proverbs 1:5",
@@ -42,7 +42,7 @@
                 "jobLocation": " Rosebank , Johannesburg",
                 "bulletPoints": [
                  
-                    "\nImplemented user authentication and authorization using Firebase AUth ",
+                    "\nImplemented user authentication and authorization using Firebase Auth ",
                     "\nDesigned and optimized database schemas for performance and scalability."
                 ],
                 "forEducation": true,
