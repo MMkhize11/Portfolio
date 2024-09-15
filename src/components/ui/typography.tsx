@@ -45,7 +45,7 @@ export const TextReveal = ({ children, className }: TextRevealProps) => {
               y: 0,
               transition: { delay: i * 0.02, ease: [0.215, 0.61, 0.355, 1] },
             }}
-            key={i}
+            key={i+""+char}
             className="inline-block whitespace-"
           >
             {char}
@@ -63,7 +63,7 @@ export const TextReveal = ({ children, className }: TextRevealProps) => {
               y: 0,
               transition: { delay: i * 0.02, ease: [0.215, 0.61, 0.355, 1] },
             }}
-            key={i}
+            key={i+""+char+"-2"}
             className="inline-block whitespace-"
           >
             {char}

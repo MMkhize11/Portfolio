@@ -89,6 +89,7 @@ export interface Service {
 export interface Testimonial {
   image: Image;
   name: string;
+  summary: string;
   review: string;
   position: string;
   enabled: boolean;

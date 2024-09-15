@@ -7,13 +7,13 @@ import { Cursor } from "./cursor";
 
 export const Providers = ({ children }: { children: ReactNode }) => {
   return (
-    <>
+  
       <SmoothScroll>
         <ContextProvider>
           <Cursor />
           {children}
         </ContextProvider>
       </SmoothScroll>
-    </>
+   
   );
 };

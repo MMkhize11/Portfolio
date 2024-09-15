@@ -107,7 +107,7 @@ export default async function Home() {
             <Transition key={service._id}>
               <HoverImageLink
                 heading={service.name}
-                href=""
+                href="#"
                 price={service.charge}
                 imgSrc={service.image.url}
                 subheading={service.desc}
@@ -115,11 +115,11 @@ export default async function Home() {
             </Transition>
           ))}
         </div>
-        <Transition className="flex items-center py-10 md:hidden">
+        {/* <Transition className="flex items-center py-10 md:hidden">
           <div className="p-4 rounded-full border border-white/50">
             <span>Discuss the project</span>
           </div>
-        </Transition>
+        </Transition> */}
       </section>
       {/* ===PROJECTS SECTION=== */}
       <Projects data={projects} />

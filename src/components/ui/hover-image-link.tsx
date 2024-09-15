@@ -89,7 +89,7 @@ export const HoverImageLink = ({
         transition={{ type: "spring" }}
         src={imgSrc}
         className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64 max-md:hidden"
-        alt={` `}
+        alt={heading}
       />
 
       <motion.div
@@ -108,7 +108,7 @@ export const HoverImageLink = ({
       >
         <span className="md:text-2xl text-neutral-50 pr-1">{price}</span>
         <div className="border border-white/50 rounded-full py-2 px-4 text-white" >
-          <TextReveal>Discuss the project</TextReveal>
+          <TextReveal>Let’s build together</TextReveal>
         </div>
       </motion.div>
     </MotionLink>

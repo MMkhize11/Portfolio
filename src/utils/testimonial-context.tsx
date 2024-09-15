@@ -20,7 +20,7 @@ interface TestimonialContextProps {
 const TestimonialsContext = createContext<TestimonialContextProps>({
  
 testimonials:[] as Testimonial[],
-  singleTestimonial:null,
+  singleTestimonial:null ,
 
   setSingleTestimonial: () => {},
 

@@ -49,6 +49,7 @@ const ProjectContainer = () => {
       <motion.div
         layout
         className="grid md:grid-cols-3 grid-cols-2 md:gap-6 gap-3"
+        key="Project-container"
       >
         {filteredProjects
           .slice(0, showMore ? filteredProjects.length : numProjectToShow)
@@ -80,7 +81,7 @@ const ProjectContainer = () => {
   );
 };
 
-const Card = ({ title, image,description }: Project) => {
+const Card = ({ _id,title, image,description }: Project) => {
   const [hover, setHover] = useState(false);
   const { setVariant } = useCursorVariants();
 
@@ -94,11 +95,13 @@ const Card = ({ title, image,description }: Project) => {
   };
 
   return (
+    <AnimatePresence>
     <motion.div
       layout
       className="relative rounded-xl md:rounded-3xl overflow-hidden aspect-square bg-secondary/30 md:px-4"
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
+      key={ title}
     >
       <div className="absolute top-2 right-2 w-full h-full flex justify-end md:hidden">
         <div className="bg-white size-8 rounded-full text-black grid place-items-center">
@@ -106,9 +109,11 @@ const Card = ({ title, image,description }: Project) => {
         </div>
       </div>
       <div className="md:py-8 relative">
+        
         <motion.div
-          animate={{ y: hover ? -10 : 0 }}
+          animate={{ y: hover ? -10 : 0 }} key={title+" "+description}
           className="flex justify-between items-center max-md:hidden"
+       
         >
           <p className="text-sm md:text-xl font-semibold max-md:opacity-0">
             {title}
@@ -138,5 +143,6 @@ const Card = ({ title, image,description }: Project) => {
         className="object-cover h-full w-full object-center rounded-xl md:rounded-t-3xl  mt-2"
       />
     </motion.div>
+    </AnimatePresence>
   );
 };

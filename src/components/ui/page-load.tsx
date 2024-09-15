@@ -37,7 +37,7 @@ export const PageLoad = ({ setHideLoader }: PageLoadProps) => {
         <span className="font-semibold text-white/40">The Tech Translator</span>
         <div className="flex flex-col max-md:justify-between max-md:h-full">
           <p className="text-3xl md:text-5xl w-full md:w-2/5">
-           I use tech to solve problems , challenge myself and help others
+          Leveraging technology to solve challenges, push boundaries, and make a positive impact
           </p>
           <div className="flex justify-between items-end">
             <span className="text-white/30">Loading...</span>

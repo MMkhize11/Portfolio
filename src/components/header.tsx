@@ -28,6 +28,7 @@ const Header = ({ social }: HeaderProps) => {
       <motion.div
         className="md:w-[480px] w-full h-full bg-primary relative rounded-3xl"
         variants={menu(isMobile)}
+        key="animation Key"
         animate={isActive ? "open" : "closed"}
         initial="closed"
       >

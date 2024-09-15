@@ -2,10 +2,10 @@
     "success": true,
     "user": {
         "about": {
-            "name": "Mpumelelo Mkhize",
-            "title": "AKA Khabazela the tech translator",
+            "name": "Demystifying Tech, One Translation at a Time",
+            "title": "Khabazela the Tech Translator",
             "subTitle": "Lover of all things software , tech and AI",
-            "description": "A Jack of all trades  that loves God,  constantly learning new things and helping solve problems through the use of tech while still having a laugh and having fun  . A sports junkie who enjoys  the thrill of competition and winning , most importantly  i enjoy a good plate of food.  ",
+            "description": "I am driven by a passion for learning and innovation. I specialize in solving complex challenges through technology, with a focus on delivering impactful solutions. With a love for competition and teamwork, I apply the same winning mindset from sports to the tech world. Outside of work, I enjoy engaging in meaningful connections and, of course, indulging in great food. My approach? Serious about success, but always having fun along the way. ",
 
      
             "quote": "Proverbs 1:5",
@@ -191,9 +191,9 @@
                 "image": {
                     "public_id": "1706286966065-p2yrx9Supabase",
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286966065-p2yrx9",
-                    "_id": "65b3df76b48589dfcae181c6Supabase"
+                    "_id": "65b3df76fcae181c6Supabase"
                 },
-                "_id": "65b3df76b48589dfcae181c5Su"
+                "_id": "65b3dSu"
             },
            
             {
@@ -349,10 +349,10 @@
                 "title": "Stuurmy",
                 "sequence": 1,
                 "image": {
-                    "public_id": "1706285511679-xe7r9t",
+                    "public_id": "1706285511679-DIFxe7r9t",
                     "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy%20banner.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteSBiYW5uZXIucG5nIiwiaWF0IjoxNzIzNDExODEwLCJleHAiOjE4ODEwOTE4MTB9.Vh1RAHSRH_0KwlhyI6HQqPdko1oev9mlL2h7yCtAtJY&t=2024-08-11T21%3A30%3A20.061Z"
                 },
-                "description": "A Geolocation APP that enabled customers to search for service providers closest to them and bring them to their door",
+                "description": "A Geolocation APP that enabled customers to search for service providers closest to them and bring them to their door \r Tech Stack : \r Firestore \r Flutter \r Firestore Cloud Functions \r Firebase Cloud Messaging  \r Google cloud ",
                 "techStack": [
                     " Firebase ",
                     " Google cloud ",
@@ -368,25 +368,25 @@
                     "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/home.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9ob21lLmpwZyIsImlhdCI6MTcyMzY2MDI2NCwiZXhwIjoyMDM5MDIwMjY0fQ.kNjESuRDe5XiRQN254hdmkmUegq7cYAoCAFaVUsh6Tk&t=2024-08-14T18%3A31%3A13.838Z"
                 },
                 {
-                    "public_id": "1706285511679-xe7r9t1",
+                    "public_id": "17062855116791",
                     "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/Babysitting.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9CYWJ5c2l0dGluZy5qcGciLCJpYXQiOjE3MjM2NjAzMTEsImV4cCI6MjAzOTAyMDMxMX0.JqeodIzKq0GqEXvDCxxKrHJCVgtMtRha83gyYiczf58&t=2024-08-14T18%3A32%3A00.159Z"
                 },
                 {
-                    "public_id": "1706285511679-xe7r9t2",
+                    "public_id": "1706285511672",
                     "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/Gardening.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9HYXJkZW5pbmcuanBnIiwiaWF0IjoxNzIzNjYxMDExLCJleHAiOjIwMzkwMjEwMTF9.AiXm7SKmg3s1wOUIlTJH3O7vE0Ome6IdQEgaMP8AoIk&t=2024-08-14T18%3A43%3A40.183Z"
                 }
                 ,{
-                    "public_id": "1706285511679-xe7r9t3",
+                    "public_id": "17062855113",
                     "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/Request.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9SZXF1ZXN0LmpwZyIsImlhdCI6MTcyMzY2MTA2MiwiZXhwIjoyMDM5MDIxMDYyfQ.pk5btctsIWp4Iw7vpyi34kicJa_DUvq44tUvjFfFo3k&t=2024-08-14T18%3A44%3A31.129Z"
                 },
                 {
-                    "public_id": "1706285511679-xe7r9t4",
+                    "public_id": "1706285511674",
                     "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/payment.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9wYXltZW50LmpwZyIsImlhdCI6MTcyMzY2MjE4MywiZXhwIjoyMDM5MDIyMTgzfQ.Ri2P57n2Rqjg4ChjFGjJUV6J_kAz8ozAcAsSOfet0y4&t=2024-08-14T19%3A03%3A12.100Z"
                 }
                             
             
             ],
-                "_id": "65b3d9c8d017f6b49c778ca7ST",
+                "_id": "65bChangeST",
                 "enabled": true
             },
             {
@@ -448,7 +448,7 @@
                 "liveurl": "",
                 "githuburl": "#",
                 "title": "Voting Manifesto Chatbot ",
-                "sequence": 4,
+                "sequence": 5,
                 "image": {
                     "public_id": "1706285431821-3lfg2r",
                     "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/voting%20chatbot.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvdm90aW5nIGNoYXRib3QucG5nIiwiaWF0IjoxNzIzOTIzNzEwLCJleHAiOjIwMzkyODM3MTB9.iQNSF3NuvRgTDxulUlB9Cxv8sIVoBoJc8MaGI5gE_ok&t=2024-08-17T19%3A41%3A58.013Z"
@@ -466,7 +466,7 @@
                 "liveurl": "#",
                 "githuburl": "#",
                 "title": "Value ed App",
-                "sequence": 5,
+                "sequence": 6,
                 "image": {
                     "public_id": "1706285511679-xe7r9t",
                     "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/Logo.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvTG9nby5qcGciLCJpYXQiOjE3MjM1NjIwMjAsImV4cCI6MjAzODkyMjAyMH0.BuGzyRaILFqBqhrIL8JWCTMa1DhvniAsWy4fVGO_ZiI&t=2024-08-13T15%3A13%3A50.150Z"
@@ -511,7 +511,7 @@
         "services": [
             {
                 "name": "App Development",
-                "charge": "Lets Talk",
+                "charge": "Let’s build together",
                 "desc": "",
                 "enabled": true,
                 "_id": "65f1fd690556c3f887e9d94aApp",
@@ -522,7 +522,7 @@
             },
             {
                 "name": "Web App Development",
-                "charge": "Lets Talk",
+                "charge": "Let’s build together",
                 "desc": "",
                 "image": {
                     "public_id": "portfolio3/1710357775748-9vwq4q.jpeg",
@@ -534,7 +534,7 @@
           
             {
                 "name": "Automation",
-                "charge": "Lets Talk",
+                "charge": "Let’s build together",
                 "desc": "",
                 "enabled": true,
                 "_id": "65f1fd690556c3f887e9d94aAut",
@@ -545,7 +545,7 @@
             },
             {
                 "name": "Master of Ceremonies (MC) ",
-                "charge": "Lets Talk",
+                "charge": "Let’s build together",
                 "desc": "   ",
                 "image": {
                     "public_id": "portfolio3/1710357775748publicSpeaking-9vwq4q.jpeg",
@@ -562,7 +562,8 @@
                     "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357726628-c4dr18.png"
                 },
                 "name": "Vikela Rankin",
-                "review": "I had the pleasure of working closely with Mpumelelo on a challenging project. He is a highly skilled developer who consistently delivered excellent results. His ability to understand complex requirements and implement efficient solutions was truly impressive. I would highly recommend him to any organization looking for a talented developer.",
+                "review": "I take great pride in being able to offer a testimonial on Mpumelelo Mkhize. I have know him for over 4 years as a scholar and student who has risen to the heights of an employee within the technology space.This does not come as a suprise because I have watched Mpumeleo self develop both personally and professionally, with diligence and dedication. He is a man who believes in doing, contributing and adding Value. He Chaired our organisation and played a critical role in helping new and young members settle into our organisation. He is not afraid to step outside his comfort zone and he likes to get this done.He is reliable and dependable and can mingle and associate with many different types of people. He is punctual and ply’s his trade very well in the digital and technical field.An absolute please to work with and I would hearty recommend him to anyone.",
+                "summary":"He is a man who believes in doing, contributing and adding Value.He is reliable and dependable and can mingle and associate with many different types of people. He is punctual and ply’s his trade very well in the digital and technical field.",
                 "position": "Founder Of Value ed ",
                 "enabled": true,
                 "companyUrl":"https://www.linkedin.com/in/vikelarankin/",
@@ -575,6 +576,7 @@
                 },
                 "name": "Tshego Sebogodi ",
                 "review": "Working with Mpumelelo has been outstanding.His expertise, swift responses, and commitment to resolving our tech issues have been invaluable.I highly recommend him for anyone seeking dependable and effective tech support.\n",
+                "summary":"He consistently goes above and beyond.His expertise, quick response time, and dedication have been invaluable to our team",
                 "position": "CEO Value Ed",
                 "enabled": true,
                 "companyUrl":"https://www.linkedin.com/in/tshego-sebogodi/",
@@ -587,6 +589,7 @@
                 },
                 "name": "Joshua Dylan",
                 "review": "Collaborating with Mpumi at JD Creations has been a delight. His technical skill, reliability, and dedication have greatly contributed to our success. Mpumi's passion for technology and commitment to positive impact are inspiring. He’s not just a skilled developer but a visionary who values collaboration and community. I highly recommend Mpumi for exceptional results and a big-picture focus\n\n",
+                "summary":"His technical expertise, reliability, and trustworthiness have consistently driven our success.He’s not just a skilled developer but also a visionary who understands the power of collaboration and community.",
                 "position": "CEO JD Creations",
                 "companyUrl":"https://www.linkedin.com/in/iamjoshdylan/",
                 "enabled": true,
@@ -601,11 +604,26 @@
                 },
                 "name": "Lesedi Morakile",
                 "review": "Working with Mpumelelo was an absolute delight. Their professionalism and technical prowess were evident from day one. He consistently delivered top-notch code and went above and beyond to ensure the success of our project. I highly recommend him for any development endeavor",
-                "position": "Co-founder",
+                "summary":"Mpumelelo's collaborative spirit, openness to new ideas, and infectious positivity make him a joy to work with.He brings heart and humor to everything he does",
+                "position": "Co-founder - DIW",
                 "companyUrl":"",
                 "enabled": true,
                 "_id": "Lesedi1"
+            },
+            {
+                "image": {
+                    "public_id": "ALU1",
+                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357534893-2s9b5d.png"
+                },
+                "name": "Alungile Sixishe",
+                "review": "Working with Mpumelelo was an absolute delight. Their professionalism and technical prowess were evident from day one. He consistently delivered top-notch code and went above and beyond to ensure the success of our project. I highly recommend him for any development endeavor",
+                "summary":"Mpumelelo's collaborative spirit, openness to new ideas, and infectious positivity make him a joy to work with.He brings heart and humor to everything he does",
+                "position": "CEO - Motherland Omni",
+                "companyUrl":"https://www.linkedin.com/in/alungile-sixishe-2a9446a7/?originalSubdomain=za",
+                "enabled": true,
+                "_id": "Lesedi1"
             }
+
         ],
         "createdAt": "2024-01-26T12:14:36.514Z",
         "updatedAt": "2024-05-08T17:53:29.758Z",
