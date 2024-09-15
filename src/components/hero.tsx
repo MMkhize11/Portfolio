@@ -38,7 +38,7 @@ export const Hero = ({ about }: { about: About }) => {
             </div>
             <Transition viewport={{ once: true }} className="w-full">
               <p className="opacity-70 md:text-xl py-4 w-10/12 md:w-2/3 mx-auto flex flex-wrap justify-center gap-2">
-              Hello There  I'm Mpumelelo Mkhize
+              {"Hello There  I'm Mpumelelo Mkhize"}
               </p>
             </Transition>
             <Transition viewport={{ once: true }}>
