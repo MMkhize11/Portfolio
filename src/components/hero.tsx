@@ -24,13 +24,16 @@ export const Hero = ({ about }: { about: About }) => {
                 src={about.avatar.url}
                 width={200}
                 height={200}
-                alt={about.name}
+                alt={about.title}
                 className="rounded-full size-28 object-cover"
               />
             </Transition>
             <div className="py-6 flex items-center flex-col">
-              <h2 className="md:text-7xl text-3xl font-bold overflow-hidden flex-wrap justify-center gap-2 px-0.5">
-                <SlideIn> {about.name}</SlideIn>
+              <h2 className="md:text-7xl text-2xl font-bold overflow-hidden flex-wrap justify-center gap-2 px-0.5">
+                <SlideIn> {about.name1}</SlideIn>
+              </h2>
+              <h2 className="md:text-7xl text-2xl font-bold overflow-hidden flex-wrap justify-center gap-2 px-0.5">
+                <SlideIn> {about.name2}</SlideIn>
               </h2>
               <h1 className="md:text-7xl text-2xl overflow-hidden   flex-wrap justify-center gap-2 px-0.5">
                 <SlideIn>{about.title}</SlideIn>

@@ -2,10 +2,11 @@
     "success": true,
     "user": {
         "about": {
-            "name": "Demystifying Tech, One Translation at a Time",
+            "name1": "Demystifying Tech",
+            "name2": "One Translation at a Time",
             "title": "Khabazela the Tech Translator",
             "subTitle": "Lover of all things software , tech and AI",
-            "description": "I am driven by a passion for learning and innovation. I enjoy solving complex challenges through technology, with a focus on delivering impactful solutions. With a love for competition and teamwork, I apply the same winning mindset from sports to the tech world. Outside of work, I enjoy engaging in meaningful connections and, of course, indulging in great food. My approach? Serious about success, but always having fun along the way. ",
+            "description": "I am driven by a passion for learning and innovation. I enjoy solving complex challenges through technology, with a focus on delivering  solutions for both businesses and entrepreneurs helping them reach their goals. With a love for competition and teamwork, I apply the same winning mindset from sports to the tech world. Outside of work, I enjoy engaging in meaningful connections and, of course, indulging in great food. My approach? Serious about hitting targets, but always having fun along the way. ",
 
      
             "quote": "Proverbs 1:5",

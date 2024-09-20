@@ -22,7 +22,8 @@ export interface User {
 }
 
 export interface About {
-  name: string;
+  name1: string;
+  name2: string;
   title: string;
   subTitle: string;
   description: string;
