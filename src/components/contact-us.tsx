@@ -125,11 +125,11 @@ const { register, handleSubmit } = useForm<FormData>();
               <Transition>
                 <span className="text-white/90">Get in touch</span>
               </Transition>
-              <div className="text-2xl md:text-4xl font-bold py-2">
+              {/* <div className="text-2xl md:text-4xl font-bold py-2">
                 <Transition>
                   <TextReveal>{email}</TextReveal>
                 </Transition>
-              </div>
+              </div> */}
               <Transition>
                 <div className="pb-1 text-white/80">{about.phoneNumber}</div>
               </Transition>
