@@ -63,7 +63,7 @@ const About = ({ about, timeline }: AboutProps) => {
               src={about.avatar.url}
               width={400}
               height={400}
-              alt={about.name}
+              alt={about.name1}
               className="rounded-xl max-md:aspect-square object-cover"
             />
           </Transition>
