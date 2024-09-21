@@ -439,7 +439,8 @@
                 "description": "A whatsapp Chatbot that was created for users to enter and upload their loaf pictures to enter the competition",
                 "techStack": [
                     " Chatbot ",
-                    " Automation "
+                    " Automation ",
+                    " AI "
                 ],
                 "projectImages":[],
                 "_id": "65b3d978d017f6b49c778c67AL",
@@ -457,7 +458,9 @@
                 "description": "A whatsapp Chatbot that was created for users to query the manifestos of a particular party  Test case (Rise mzansi)",
                 "techStack": [
                     " Chatbot ",
-                    " Automation "
+                    " Automation ",
+                    "RAG",
+                    "AI"
                 ],
                 "projectImages":[],
                 "_id": "65b3d978d017f6b49c778c67VMA",
