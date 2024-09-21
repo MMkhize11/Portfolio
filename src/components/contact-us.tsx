@@ -64,72 +64,16 @@ const { register, handleSubmit } = useForm<FormData>();
           <SlideIn className="text-white/40">Interested in Collaborating,</SlideIn>{" "}
           <br /> <SlideIn>let’s Chat</SlideIn>
         </SectionHeading>
-        <form onSubmit={handleSubmit(handleSendEmail)}>
-        <div className="grid md:grid-cols-2 gap-10 md:pt-16">
-          <div className="space-y-4">
-            <div className="flex gap-4">
-              <Transition className="w-full">
-                <Input
-                  id="full-name"
-                  placeholder="Full name"
-                  className="border-0 border-b rounded-none"
-                  {...register('name',{required:true})}
-                />
-              </Transition>
-              <Transition className="w-full">
-                <Input
-                  id="email"
-                  placeholder="Email"
-                  type="email"
-                  className="border-0 border-b rounded-none"
-                  {...register('from',{required:true})}
-                />
-              </Transition>
-            </div>
-            <div className="space-y-2">
-              <Transition>
-                <Input
-                  id="subject"
-                  {...register('subject',{required:true})}
-                  placeholder="Enter the subject"
-                  className="border-0 border-b rounded-none"
-                />
-              </Transition>
-            </div>
-            <div className="space-y-2">
-              <Transition>
-                <Textarea
-                  className="min-h-[100px] rounded-none border-0 border-b resize-none"
-                  id="message"
-                  placeholder="Enter your message"
-                  {...register('message',{required:true})}
-                />
-              </Transition>
-            </div>
-            <div>
-              <Transition>
-                <motion.button      onClick={()=>{
-                 handleSubmit(handleSendEmail)
-                }}
-                  whileHover="whileHover"
-                  initial="initial"
-                  className="border border-white/30 px-8 py-2 rounded-3xl relative overflow-hidden"
-                >
-                  <TextReveal className="uppercase">Lets Chat</TextReveal>
-                </motion.button>
-              </Transition>
-            </div>
-          </div>
-          <div className="md:justify-self-end flex flex-col">
+        <div className="md:justify-self-end flex flex-col">
             <div className="pb-4">
               <Transition>
                 <span className="text-white/90">Get in touch</span>
               </Transition>
-              {/* <div className="text-2xl md:text-4xl font-bold py-2">
+             <div className="text-2xl md:text-4xl font-bold py-2">
                 <Transition>
                   <TextReveal>{email}</TextReveal>
                 </Transition>
-              </div> */}
+              </div>
               <Transition>
                 <div className="pb-1 text-white/80">{about.phoneNumber}</div>
               </Transition>
@@ -153,8 +97,7 @@ const { register, handleSubmit } = useForm<FormData>();
               )}
             </div>
           </div>
-        </div>
-      </form>
+      
       </div>
       <footer className="flex items-center justify-between md:px-8 px-2 py-4 text-sm">
         <Transition>
