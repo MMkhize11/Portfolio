@@ -20,7 +20,6 @@ const nextConfig = {
       {
         hostname: "wa.me",
       },
-      // wa.me
     ],
   },
 };

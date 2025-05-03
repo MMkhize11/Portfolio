@@ -31,7 +31,7 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
                   <X size={20} />
                 </button>
                 <Image
-                  src={singleProject.image.url}
+                  src={singleProject.image.url || '/placeholder-image.jpg'}
                   width={500}
                   height={300}
                   alt={singleProject.title}
@@ -68,7 +68,7 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
       {singleProject.projectImages.map((img, index) => (
         <div key={singleProject.title+"-"+index} className="flex-shrink-0">
           <Image
-            src={img.url}
+            src={img.url || '/placeholder-image.jpg'}
             alt=""
             width={100}
             height={150}

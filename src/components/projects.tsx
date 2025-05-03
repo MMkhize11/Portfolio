@@ -21,7 +21,7 @@ const Projects = ({ data }: ProjectProps) => {
   return (
     <ProjectsProvider data={data}>
       <section className="md:p-8 p-4 relative" id="projects">
-        <SectionHeading className="md:pl-16">
+        <SectionHeading>
           <SlideIn className="text-white/40">Selected</SlideIn>
           <br />
           <SlideIn>works</SlideIn>
@@ -47,7 +47,6 @@ const ProjectContainer = () => {
   return (
     <AnimatePresence>
       <motion.div
-        layout
         className="grid md:grid-cols-3 grid-cols-2 md:gap-6 gap-3"
         key="Project-container"
       >
@@ -58,11 +57,7 @@ const ProjectContainer = () => {
               <Transition
                 transition={{ delay: 0.2 + index * 0.1 }}
                 viewport={{ once: true }}
-                key={project._id}
-                onClick={() => {
-                  setShowDialog(true);
-                  setSingleProject(project);
-                }}
+                key={project._id+"-"+index}
               >
                 <Card {...project} />
               </Transition>
@@ -81,7 +76,7 @@ const ProjectContainer = () => {
   );
 };
 
-const Card = ({ _id,title, image,description }: Project) => {
+const Card = ({ _id, title, image, description, liveurl }: Project) => {
   const [hover, setHover] = useState(false);
   const { setVariant } = useCursorVariants();
 
@@ -96,53 +91,47 @@ const Card = ({ _id,title, image,description }: Project) => {
 
   return (
     <AnimatePresence>
-    <motion.div
-      layout
-      className="relative rounded-xl md:rounded-3xl overflow-hidden aspect-square bg-secondary/30 md:px-4"
-      onMouseEnter={mouseEnter}
-      onMouseLeave={mouseLeave}
-      key={ title}
-    >
-      <div className="absolute top-2 right-2 w-full h-full flex justify-end md:hidden">
-        <div className="bg-white size-8 rounded-full text-black grid place-items-center">
-          <ArrowUpRight size={20} />
-        </div>
-      </div>
-      <div className="md:py-8 relative">
-        
-        <motion.div
-          animate={{ y: hover ? -10 : 0 }} key={title+" "+description}
-          className="flex justify-between items-center max-md:hidden"
-       
+      <div
+        className={
+          `relative rounded-2xl overflow-hidden aspect-square bg-secondary/30 transition-transform duration-300 ` +
+          (hover ? "scale-105 shadow-2xl z-10" : "")
+        }
+        onMouseEnter={mouseEnter}
+        onMouseLeave={mouseLeave}
+        key={title}
+      >
+        {/* Project Image */}
+        <Image
+          src={image.url || '/placeholder-image.jpg'}
+          width={600}
+          height={500}
+          alt={title}
+          className="object-cover h-full w-full object-center rounded-2xl transition-transform duration-300"
+        />
+        {/* Glassmorphism Overlay */}
+        <div
+          style={{ opacity: hover ? 1 : 0, pointerEvents: hover ? 'auto' : 'none', transition: 'opacity 0.3s' }}
+          className="absolute inset-0 flex flex-col justify-end p-6 bg-black/40 backdrop-blur-md"
         >
-          <p className="text-sm md:text-xl font-semibold max-md:opacity-0">
-            {title}
-          </p>
-          <button className="flex gap-2 items-center justify-center max-md:px-4">
-            <TextReveal className="max-md:text-sm">Visit</TextReveal>
-            <span className="bg-black text-white/80 rounded-full p-1">
-              <ArrowUpRight className="size-4 md:size-6" />
-            </span>
-          </button>
-        </motion.div>
-        <div className="overflow-hidden max-md:hidden">
-          <motion.p
-            initial={{ y: 0, opacity: 0 }}
-            animate={{ y: hover ? -10 : 0, opacity: hover ? 1 : 0 }}
-            className="absolute text-white/50"
-          >
-          {description}
-          </motion.p>
+          <div className="mb-auto" />
+          <h3 className="text-xl font-bold text-white mb-2 drop-shadow-lg">{title}</h3>
+          <p className="text-white/80 text-sm mb-4 line-clamp-3 drop-shadow-md">{description}</p>
+          <div className="flex gap-2">
+            {liveurl && (
+              <a
+                href={liveurl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 text-white px-4 py-2 rounded-lg hover:bg-white/20 transition font-semibold text-sm backdrop-blur-sm"
+              >
+                Visit
+                <ArrowUpRight className="inline ml-2 size-4 align-text-bottom" />
+              </a>
+            )}
+            {/* Add more buttons if needed */}
+          </div>
         </div>
       </div>
-      <Image
-        src={image.url}
-        width={600}
-        height={500}
-        alt={title}
-        className="object-cover h-full w-full object-center rounded-xl md:rounded-t-3xl  mt-2"
-      />
-    </motion.div>
     </AnimatePresence>
   );
 };

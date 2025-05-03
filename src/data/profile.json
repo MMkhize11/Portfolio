@@ -5,25 +5,23 @@
             "name1": "Demystifying Tech",
             "name2": "One Translation at a Time",
             "title": "Khabazela the Tech Translator",
-            "subTitle": "Lover of all things software , tech and AI",
-            "description": "I am driven by a passion for learning and innovation. I enjoy solving complex challenges through technology, with a focus on delivering  solutions for both businesses and entrepreneurs helping them reach their goals. With a love for competition and teamwork, I apply the same winning mindset from sports to the tech world. Outside of work, I enjoy engaging in meaningful connections and, of course, indulging in great food. My approach? Serious about hitting targets, but always having fun along the way. ",
-
-     
+            "subTitle": "Lover of all things software, tech and AI",
+            "description": "I am driven by a passion for learning and innovation. I enjoy solving complex challenges through technology, with a focus on delivering solutions for both businesses and entrepreneurs helping them reach their goals. With a love for competition and teamwork, I apply the same winning mindset from sports to the tech world. Outside of work, I enjoy engaging in meaningful connections and, of course, indulging in great food. My approach? Serious about hitting targets, but always having fun along the way.",
             "quote": "Proverbs 1:5",
-            "scripture":"Let the wise hear and increase in learning,            and the one who understands obtain guidance,",
+            "scripture": "Let the wise hear and increase in learning, and the one who understands obtain guidance",
             "exp_year": "5",
-            "address": "Johannesburg , South Africa",
+            "address": "Johannesburg, South Africa",
             "some_total": "90",
             "phoneNumber": " ",
             "contactEmail": "mmkhize11@gmail.com",
             "avatar": {
                 "public_id": "portfolio3/1713995155677-122l5x.webp",
-                "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/profileImage.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvcHJvZmlsZUltYWdlLmpwZyIsImlhdCI6MTcyMzQxNTA1OSwiZXhwIjoyMDM4Nzc1MDU5fQ.PE8Tr_6x81snszO-nzSuIJhpdaEXeqHmPIqu4yVV-iY&t=2024-08-11T22%3A24%3A29.673Z"
+                "url": "/assets/images/brand/profileImage.jpg"
             },
             "alternateAvatars": [
                 {
                     "public_id": "portfolio3/1713996156944-1hro1b.webp",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1713996156944-1hro1b.webp"
+                    "url": "/assets/images/alternate-avatar.webp"
                 }
             ]
         },
@@ -36,98 +34,94 @@
                 "company_name": "Argility",
                 "summary": "Went through Angular 2 Training for the goal of helping create webapps",
                 "sequence": 1,
-                "companyUrl":"",
+                "companyUrl": "",
                 "startDate": "2019-02-13T00:00:00.000Z",
                 "endDate": "2020-01-13T00:00:00.000Z",
-                "jobTitle": "Graduate Intern ",
-                "jobLocation": " Rosebank , Johannesburg",
+                "jobTitle": "Graduate Intern",
+                "jobLocation": "Rosebank, Johannesburg",
                 "bulletPoints": [
-                 
-                    "\nImplemented user authentication and authorization using Firebase Auth ",
-                    "\nDesigned and optimized database schemas for performance and scalability."
+                    "Implemented user authentication and authorization using Firebase Auth",
+                    "Designed and optimized database schemas for performance and scalability"
                 ],
                 "forEducation": true,
                 "enabled": true,
                 "_id": "65f1fe900556c3f887e9db94"
             },
             {
-                "company_name": "Argility ",
+                "company_name": "Argility",
                 "summary": "Contributed to the development of a cloud-based Point of Sale POC webapp",
                 "sequence": 2,
-                "companyUrl":"",
+                "companyUrl": "",
                 "startDate": "2020-01-06T00:00:00.000Z",
                 "endDate": "2022-06-20T00:00:00.000Z",
                 "jobTitle": "Junior Developer",
-                "jobLocation": " Rosebank , Johannesburg",
+                "jobLocation": "Rosebank, Johannesburg",
                 "bulletPoints": [
-                    "Developed APi's using Node.js and deployed them using Firebase Cloud functions",
-                    "\nImplemented user authentication and authorization using Firebase AUth ",
-                    "\nIntegrated with cloud providers such as Google cloud to manage infrastructure resources.",
-                    "\nDesigned and implemented RESTful APIs for various platform features."
+                    "Developed APIs using Node.js and deployed them using Firebase Cloud Functions",
+                    "Implemented user authentication and authorization using Firebase Auth",
+                    "Integrated with cloud providers such as Google Cloud to manage infrastructure resources",
+                    "Designed and implemented RESTful APIs for various platform features"
                 ],
                 "forEducation": true,
                 "enabled": true,
                 "_id": "65f1fe4e0556c3f887e9db22"
             },
             {
-                "company_name": "Argility  (Current)",
+                "company_name": "Argility (Current)",
                 "summary": "Contributed to the Development of Numerous releases of existing Platforms and Projects",
                 "sequence": 3,
-                "companyUrl":"",
+                "companyUrl": "",
                 "startDate": "2022-06-11T00:00:00.000Z",
                 "endDate": "2024-08-13T00:00:00.000Z",
-                "jobTitle": "Solutions Developer  ",
-                "jobLocation": " Rosebank , Johannesburg",
+                "jobTitle": "Solutions Developer",
+                "jobLocation": "Rosebank, Johannesburg",
                 "bulletPoints": [
-                    "Implemented user interface components using angular 2 and Typescript",
-                    "\nCollaborated with backend developers to integrate frontend components with RESTful APIs.",
-                    "\nParticipated in sprint planning meetings and provided accurate estimates for feature development.",
-                    "\nAssisted in the development of incremental feature requests for mobile apps using ionic ",
-                    "Transferred mobile apps from different push notification Providers e.g (onesignal to firebase)",
-                    "Assisted in the development of a new major release version of mobile app deployed using docker containers"
-                    
+                    "Implemented user interface components using Angular 2 and TypeScript",
+                    "Collaborated with backend developers to integrate frontend components with RESTful APIs",
+                    "Participated in sprint planning meetings and provided accurate estimates for feature development",
+                    "Assisted in the development of incremental feature requests for mobile apps using Ionic",
+                    "Transferred mobile apps from different push notification providers (e.g., OneSignal to Firebase)",
+                    "Assisted in the development of a new major release version of mobile app deployed using Docker containers"
                 ],
                 "forEducation": true,
                 "enabled": true,
                 "_id": "65f1fe1e0556c3f887e9dab2"
             },
-           
             {
                 "company_name": "Digi Innovation Workshop",
-                "summary": "Co founded Digi innovation workshops (DIW) where we look to host workshops were we provide a peek into the current landscape and bring in industry experts to help guide entrepreneurs and freelancers in their business decisions ",
+                "summary": "Co-founded Digi Innovation Workshops (DIW) where we look to host workshops where we provide a peek into the current landscape and bring in industry experts to help guide entrepreneurs and freelancers in their business decisions",
                 "sequence": 5,
-                "companyUrl":"",
+                "companyUrl": "",
                 "icon": {
                     "public_id": "portfolio3/1710357917833-0mic4.png",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357917833-0mic4.png"
+                    "url": "/assets/images/diw-icon.png"
                 },
                 "startDate": "2023-01-03T00:00:00.000Z",
                 "endDate": "2024-08-13T00:00:00.000Z",
-                "jobTitle": "Co-founder / Chief Strategy Officer  (DIW)",
+                "jobTitle": "Co-founder / Chief Strategy Officer (DIW)",
                 "jobLocation": "Johannesburg",
                 "bulletPoints": [
                     "Assisted in content planning and Decision Making",
-                    "Conducted the workshops as the Master of Ceremonies (MC) ensuring adherance to rules and ensure flow of workshop"
+                    "Conducted the workshops as the Master of Ceremonies (MC) ensuring adherence to rules and ensuring flow of workshop"
                 ],
                 "forEducation": true,
                 "enabled": true,
                 "_id": "65f1fd9e0556c3f887e9d9d8"
             },
             {
-                "company_name": "Value ed",
-                "summary": "I was tasked with the Technology related strategy and maintenance of technological issues ",
-                "companyUrl":"",
+                "company_name": "Value Ed",
+                "summary": "I was tasked with the Technology related strategy and maintenance of technological issues",
+                "companyUrl": "",
                 "sequence": 7,
                 "startDate": "2021-11-13T00:00:00.000Z",
                 "endDate": "2024-08-13T00:00:00.000Z",
-                "jobTitle": "Chief Technology Officer ",
-                "jobLocation": " Roodeport, Johannesburg",
+                "jobTitle": "Chief Technology Officer",
+                "jobLocation": "Roodeport, Johannesburg",
                 "bulletPoints": [
                     "Developed RESTful APIs and integrated third-party services to ingest and return Data for external partners using API Keys for authorization",
-                    "\nDeveloped the Value ed mobile app using Flutter and creating api's that lift data from the website to the app ",
+                    "Developed the Value Ed mobile app using Flutter and creating APIs that lift data from the website to the app",
                     "Provided support for customers when website was not working as expected",
                     "Assisted in creating automation routines for data input processes"
-  
                 ],
                 "forEducation": true,
                 "enabled": true,
@@ -135,7 +129,6 @@
             }
         ],
         "skills": [
-          
             {
                 "enabled": true,
                 "name": "Python",
@@ -143,12 +136,11 @@
                 "percentage": 86,
                 "image": {
                     "public_id": "1706288708710-nrq74spythonSID",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288708710-nrq74s",
+                    "url": "/assets/images/skills/python.png",
                     "_id": "pythonSID"
                 },
                 "_id": "65b3e645b48589dfcae187a2pythonSID"
             },
-
             {
                 "enabled": true,
                 "name": "TypeScript",
@@ -156,7 +148,7 @@
                 "percentage": 90,
                 "image": {
                     "public_id": "1706287104739-pm8enTypeScript",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706287104739-pm8en",
+                    "url": "/assets/images/skills/typescript.png",
                     "_id": "65b3e001b48589dfcae18246TypeScript"
                 },
                 "_id": "65b3e001b48589dfcae18245TypeScript"
@@ -168,7 +160,7 @@
                 "percentage": 92,
                 "image": {
                     "public_id": "1706286990341-tznh4Node",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286990341-tznh4",
+                    "url": "/assets/images/skills/nodejs.png",
                     "_id": "65b3df8fb48589dfcae18205Node"
                 },
                 "_id": "65b3df8fb48589dfcae18204Node"
@@ -180,23 +172,23 @@
                 "percentage": 70,
                 "image": {
                     "public_id": "1706286966065-p2yrx9Firebase",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286966065-p2yrx9",
+                    "url": "/assets/images/skills/firebase.png",
                     "_id": "65b3df76b48589dfcae181c6Firebase"
                 },
                 "_id": "65b3df76b48589dfcae181c5FiFirebase"
-            },  {
+            },
+            {
                 "enabled": true,
                 "name": "Supabase",
                 "sequence": 5,
                 "percentage": 70,
                 "image": {
                     "public_id": "1706286966065-p2yrx9Supabase",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286966065-p2yrx9",
+                    "url": "/assets/images/skills/supabase.png",
                     "_id": "65b3df76fcae181c6Supabase"
                 },
                 "_id": "65b3dSu"
             },
-           
             {
                 "enabled": true,
                 "name": "Flutter",
@@ -204,7 +196,7 @@
                 "percentage": 95,
                 "image": {
                     "public_id": "1706286913147-nwiky8Flutter",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286913147-nwiky8",
+                    "url": "/assets/images/skills/flutter.png",
                     "_id": "65b3df41b48589dfcae1814eFlutter"
                 },
                 "_id": "65b3df41b48589dfcae1814dFluFlutter"
@@ -216,7 +208,7 @@
                 "percentage": 95,
                 "image": {
                     "public_id": "1706286913147-nwiky8Ionic",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286913147-nwiky8",
+                    "url": "/assets/images/skills/ionic.png",
                     "_id": "65b3df41b48589dfcae1814eIonic"
                 },
                 "_id": "65b3df41b48589dfcae1814dIOIonic"
@@ -228,7 +220,7 @@
                 "percentage": 95,
                 "image": {
                     "public_id": "1706286913147-nwiky8Angular",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286913147-nwiky8",
+                    "url": "/assets/images/skills/angular.png",
                     "_id": "65b3df41b48589dfcae1814eAngular"
                 },
                 "_id": "65b3df41b48589dfcae1814dAnAngular"
@@ -240,19 +232,19 @@
                 "percentage": 95,
                 "image": {
                     "public_id": "1706286913147-nwiky8Redis",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286913147-nwiky8",
+                    "url": "/assets/images/skills/redis.png",
                     "_id": "65b3df41b48589dfcae1814eRedis"
                 },
                 "_id": "65b3df41b48589dfcae1814dReRedis"
             },
             {
                 "enabled": true,
-                "name": "Javascript",
+                "name": "JavaScript",
                 "sequence": 10,
                 "percentage": 95,
                 "image": {
                     "public_id": "1706288679775-y4qwn3Javascript",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288679775-y4qwn3",
+                    "url": "/assets/images/skills/javascript.png",
                     "_id": "65b3e628b48589dfcae18750Javascript"
                 },
                 "_id": "65b3df24b48589dfcae18114Javascript"
@@ -264,24 +256,23 @@
                 "percentage": 95,
                 "image": {
                     "public_id": "1706286842731-r0eynGit",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286842731-r0eyn",
+                    "url": "/assets/images/skills/git.png",
                     "_id": "65b3defbb48589dfcae180deGit"
                 },
                 "_id": "65b3defbb48589dfcae180ddGit"
             },
             {
                 "enabled": true,
-                "name": "Github",
+                "name": "GitHub",
                 "sequence": 12,
                 "percentage": 95,
                 "image": {
                     "public_id": "1706286821409-21cuqsGithub",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286821409-21cuqs",
+                    "url": "/assets/images/skills/github.png",
                     "_id": "65b3dee5b48589dfcae180a9Github"
                 },
                 "_id": "65b3dee5b48589dfcae180a8Github"
             },
-           
             {
                 "enabled": true,
                 "name": "FastAPI",
@@ -289,7 +280,7 @@
                 "percentage": 80,
                 "image": {
                     "public_id": "1706286760237-gh4idqFastAPI",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286760237-gh4idq",
+                    "url": "/assets/images/skills/fastapi.png",
                     "_id": "65b3dea8b48589dfcae18045FastAPI"
                 },
                 "_id": "65b3dea8b48589dfcae18044FastAPI"
@@ -301,14 +292,11 @@
                 "percentage": 90,
                 "image": {
                     "public_id": "1706286729467-rbblgbVercel",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286729467-rbblgb",
+                    "url": "/assets/images/skills/vercel.png",
                     "_id": "65b3de89b48589dfcae18016Vercel"
                 },
                 "_id": "65b3de89b48589dfcae18015Vercel"
             },
-           
-           
-          
             {
                 "enabled": true,
                 "name": "CSS",
@@ -316,7 +304,7 @@
                 "percentage": 97,
                 "image": {
                     "public_id": "1706286273084-romleCSS",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286273084-romle"
+                    "url": "/assets/images/skills/css.png"
                 },
                 "_id": "65b3dcc1b48589dfcae17e4dCSS"
             },
@@ -326,7 +314,7 @@
                 "percentage": 98,
                 "image": {
                     "public_id": "1706286058630-v3ax0aHTML",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286058630-v3ax0a"
+                    "url": "/assets/images/skills/html.png"
                 },
                 "_id": "65b3dbeba5c8d2db7b6164bcHTML",
                 "enabled": true
@@ -351,42 +339,40 @@
                 "sequence": 1,
                 "image": {
                     "public_id": "1706285511679-DIFxe7r9t",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy%20banner.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteSBiYW5uZXIucG5nIiwiaWF0IjoxNzIzNDExODEwLCJleHAiOjE4ODEwOTE4MTB9.Vh1RAHSRH_0KwlhyI6HQqPdko1oev9mlL2h7yCtAtJY&t=2024-08-11T21%3A30%3A20.061Z"
+                    "url": "/assets/images/projects/stuurmy/stuurmy-banner.png"
                 },
-                "description": "A Geolocation APP that enabled customers to search for service providers closest to them and bring them to their door \r Tech Stack : \r Firestore \r Flutter \r Firestore Cloud Functions \r Firebase Cloud Messaging  \r Google cloud ",
+                "description": "A geolocation app that enabled customers to search for service providers closest to them and bring them to their door. Tech Stack: Firestore, Flutter, Firebase Cloud Functions, Firebase Cloud Messaging, Google Cloud",
                 "techStack": [
-                    " Firebase ",
-                    " Google cloud ",
-              
-                    " Flutter "
-              
+                    "Firebase",
+                    "Google Cloud",
+                    "Flutter"
                 ],
-                "projectImages":[{
-                    "public_id": "homeLogo",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/logo.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9sb2dvLmpwZyIsImlhdCI6MTcyMzY2MDIwOSwiZXhwIjoyMDM5MDIwMjA5fQ.HasEo3Cu0Kvj0maY4i_MMWqMvP6ur7aZ6yXe5WyfyRQ&t=2024-08-14T18%3A30%3A18.706Z"
-                },{
-                    "public_id": "HomePage",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/home.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9ob21lLmpwZyIsImlhdCI6MTcyMzY2MDI2NCwiZXhwIjoyMDM5MDIwMjY0fQ.kNjESuRDe5XiRQN254hdmkmUegq7cYAoCAFaVUsh6Tk&t=2024-08-14T18%3A31%3A13.838Z"
-                },
-                {
-                    "public_id": "17062855116791",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/Babysitting.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9CYWJ5c2l0dGluZy5qcGciLCJpYXQiOjE3MjM2NjAzMTEsImV4cCI6MjAzOTAyMDMxMX0.JqeodIzKq0GqEXvDCxxKrHJCVgtMtRha83gyYiczf58&t=2024-08-14T18%3A32%3A00.159Z"
-                },
-                {
-                    "public_id": "1706285511672",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/Gardening.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9HYXJkZW5pbmcuanBnIiwiaWF0IjoxNzIzNjYxMDExLCJleHAiOjIwMzkwMjEwMTF9.AiXm7SKmg3s1wOUIlTJH3O7vE0Ome6IdQEgaMP8AoIk&t=2024-08-14T18%3A43%3A40.183Z"
-                }
-                ,{
-                    "public_id": "17062855113",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/Request.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9SZXF1ZXN0LmpwZyIsImlhdCI6MTcyMzY2MTA2MiwiZXhwIjoyMDM5MDIxMDYyfQ.pk5btctsIWp4Iw7vpyi34kicJa_DUvq44tUvjFfFo3k&t=2024-08-14T18%3A44%3A31.129Z"
-                },
-                {
-                    "public_id": "1706285511674",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/stuurmy/payment.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvc3R1dXJteS9wYXltZW50LmpwZyIsImlhdCI6MTcyMzY2MjE4MywiZXhwIjoyMDM5MDIyMTgzfQ.Ri2P57n2Rqjg4ChjFGjJUV6J_kAz8ozAcAsSOfet0y4&t=2024-08-14T19%3A03%3A12.100Z"
-                }
-                            
-            
-            ],
+                "projectImages": [
+                    {
+                        "public_id": "homeLogo",
+                        "url": "/assets/images/projects/stuurmy/logo.jpg"
+                    },
+                    {
+                        "public_id": "HomePage",
+                        "url": "/assets/images/projects/stuurmy/home.jpg"
+                    },
+                    {
+                        "public_id": "17062855116791",
+                        "url": "/assets/images/projects/stuurmy/babysitting.jpg"
+                    },
+                    {
+                        "public_id": "1706285511672",
+                        "url": "/assets/images/projects/stuurmy/gardening.jpg"
+                    },
+                    {
+                        "public_id": "17062855113",
+                        "url": "/assets/images/projects/stuurmy/request.jpg"
+                    },
+                    {
+                        "public_id": "1706285511674",
+                        "url": "/assets/images/projects/stuurmy/payment.jpg"
+                    }
+                ],
                 "_id": "65bChangeST",
                 "enabled": true
             },
@@ -397,97 +383,132 @@
                 "sequence": 2,
                 "image": {
                     "public_id": "1706285468702-igx05q",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/PROMPT%20PULSE%20Logo%20(1).png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvUFJPTVBUIFBVTFNFIExvZ28gKDEpLnBuZyIsImlhdCI6MTcyMzQxMjAxMiwiZXhwIjoxODgxMDkyMDEyfQ.E0K43llQcp0IERJqHF8xdLbX0bYxu1yAOcQh_adipy0&t=2024-08-11T21%3A33%3A42.244Z"
+                    "url": "/assets/images/projects/promptpulse.png"
                 },
-                "description": "An AI prompt assistance platform enabling users to make Use of AI without the need of having to deal with prompting and prompting techniques",
+                "description": "An AI prompt assistance platform enabling users to make use of AI without the need of having to deal with prompting and prompting techniques",
                 "techStack": [
-                    " Flutter web ",
-                    " Firebase ",
-                    " AI "
-                ],"projectImages":[],
+                    "Flutter Web",
+                    "Firebase",
+                    "AI"
+                ],
+                "projectImages": [],
                 "_id": "65b3d99dd017f6b49c778c86",
                 "enabled": true
             },
             {
                 "liveurl": "https://wa.me/message/USRVOCNZM3L5A1",
                 "githuburl": "#",
-                "title": "Cebo Bot ",
+                "title": "Cebo Bot",
                 "sequence": 3,
                 "image": {
                     "public_id": "1706285431821-3lfg2r",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/cebo%20bot%20logo.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvY2VibyBib3QgbG9nby5qcGciLCJpYXQiOjE3MjM4NDY1MDMsImV4cCI6MjAzOTIwNjUwM30.1Wsjdn-XGdQWCAHTL3PTTUdmbGWyjznjQ8baH71lIKA&t=2024-08-16T22%3A15%3A11.453Z"
+                    "url": "/assets/images/projects/cebobot.jpg"
                 },
-                "description": "A whatsapp business assistant that makes the use of AI to help business owners with any questions that they might have ",
+                "description": "A WhatsApp business assistant that makes use of AI to help business owners with any questions that they might have",
                 "techStack": [
-                    " Chatbot ",
-                    " AI "
+                    "Chatbot",
+                    "AI"
                 ],
-                "projectImages":[],
+                "projectImages": [],
                 "_id": "65b3d978d017f6b49c778c67Ce",
                 "enabled": true
             },
-
             {
                 "liveurl": "https://wa.me/message/NWVMBTX6FCOMN1",
                 "githuburl": "#",
-                "title": "Albany Ntofo Ntofo ",
+                "title": "Albany Ntofo Ntofo",
                 "sequence": 4,
                 "image": {
                     "public_id": "1706285431821-3lfg2r",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/Albany%20Ntofo%20Ntofo.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvQWxiYW55IE50b2ZvIE50b2ZvLmpwZyIsImlhdCI6MTcyMzQxMzc5OSwiZXhwIjoxODgxMDkzNzk5fQ.Tk5Gtoql3n0m4jen4N3EbojhDancH3SaA1zxiTy7PEk&t=2024-08-11T22%3A03%3A29.416Z"
+                    "url": "/assets/images/projects/albany.jpg"
                 },
-                "description": "A whatsapp Chatbot that was created for users to enter and upload their loaf pictures to enter the competition",
+                "description": "A WhatsApp chatbot that was created for users to enter and upload their loaf pictures to enter the competition",
                 "techStack": [
-                    " Chatbot ",
-                    " Automation ",
-                    " AI "
+                    "Chatbot",
+                    "Automation",
+                    "AI"
                 ],
-                "projectImages":[],
+                "projectImages": [],
                 "_id": "65b3d978d017f6b49c778c67AL",
                 "enabled": true
             },
             {
                 "liveurl": "",
                 "githuburl": "#",
-                "title": "Voting Manifesto Chatbot ",
+                "title": "Voting Manifesto Chatbot",
                 "sequence": 5,
                 "image": {
                     "public_id": "1706285431821-3lfg2r",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/voting%20chatbot.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvdm90aW5nIGNoYXRib3QucG5nIiwiaWF0IjoxNzIzOTIzNzEwLCJleHAiOjIwMzkyODM3MTB9.iQNSF3NuvRgTDxulUlB9Cxv8sIVoBoJc8MaGI5gE_ok&t=2024-08-17T19%3A41%3A58.013Z"
+                    "url": "/assets/images/projects/voting.png"
                 },
-                "description": "A whatsapp Chatbot that was created for users to query the manifestos of a particular party  Test case (Rise mzansi)",
+                "description": "A WhatsApp chatbot that was created for users to query the manifestos of a particular party. Test case (Rise Mzansi)",
                 "techStack": [
-                    " Chatbot ",
-                    " Automation ",
+                    "Chatbot",
+                    "Automation",
                     "RAG",
                     "AI"
                 ],
-                "projectImages":[],
+                "projectImages": [],
                 "_id": "65b3d978d017f6b49c778c67VMA",
                 "enabled": true
             },
             {
                 "liveurl": "#",
                 "githuburl": "#",
-                "title": "Value ed App",
+                "title": "Value Ed App",
                 "sequence": 6,
                 "image": {
                     "public_id": "1706285511679-xe7r9t",
-                    "url": "https://ibernipnpncvyxmhwpcy.supabase.co/storage/v1/object/sign/images/Logo.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvTG9nby5qcGciLCJpYXQiOjE3MjM1NjIwMjAsImV4cCI6MjAzODkyMjAyMH0.BuGzyRaILFqBqhrIL8JWCTMa1DhvniAsWy4fVGO_ZiI&t=2024-08-13T15%3A13%3A50.150Z"
+                    "url": "/assets/images/projects/valueed.jpg"
                 },
-                "description": "An app that enabled users to be informed of the available courses , as well as the dates and times of sessions to come , additionally integrated zoom api to enable users to join zoom sessions from the app",
+                "description": "An app that enabled users to be informed of the available courses, as well as the dates and times of sessions to come. Additionally integrated Zoom API to enable users to join Zoom sessions from the app",
                 "techStack": [
-                    " Firebase ",
-                    " Google cloud ",
-              
-                    " Flutter "
-              
+                    "Firebase",
+                    "Google Cloud",
+                    "Flutter"
                 ],
-                "projectImages":[],
+                "projectImages": [],
                 "_id": "65b3d9c8d017f6b49c778ca7",
                 "enabled": true
+            },
+            {
+                "liveurl": "https://www.tmeg.co.za/",
+                "githuburl": "https://www.tmeg.co.za/",
+                "title": "TMEG Website",
+                "sequence": 7,
+                "image": {
+                    "public_id": "1706285511679-tmeg",
+                    "url": "/assets/images/projects/tmeg.png"
+                },
+                "description": "Developed a company website for TMEG Financial Solutions which also included email sending functionality for clients interested in their services",
+                "techStack": [
+                    "Next.js",
+                    "Email Integration",
+                    "Tailwind CSS"
+                ],
+                "projectImages": [],
+                "_id": "65b3d9c8d017f6b49c778ca8",
+                "enabled": true
+            },
+            {
+                "liveurl": "https://value-ed-api-backend.vercel.app/docs",
+                "githuburl": "https://github.com/mpumelelo-mkhize/value-ed-api-backend",
+                "title": "Value Ed & Deviare Integration APIs",
+                "sequence": 8,
+                "image": {
+                    "public_id": "1706285511679-xe7r9t",
+                    "url": "/assets/images/projects/valueed.jpg"
+                },
+                "description": "Created a suite of backend APIs which were used on Deviare's Learning Management System to access Value Ed's Zoom classes/sessions",
+                "techStack": [
+                    "FastAPI",
+                    "Python",
+                    "Redis"
+                ],
+                "projectImages": [],
+                "_id": "65b3d9c8d017f6b49c778ca9",
+                "enabled": true
             }
-           
         ],
         "social_handles": [
             {
@@ -495,7 +516,7 @@
                 "url": "https://www.instagram.com/mpumi_khabazela/?hl=af",
                 "image": {
                     "public_id": "1708718250873-3038n7.webp",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718250873-3038n7.webp"
+                    "url": "/assets/images/social/instagram.webp"
                 },
                 "enabled": true,
                 "_id": "65b3ea4feb20546ae6d4641d"
@@ -505,28 +526,27 @@
                 "url": "https://www.linkedin.com/in/mpumelelohowardmkhize/",
                 "image": {
                     "public_id": "1708718263294-2lfj67.webp",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp"
+                    "url": "/assets/images/social/linkedin.webp"
                 },
                 "enabled": true,
                 "_id": "65b3e99beb20546ae6d463c2"
             }
-            
         ],
         "services": [
             {
                 "name": "App Development",
-                "charge": "Let’s build together",
+                "charge": "Let's build together",
                 "desc": "",
                 "enabled": true,
                 "_id": "65f1fd690556c3f887e9d94aApp",
                 "image": {
                     "public_id": "portfolio3/1710364293287-4q1ngo.webp",
-                    "url": ""             
+                    "url": "/assets/images/services/app-development.webp"
                 }
             },
             {
                 "name": "Web App Development",
-                "charge": "Let’s build together",
+                "charge": "Let's build together",
                 "desc": "",
                 "image": {
                     "public_id": "portfolio3/1710357775748-9vwq4q.jpeg",
@@ -535,99 +555,95 @@
                 "enabled": true,
                 "_id": "65f1fd100556c3f887e9d87bWeb"
             },
-          
             {
                 "name": "Automation",
-                "charge": "Let’s build together",
+                "charge": "Let's build together",
                 "desc": "",
                 "enabled": true,
                 "_id": "65f1fd690556c3f887e9d94aAut",
                 "image": {
                     "public_id": "portfolio3/1710364293287-4q1ngo.webp",
-                    "url": ""
+                    "url": "/assets/images/services/automation.webp"
                 }
             },
             {
-                "name": "Master of Ceremonies (MC) ",
-                "charge": "Let’s build together",
-                "desc": "   ",
+                "name": "Master of Ceremonies (MC)",
+                "charge": "Let's build together",
+                "desc": "",
                 "image": {
                     "public_id": "portfolio3/1710357775748publicSpeaking-9vwq4q.jpeg",
-                    "url": " "
+                    "url": "/assets/images/services/public-speaking.jpeg"
                 },
                 "enabled": false,
                 "_id": "65f1fd100556c3f887e9d87bPu"
-            }    
+            }
         ],
         "testimonials": [
             {
                 "image": {
                     "public_id": "Vik1URL",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357726628-c4dr18.png"
+                    "url": "/assets/images/testimonials/vikela-rankin.png"
                 },
                 "name": "Vikela Rankin",
-                "review": "I take great pride in being able to offer a testimonial on Mpumelelo Mkhize. I have know him for over 4 years as a scholar and student who has risen to the heights of an employee within the technology space.This does not come as a suprise because I have watched Mpumeleo self develop both personally and professionally, with diligence and dedication. He is a man who believes in doing, contributing and adding Value. He Chaired our organisation and played a critical role in helping new and young members settle into our organisation. He is not afraid to step outside his comfort zone and he likes to get this done.He is reliable and dependable and can mingle and associate with many different types of people. He is punctual and ply’s his trade very well in the digital and technical field.An absolute please to work with and I would hearty recommend him to anyone.",
-                "summary":"He is a man who believes in doing, contributing and adding Value.He is reliable and dependable and can mingle and associate with many different types of people. He is punctual and ply’s his trade very well in the digital and technical field.",
-                "position": "Founder Of Value ed ",
+                "review": "I take great pride in being able to offer a testimonial on Mpumelelo Mkhize. I have known him for over 4 years as a scholar and student who has risen to the heights of an employee within the technology space. This does not come as a surprise because I have watched Mpumelelo self-develop both personally and professionally, with diligence and dedication. He is a man who believes in doing, contributing and adding value. He chaired our organisation and played a critical role in helping new and young members settle into our organisation. He is not afraid to step outside his comfort zone and he likes to get things done. He is reliable and dependable and can mingle and associate with many different types of people. He is punctual and plies his trade very well in the digital and technical field. An absolute pleasure to work with and I would heartily recommend him to anyone.",
+                "summary": "He is a man who believes in doing, contributing and adding value. He is reliable and dependable and can mingle and associate with many different types of people. He is punctual and plies his trade very well in the digital and technical field.",
+                "position": "Founder of Value Ed",
                 "enabled": true,
-                "companyUrl":"https://www.linkedin.com/in/vikelarankin/",
+                "companyUrl": "https://www.linkedin.com/in/vikelarankin/",
                 "_id": "Vik1"
             },
             {
                 "image": {
                     "public_id": "ValueEdimg",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357705657-aimydg.png"
+                    "url": "/assets/images/testimonials/tshego-sebogodi.png"
                 },
-                "name": "Tshego Sebogodi ",
-                "review": "Working with Mpumelelo has been outstanding.His expertise, swift responses, and commitment to resolving our tech issues have been invaluable.I highly recommend him for anyone seeking dependable and effective tech support.\n",
-                "summary":"He consistently goes above and beyond.His expertise, quick response time, and dedication have been invaluable to our team",
+                "name": "Tshego Sebogodi",
+                "review": "Working with Mpumelelo has been outstanding. His expertise, swift responses, and commitment to resolving our tech issues have been invaluable. I highly recommend him for anyone seeking dependable and effective tech support.",
+                "summary": "He consistently goes above and beyond. His expertise, quick response time, and dedication have been invaluable to our team",
                 "position": "CEO Value Ed",
                 "enabled": true,
-                "companyUrl":"https://www.linkedin.com/in/tshego-sebogodi/",
+                "companyUrl": "https://www.linkedin.com/in/tshego-sebogodi/",
                 "_id": "Tshego1"
             },
             {
                 "image": {
                     "public_id": "JDImg",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357683739-tqeav.png"
+                    "url": "/assets/images/testimonials/joshua-dylan.png"
                 },
                 "name": "Joshua Dylan",
-                "review": "Collaborating with Mpumi at JD Creations has been a delight. His technical skill, reliability, and dedication have greatly contributed to our success. Mpumi's passion for technology and commitment to positive impact are inspiring. He’s not just a skilled developer but a visionary who values collaboration and community. I highly recommend Mpumi for exceptional results and a big-picture focus\n\n",
-                "summary":"His technical expertise, reliability, and trustworthiness have consistently driven our success.He’s not just a skilled developer but also a visionary who understands the power of collaboration and community.",
+                "review": "Collaborating with Mpumi at JD Creations has been a delight. His technical skill, reliability, and dedication have greatly contributed to our success. Mpumi's passion for technology and commitment to positive impact are inspiring. He's not just a skilled developer but a visionary who values collaboration and community. I highly recommend Mpumi for exceptional results and a big-picture focus",
+                "summary": "His technical expertise, reliability, and trustworthiness have consistently driven our success. He's not just a skilled developer but also a visionary who understands the power of collaboration and community.",
                 "position": "CEO JD Creations",
-                "companyUrl":"https://www.linkedin.com/in/iamjoshdylan/",
+                "companyUrl": "https://www.linkedin.com/in/iamjoshdylan/",
                 "enabled": true,
                 "_id": "Josh1"
             },
-           
-            
             {
                 "image": {
                     "public_id": "les1",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357534893-2s9b5d.png"
+                    "url": "/assets/images/testimonials/lesedi-morakile.png"
                 },
                 "name": "Lesedi Morakile",
-                "review": "Working with Mpumelelo was an absolute delight. Their professionalism and technical prowess were evident from day one. He consistently delivered top-notch code and went above and beyond to ensure the success of our project. I highly recommend him for any development endeavor",
-                "summary":"Mpumelelo's collaborative spirit, openness to new ideas, and infectious positivity make him a joy to work with.He brings heart and humor to everything he does",
+                "review": "Working with Mpumelelo was an absolute delight. His professionalism and technical prowess were evident from day one. He consistently delivered top-notch code and went above and beyond to ensure the success of our project. I highly recommend him for any development endeavor",
+                "summary": "Mpumelelo's collaborative spirit, openness to new ideas, and infectious positivity make him a joy to work with. He brings heart and humor to everything he does",
                 "position": "Co-founder - DIW",
-                "companyUrl":"",
+                "companyUrl": "",
                 "enabled": true,
                 "_id": "Lesedi1"
             },
             {
                 "image": {
                     "public_id": "ALU1",
-                    "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357534893-2s9b5d.png"
+                    "url": "/assets/images/testimonials/alungile-sixishe.png"
                 },
                 "name": "Alungile Sixishe",
                 "review": "Mpumelelo Mkhize and his team were crucial to the success of our Albany Superior Brown Bread Competition campaign. They developed an exceptional WhatsApp bot that was user-friendly and efficiently managed many entries. The team met tight deadlines, adapted well to changes, and created a seamless user experience, significantly contributing to the campaign's success. We highly recommend their services for similar digital projects.",
-                "summary":"Mpumelelo Mkhize and his team were crucial to the success of our Albany Superior Brown Bread Competition campaign. They developed an exceptional WhatsApp bot that was user-friendly and efficiently managed many entries. The team met tight deadlines, adapted well to changes, and created a seamless user experience, significantly contributing to the campaign's success. We highly recommend their services for similar digital projects.",
+                "summary": "Mpumelelo Mkhize and his team were crucial to the success of our Albany Superior Brown Bread Competition campaign. They developed an exceptional WhatsApp bot that was user-friendly and efficiently managed many entries. The team met tight deadlines, adapted well to changes, and created a seamless user experience, significantly contributing to the campaign's success. We highly recommend their services for similar digital projects.",
                 "position": "CEO - Motherland Omni",
-                "companyUrl":"https://www.linkedin.com/in/alungile-sixishe-2a9446a7/?originalSubdomain=za",
+                "companyUrl": "https://www.linkedin.com/in/alungile-sixishe-2a9446a7/?originalSubdomain=za",
                 "enabled": true,
-                "_id": "Lesedi1"
+                "_id": "AlungileOmni"
             }
-
         ],
         "createdAt": "2024-01-26T12:14:36.514Z",
         "updatedAt": "2024-05-08T17:53:29.758Z",

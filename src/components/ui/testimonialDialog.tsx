@@ -38,7 +38,7 @@ export const TestimonialDialog = ({ showDialog, setShowDialog }: DialogProps) =>
                   <X size={20} />
                 </button>
                 <Image
-                  src={singleTestimonial.image.url}
+                  src={singleTestimonial.image.url || '/placeholder-image.jpg'}
                   width={500}
                   height={300}
                   alt={singleTestimonial.image.public_id}

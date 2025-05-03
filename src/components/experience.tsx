@@ -28,7 +28,7 @@ const Experience = ({ timeline }: ExperienceProps) => {
       <div>
         {experience.map((exp, index) => (
           <Transition
-            key={exp._id}
+            key={exp._id+"-"+index}
             className="py-4 md:py-8 border-b border-white/10 hover:bg-white/5 px-2 md:px-12"
             onMouseEnter={() => setHover(index)}
             onMouseLeave={() => setHover(null)}

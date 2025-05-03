@@ -21,7 +21,7 @@ export const Hero = ({ about }: { about: About }) => {
           <div className="flex items-center text-align-center justify-center flex-col h-full pb-10">
             <Transition>
               <Image
-                src={about.avatar.url}
+                src={about.avatar.url || '/placeholder-image.jpg'}
                 width={200}
                 height={200}
                 alt={about.title}

@@ -60,7 +60,7 @@ const About = ({ about, timeline }: AboutProps) => {
         <div className="sticky top-6">
           <Transition>
             <Image
-              src={about.avatar.url}
+              src={about.avatar.url || '/placeholder-image.jpg'}
               width={400}
               height={400}
               alt={about.name1}
