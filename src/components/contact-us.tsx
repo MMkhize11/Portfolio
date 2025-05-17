@@ -33,71 +33,102 @@ export type FormData = {
 
 
 export const ContactUs = ({ email, social_handle, about }: ContactProps) => {
+  const [loading, setLoading] = useState<boolean>(false);
+  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
 
-const [loading,setLoading] = useState<boolean>(false);
-const { register, handleSubmit } = useForm<FormData>();
-
-
-
-  function handleSendEmail(data:FormData) {
-    setLoading(true)
-
- 
-    fetch('/api/email',{
-      method:'POST',
+  function handleSendEmail(data: FormData) {
+    setLoading(true);
+    fetch('/api/email', {
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
-
-    }).then(response => response.json()).then(data=>console.log(`data returned  ${JSON.stringify(data)}`)).catch(error => console.log(`error  ${JSON.stringify(error)}`)).finally(()=>setLoading(false));
-
+    })
+      .then(response => response.json())
+      .then(data => console.log(`data returned ${JSON.stringify(data)}`))
+      .catch(error => console.log(`error ${JSON.stringify(error)}`))
+      .finally(() => setLoading(false));
   };
 
-  
-  
   return (
     <motion.section className="relative">
       <span className="blob size-1/2 absolute top-20 right-0 blur-[100px]" />
-      <div className="p-4 md:p-8 md:px-16">
-        <SectionHeading className="">
+      <div className="w-full flex flex-col items-center p-4 md:p-8 md:px-16">
+        <SectionHeading className="text-center w-full">
           <SlideIn className="text-white/40">Interested in Collaborating,</SlideIn>{" "}
-          <br /> <SlideIn>let’s Chat</SlideIn>
+          <br /> <SlideIn>let's Chat</SlideIn>
         </SectionHeading>
-        <div className="md:justify-self-end flex flex-col">
-            <div className="pb-4">
-              <Transition>
-                <span className="text-white/90">Get in touch</span>
-              </Transition>
-             <div className="text-2xl md:text-4xl font-bold py-2">
-                <Transition>
-                  <TextReveal>{email}</TextReveal>
-                </Transition>
+        
+        <div className="flex justify-center mt-12 w-full">
+          <div className="glass p-6 rounded-xl w-full max-w-lg mx-auto">
+            <form onSubmit={handleSubmit(handleSendEmail)} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-white/90 mb-1">
+                  Full Name <span className="text-primary">*</span>
+                </label>
+                <input
+                  {...register("name", { required: true })}
+                  type="text"
+                  id="name"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 text-white"
+                  placeholder="John Doe"
+                />
+                {errors.name && <span className="text-red-500 text-sm">Name is required</span>}
               </div>
-              <Transition>
-                <div className="pb-1 text-white/80">{about.phoneNumber}</div>
-              </Transition>
-              <Transition>
-                <div className="text-white/80">{about.address}</div>
-              </Transition>
-            </div>
 
-            <div className="flex md:gap-8 gap-4 mt-auto md:pb-16">
-              {social_handle.map((social, index) =>
-                social.enabled ? (
-                  <Transition
-                    key={social._id}
-                    transition={{ delay: 0.4 + index * 0.1 }}
-                  >
-                    <Link href={social.url}>
-                      <TextReveal>{social.platform}</TextReveal>
-                    </Link>
-                  </Transition>
-                ) : null
-              )}
-            </div>
+              <div>
+                <label htmlFor="from" className="block text-sm font-medium text-white/90 mb-1">
+                  Email Address <span className="text-primary">*</span>
+                </label>
+                <input
+                  {...register("from", { required: true, pattern: /^\S+@\S+$/i })}
+                  type="email"
+                  id="from"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 text-white"
+                  placeholder="john.doe@example.com"
+                />
+                {errors.from && <span className="text-red-500 text-sm">Valid email is required</span>}
+              </div>
+
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-white/90 mb-1">
+                  Subject <span className="text-primary">*</span>
+                </label>
+                <input
+                  {...register("subject", { required: true })}
+                  type="text"
+                  id="subject"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 text-white"
+                  placeholder="What's this about?"
+                />
+                {errors.subject && <span className="text-red-500 text-sm">Subject is required</span>}
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-white/90 mb-1">
+                  Message <span className="text-primary">*</span>
+                </label>
+                <textarea
+                  {...register("message", { required: true })}
+                  id="message"
+                  rows={4}
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 text-white"
+                  placeholder="Tell me about your project..."
+                />
+                {errors.message && <span className="text-red-500 text-sm">Message is required</span>}
+              </div>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full bg-primary text-black font-medium py-3 px-6 rounded-md hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {loading ? 'Sending...' : 'Send Message'}
+              </button>
+            </form>
           </div>
-      
+        </div>
       </div>
       <footer className="flex items-center justify-between md:px-8 px-2 py-4 text-sm">
         <Transition>

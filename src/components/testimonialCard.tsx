@@ -1,6 +1,7 @@
 import { Testimonial } from "@/utils/interfaces";
 import { TestimonialsProvider, useTestimonials } from "@/utils/testimonial-context";
 import test from "node:test";
+import Image from "next/image";
 
 interface TestimonialProps {
     data: Testimonial[];
@@ -38,3 +39,22 @@ const TestimonialCard = (testimonial:Testimonial) => (
   };
   
   export default TestimonialSection;
+
+export default function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+  return (
+    <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg p-8 flex flex-col items-center text-center transition-transform hover:scale-105 max-w-lg mx-auto">
+      <Image
+        src={testimonial.image?.url || "/placeholder-image.jpg"}
+        alt={testimonial.name}
+        width={64}
+        height={64}
+        className="rounded-full mb-4 object-cover"
+      />
+      <p className="text-lg font-semibold text-white/90 mb-2">
+        “{testimonial.summary}”
+      </p>
+      <p className="text-white/60 text-sm mb-1">{testimonial.name}</p>
+      <p className="text-white/40 text-xs">{testimonial.position}</p>
+    </div>
+  );
+}

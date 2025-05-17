@@ -567,7 +567,29 @@
                 }
             },
             {
+                "name": "AI Integrations",
+                "charge": "Let's build together",
+                "desc": "",
+                "enabled": true,
+                "_id": "65f1fd690556c3f887e9d94aAut",
+                "image": {
+                    "public_id": "portfolio3/1710364293287-4q1ngo.webp",
+                    "url": "/assets/images/services/automation.webp"
+                }
+            },
+            {
                 "name": "Master of Ceremonies (MC)",
+                "charge": "Let's build together",
+                "desc": "",
+                "image": {
+                    "public_id": "portfolio3/1710357775748publicSpeaking-9vwq4q.jpeg",
+                    "url": "/assets/images/services/public-speaking.jpeg"
+                },
+                "enabled": false,
+                "_id": "65f1fd100556c3f887e9d87bPu"
+            },
+            {
+                "name": "ßßßßß",
                 "charge": "Let's build together",
                 "desc": "",
                 "image": {

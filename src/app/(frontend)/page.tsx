@@ -102,7 +102,7 @@ export default async function Home() {
           <SlideIn className="text-white/40">Here&apos;s how</SlideIn> <br />
           <SlideIn>I can help you</SlideIn>
         </SectionHeading>
-        <div className="mx-auto pt-10">
+        <div className="mx-auto pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl">
           {services.map((service) => (
             <Transition key={service._id}>
               <HoverImageLink
