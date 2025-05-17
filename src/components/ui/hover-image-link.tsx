@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 interface LinkProps {
   heading: string;
   subheading: string;
   href: string;
   price: string;
+  imgSrc: string;
 }
 
 export const HoverImageLink = ({
@@ -14,6 +16,7 @@ export const HoverImageLink = ({
   subheading,
   href,
   price,
+  imgSrc,
 }: LinkProps) => {
   return (
     <Link
@@ -26,6 +29,16 @@ export const HoverImageLink = ({
           <h4 className="relative z-10 block text-2xl sm:text-4xl font-bold md:text-neutral-50 text-neutral-900 transition-colors duration-500 md:text-5xl">
             {heading}
           </h4>
+          {imgSrc && (
+            <div className="relative w-16 h-16 md:w-24 md:h-24">
+              <Image
+                src={imgSrc}
+                alt={heading}
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+          )}
         </div>
         <p className="relative z-10 mt-2 block md:text-base text-sm text-foreground/70 transition-colors duration-500">
           {subheading}
