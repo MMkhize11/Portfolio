@@ -57,7 +57,7 @@ export const ContactUs = ({ email, social_handle, about }: ContactProps) => {
       <div className="w-full flex flex-col items-center p-4 md:p-8 md:px-16">
         <SectionHeading className="text-center w-full">
           <SlideIn className="text-white/40">Interested in Collaborating,</SlideIn>{" "}
-          <br /> <SlideIn>let's Chat</SlideIn>
+          <br /> <SlideIn>let&apos;s Chat</SlideIn>
         </SectionHeading>
         
         <div className="flex justify-center mt-12 w-full">

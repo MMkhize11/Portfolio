@@ -24,24 +24,24 @@ export const InfiniteScroll = ({
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    addAnimation();
-  }, []);
-  function addAnimation() {
-    if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
+    function addAnimation() {
+      if (containerRef.current && scrollerRef.current) {
+        const scrollerContent = Array.from(scrollerRef.current.children);
 
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
-      });
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          if (scrollerRef.current) {
+            scrollerRef.current.appendChild(duplicatedItem);
+          }
+        });
 
-      getDirection();
-      getSpeed();
-      setStart(true);
+        getDirection();
+        getSpeed();
+        setStart(true);
+      }
     }
-  }
+    addAnimation();
+  }, [direction, speed]);
 
   const getDirection = () => {
     if (containerRef.current) {
