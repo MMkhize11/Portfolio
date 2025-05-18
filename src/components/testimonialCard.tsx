@@ -34,7 +34,7 @@ export default function TestimonialCard({ testimonial }: { testimonial: Testimon
         className="rounded-full mb-4 object-cover"
       />
       <p className="text-lg font-semibold text-white/90 mb-2">
-        "{testimonial.summary}"
+        {testimonial.summary}
       </p>
       <p className="text-white/60 text-sm mb-1">{testimonial.name}</p>
       <p className="text-white/40 text-xs">{testimonial.position}</p>
