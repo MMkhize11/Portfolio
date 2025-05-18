@@ -560,7 +560,7 @@
                 "charge": "Let's build together",
                 "desc": "",
                 "enabled": true,
-                "_id": "65f1fd690556c3f887e9d94aAut",
+                "_id": "65f1fd690556c3f887e9d94aAut1",
                 "image": {
                     "public_id": "portfolio3/1710364293287-4q1ngo.webp",
                     "url": "/assets/images/services/automation.webp"
@@ -583,21 +583,21 @@
                 "desc": "",
                 "image": {
                     "public_id": "portfolio3/1710357775748publicSpeaking-9vwq4q.jpeg",
-                    "url": "/assets/images/services/public-speaking.jpeg"
+                    "url": "/assets/images/services/automation.webp"
                 },
                 "enabled": false,
                 "_id": "65f1fd100556c3f887e9d87bPu"
             },
             {
-                "name": "ßßßßß",
+                "name": "Public Speaking",
                 "charge": "Let's build together",
                 "desc": "",
                 "image": {
                     "public_id": "portfolio3/1710357775748publicSpeaking-9vwq4q.jpeg",
-                    "url": "/assets/images/services/public-speaking.jpeg"
+                    "url": "/assets/images/services/automation.webp"
                 },
                 "enabled": false,
-                "_id": "65f1fd100556c3f887e9d87bPu"
+                "_id": "65f1fd100556c3f887e9d87bPucaa"
             }
         ],
         "testimonials": [
