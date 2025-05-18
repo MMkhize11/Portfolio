@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { BlogPost } from '@/types/blog';
 import Link from 'next/link';
 import { ChevronLeftIcon } from '@heroicons/react/24/solid';
+import { BackButton } from './back-button';
 
 interface BlogPreview {
   posts: BlogPost[];
@@ -33,19 +34,7 @@ export default async function BlogPostPage(
       
       <article className="max-w-4xl mx-auto px-4 py-16">
         <div className="flex items-center gap-4 mb-8">
-          <Link 
-            href="/blog"
-            className="hover:text-white/80 transition-colors"
-            aria-label="Back to blog"
-            onClick={() => {
-              // Set a flag in localStorage when navigating back
-              if (typeof window !== 'undefined') {
-                localStorage.setItem('isNavigatingBack', 'true');
-              }
-            }}
-          >
-            <ChevronLeftIcon className="h-10 w-10 md:h-12 md:w-12" />
-          </Link>
+          <BackButton />
           <h1 className="text-3xl md:text-4xl font-bold">{post.title}</h1>
         </div>
         <div className="prose prose-invert max-w-none">
