@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import About from "@/components/about";
 import Header from "@/components/header";
 import Projects from "@/components/projects";
@@ -17,8 +18,19 @@ import { ContactUs } from "@/components/contact-us";
 import Link from "next/link";
 import { Hero } from "@/components/hero";
 import { promises as fs } from 'fs';
-import TestimonialSection from "@/components/testimonialCard";
+import TestimonialSection from "@/components/TestimonialCard";
 import { TestimonialsProvider } from "@/utils/testimonial-context";
+
+export const metadata: Metadata = {
+  title: 'Mpumelelo Mkhize - Tech Translator & Full-Stack Developer',
+  description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator and full-stack developer specializing in web and mobile development. View projects, services, and client testimonials.',
+  keywords: 'tech translator, full-stack developer, web development, mobile development, Firebase, Flutter, Angular, Python',
+  openGraph: {
+    title: 'Mpumelelo Mkhize - Tech Translator & Full-Stack Developer',
+    description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator and full-stack developer specializing in web and mobile development.',
+    type: 'website',
+  }
+};
 
 export default async function Home() {
  
@@ -41,6 +53,20 @@ export default async function Home() {
 
   return (
     <main className="relative">
+      {/* Hidden SEO content */}
+      <div className="hidden">
+        <h1>Mpumelelo Mkhize - Tech Translator & Full-Stack Developer</h1>
+        <p>Professional tech translator and full-stack developer specializing in web and mobile development solutions.</p>
+        <h2>Services</h2>
+        <p>Expert services in {services.map(s => s.name).join(', ')}</p>
+        <h2>Skills</h2>
+        <p>Technical expertise in {skills.filter(s => s.enabled).map(s => s.name).join(', ')}</p>
+        <h2>Projects</h2>
+        <p>Portfolio of successful projects in web and mobile development</p>
+        <h2>Testimonials</h2>
+        <p>Client testimonials and success stories</p>
+      </div>
+
       <Transition className="fixed md:top-8 top-6 md:left-8 left-6 z-30 hover:text-white/80 text-white/40">
         <Link href={"/"}>
           <TextReveal className="font-semibold ">The Tech Translator</TextReveal>

@@ -1,3 +1,89 @@
+# Mpumelelo Mkhize Portfolio
+
+## Environment Configuration
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```env
+# Site Configuration
+NEXT_PUBLIC_SITE_URL=https://www.mpumelelomkhize.com
+NEXT_PUBLIC_SITE_NAME="Mpumelelo Mkhize Portfolio"
+NEXT_PUBLIC_SITE_DESCRIPTION="Expert tech translator and full-stack developer specializing in Firebase, Flutter, Angular, and Python"
+
+# Analytics
+NEXT_PUBLIC_GA_TRACKING_ID=G-XXXXXXXXXX  # Replace with your GA4 measurement ID
+
+# Social Media
+NEXT_PUBLIC_LINKEDIN_URL=https://linkedin.com/in/mpumelelohowardmkhize
+NEXT_PUBLIC_INSTAGRAM_URL=https://instagram.com/mpumi_khabazela
+# NEXT_PUBLIC_FACEBOOK_URL=  # Uncomment when you have a Facebook page
+# NEXT_PUBLIC_TWITTER_URL=   # Uncomment when you have a Twitter profile
+
+# Contact Information
+# NEXT_PUBLIC_CONTACT_PHONE=  # Uncomment and add your phone number
+# NEXT_PUBLIC_CONTACT_ADDRESS= # Uncomment and add your address
+
+# Feature Flags
+NEXT_PUBLIC_ENABLE_ANALYTICS=true
+NEXT_PUBLIC_ENABLE_SOCIAL_SHARING=true
+```
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+## SEO Features
+
+This portfolio includes:
+- Optimized meta tags and OpenGraph data
+- XML sitemap generation
+- Robots.txt configuration
+- Structured data (JSON-LD)
+- Google Analytics 4 integration
+- Social media integration
+- Performance optimizations
+
+## Performance Optimizations
+
+The site is configured with:
+- Image optimization
+- HTTP/2 support
+- Security headers
+- Code splitting
+- Tree shaking
+- Modern JavaScript features
+- CSS optimization
+
+## Social Media Integration
+
+Currently integrated:
+- LinkedIn
+- Instagram
+
+Placeholder for future integration:
+- Facebook
+- Twitter
+
+## Contact Information
+
+The contact component supports:
+- Email
+- Phone (optional)
+- Address (optional)
+- Social media links
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
