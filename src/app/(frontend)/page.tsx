@@ -18,8 +18,6 @@ import { ContactUs } from "@/components/contact-us";
 import Link from "next/link";
 import { Hero } from "@/components/hero";
 import { promises as fs } from 'fs';
-import TestimonialSection from "@/components/TestimonialCard";
-import { TestimonialsProvider } from "@/utils/testimonial-context";
 
 export const metadata: Metadata = {
   title: 'Mpumelelo Mkhize - Tech Translator & Full-Stack Developer',
