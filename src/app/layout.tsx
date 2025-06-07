@@ -9,10 +9,10 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.mpumelelomkhize.com'),
   title: 'Mpumelelo Mkhize Khabazela - Tech Translator & Full-Stack Developer',
-  description: 'Mpumelelo Mkhize - Expert tech translator and full-stack developer specializing in Firebase, Flutter, Angular, and Python. Building innovative web and mobile solutions.',
+  description: 'Mpumelelo Mkhize - Expert tech translator and full-stack developer specializing in AI, Automations, Firebase, Flutter, Angular, and Python. Building innovative web, mobile, and AI-powered solutions.',
   openGraph: {
     title: 'Mpumelelo Mkhize Khabazela - Tech Translator & Full-Stack Developer',
-    description: 'Mpumelelo Mkhize - Expert tech translator and full-stack developer specializing in Firebase, Flutter, Angular, and Python. Building innovative web and mobile solutions.',
+    description: 'Mpumelelo Mkhize - Expert tech translator and full-stack developer specializing in AI, Automations, Firebase, Flutter, Angular, and Python. Building innovative web, mobile, and AI-powered solutions.',
     url: 'https://www.mpumelelomkhize.com',
     siteName: 'Mpumelelo Mkhize Portfolio',
     locale: 'en_ZA',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mpumelelo Mkhize Khabazela - Tech Translator & Full-Stack Developer',
-    description: 'Mpumelelo Mkhize - Expert tech translator and full-stack developer specializing in Firebase, Flutter, Angular, and Python. Building innovative web and mobile solutions.',
+    description: 'Mpumelelo Mkhize - Expert tech translator and full-stack developer specializing in AI, Automations, Firebase, Flutter, Angular, and Python. Building innovative web, mobile, and AI-powered solutions.',
     creator: '@mpumi_khabazela',
   },
   robots: {

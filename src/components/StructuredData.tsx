@@ -15,6 +15,9 @@ export default function StructuredData() {
         'https://instagram.com/mpumi_khabazela'
       ],
       knowsAbout: [
+        'AI Development',
+        'Automation Solutions',
+        'Chatbot Development',
         'Firebase',
         'Flutter',
         'Angular',
@@ -22,7 +25,8 @@ export default function StructuredData() {
         'Web Development',
         'Mobile Development',
         'Cloud Computing',
-        'Technical Translation'
+        'Technical Translation',
+        'AI Integration'
       ],
       description: 'Expert tech translator and full-stack developer specializing in Firebase, Flutter, Angular, and Python. Building innovative web and mobile solutions.',
       alumniOf: {

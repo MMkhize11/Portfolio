@@ -23,11 +23,11 @@ import { TestimonialsProvider } from "@/utils/testimonial-context";
 
 export const metadata: Metadata = {
   title: 'Mpumelelo Mkhize - Tech Translator & Full-Stack Developer',
-  description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator and full-stack developer specializing in web and mobile development. View projects, services, and client testimonials.',
-  keywords: 'tech translator, full-stack developer, web development, mobile development, Firebase, Flutter, Angular, Python',
+  description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator and full-stack developer specializing in AI, Automations, web and mobile development. View projects, services, and client testimonials.',
+  keywords: 'tech translator, full-stack developer, AI development, automation solutions, web development, mobile development, Firebase, Flutter, Angular, Python, chatbot development, AI integration',
   openGraph: {
     title: 'Mpumelelo Mkhize - Tech Translator & Full-Stack Developer',
-    description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator and full-stack developer specializing in web and mobile development.',
+    description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator and full-stack developer specializing in AI, Automations, web and mobile development.',
     type: 'website',
   }
 };
