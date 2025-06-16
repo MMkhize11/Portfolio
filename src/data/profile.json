@@ -541,8 +541,7 @@
                 "_id": "65f1fd690556c3f887e9d94aApp",
                 "image": {
                     "public_id": "portfolio3/1710364293287-4q1ngo.webp",
-                    "url": "/assets/images/services/app-development.webp"
-                }
+                    "url": ""   }
             },
             {
                 "name": "Web App Development",
@@ -563,8 +562,7 @@
                 "_id": "65f1fd690556c3f887e9d94aAut1",
                 "image": {
                     "public_id": "portfolio3/1710364293287-4q1ngo.webp",
-                    "url": "/assets/images/services/automation.webp"
-                }
+                    "url": ""                }
             },
             {
                 "name": "AI Integrations",
@@ -574,8 +572,7 @@
                 "_id": "65f1fd690556c3f887e9d94aAut",
                 "image": {
                     "public_id": "portfolio3/1710364293287-4q1ngo.webp",
-                    "url": "/assets/images/services/automation.webp"
-                }
+                    "url": ""                }
             },
             {
                 "name": "Master of Ceremonies (MC)",
@@ -583,8 +580,7 @@
                 "desc": "",
                 "image": {
                     "public_id": "portfolio3/1710357775748publicSpeaking-9vwq4q.jpeg",
-                    "url": "/assets/images/services/automation.webp"
-                },
+                    "url": ""                },
                 "enabled": false,
                 "_id": "65f1fd100556c3f887e9d87bPu"
             },
@@ -594,7 +590,7 @@
                 "desc": "",
                 "image": {
                     "public_id": "portfolio3/1710357775748publicSpeaking-9vwq4q.jpeg",
-                    "url": "/assets/images/services/automation.webp"
+                    "url": ""
                 },
                 "enabled": false,
                 "_id": "65f1fd100556c3f887e9d87bPucaa"

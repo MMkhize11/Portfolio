@@ -1,10 +1,9 @@
-# Allow all crawlers
+# *
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://www.mpumelelomkhize.com/sitemap.xml
+# Host
+Host: https://www.mpumelelomkhize.com
 
-# Disallow admin and API routes
-Disallow: /api/
-Disallow: /admin/ 
+# Sitemaps
+Sitemap: https://www.mpumelelomkhize.com/sitemap.xml

@@ -1,26 +1,23 @@
 "use client";
 
-
-import { useProjects } from "@/utils/project-context";
 import { useTestimonials } from "@/utils/testimonial-context";
-import { ExternalLink, Github, X } from "lucide-react";
+import { ExternalLink, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Dispatch, ReactNode, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 interface DialogProps {
   showDialog: boolean;
   setShowDialog: Dispatch<SetStateAction<boolean>>;
-
 }
 
 export const TestimonialDialog = ({ showDialog, setShowDialog }: DialogProps) => {
-    const { singleTestimonial,setSingleTestimonial } = useTestimonials();
+  const { singleTestimonial } = useTestimonials();
 
-    if (!singleTestimonial) return null;
+  if (!singleTestimonial) return null;
 
-  console.log(`what is single TEstimonial  ${JSON.stringify(singleTestimonial)}`)
-  console.log(`what is  TEstimonial  ${JSON.stringify(singleTestimonial)}`)
+  console.log(`what is single Testimonial  ${JSON.stringify(singleTestimonial)}`);
+  
   return (
     <>
       {showDialog && (
@@ -51,7 +48,6 @@ export const TestimonialDialog = ({ showDialog, setShowDialog }: DialogProps) =>
                     </h5>
                     
                     <div className="flex items-center gap-4">
-                  
                       <Link href={singleTestimonial.companyUrl}>
                         <ExternalLink />
                       </Link>
@@ -59,9 +55,8 @@ export const TestimonialDialog = ({ showDialog, setShowDialog }: DialogProps) =>
                   </div>
                  
                   <p className="text-white/50">
-                  {singleTestimonial.review}
+                    {singleTestimonial.review}
                   </p>
-
                 </div>
               </div>
             )}

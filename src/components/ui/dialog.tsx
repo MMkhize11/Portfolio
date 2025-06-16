@@ -1,10 +1,10 @@
 "use client";
 
 import { useProjects } from "@/utils/project-context";
-import { ExternalLink, Github, X } from "lucide-react";
+import { ExternalLink, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Dispatch, ReactNode, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 interface DialogProps {
   showDialog: boolean;
@@ -44,7 +44,6 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
                     </h5>
                     
                     <div className="flex items-center gap-4">
-                  
                       <Link href={singleProject.liveurl}>
                         <ExternalLink />
                       </Link>
@@ -61,22 +60,22 @@ export const Dialog = ({ showDialog, setShowDialog }: DialogProps) => {
                     ))}
                   </div>
                   <p className="text-white/50">
-                  {singleProject.description}
+                    {singleProject.description}
                   </p>
 
                   <div className="flex overflow-x-auto space-x-4 p-4">
-      {singleProject.projectImages.map((img, index) => (
-        <div key={singleProject.title+"-"+index} className="flex-shrink-0">
-          <Image
-            src={img.url || '/placeholder-image.jpg'}
-            alt=""
-            width={100}
-            height={150}
-            className="rounded-lg object-cover"
-          />
-        </div>
-      ))}
-    </div>
+                    {singleProject.projectImages.map((img, index) => (
+                      <div key={singleProject.title+"-"+index} className="flex-shrink-0">
+                        <Image
+                          src={img.url || '/placeholder-image.jpg'}
+                          alt=""
+                          width={100}
+                          height={150}
+                          className="rounded-lg object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             )}

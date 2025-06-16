@@ -4,7 +4,8 @@ import { Project } from "@/utils/interfaces";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import React from "react";
 import Filters from "./filters";
 import { SectionHeading, SlideIn, TextReveal, Transition } from "./ui";
 import { useMediaQuery } from "@/utils/useMediaQuery";
@@ -36,13 +37,27 @@ const Projects = ({ data }: ProjectProps) => {
 export default Projects;
 
 const ProjectContainer = () => {
-  const { filteredProjects, setSingleProject } = useProjects();
+  const { filteredProjects, setSingleProject, singleProject } = useProjects();
   const [showMore, setShowMore] = useState(false);
   const [showDialog, setShowDialog] = useState(false);
 
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const numProjectToShow = isMobile ? 6 : 8;
+
+  // Open dialog when singleProject is set
+  useEffect(() => {
+    if (singleProject) {
+      setShowDialog(true);
+    }
+  }, [singleProject]);
+
+  // Clear singleProject when dialog closes
+  useEffect(() => {
+    if (!showDialog && singleProject) {
+      setSingleProject(null);
+    }
+  }, [showDialog, singleProject, setSingleProject]);
 
   return (
     <AnimatePresence>
@@ -76,9 +91,10 @@ const ProjectContainer = () => {
   );
 };
 
-const Card = ({ _id, title, image, description, liveurl }: Project) => {
+const Card = ({ _id, title, image, description, liveurl, techStack, projectImages }: Project) => {
   const [hover, setHover] = useState(false);
   const { setVariant } = useCursorVariants();
+  const { setSingleProject } = useProjects();
 
   const mouseEnter = () => {
     setHover(true);
@@ -87,6 +103,10 @@ const Card = ({ _id, title, image, description, liveurl }: Project) => {
   const mouseLeave = () => {
     setHover(false);
     setVariant("DEFAULT");
+  };
+
+  const handleReadMore = () => {
+    setSingleProject({ _id, title, image, description, liveurl, techStack, projectImages, githuburl: "", sequence: 0, enabled: true });
   };
 
   return (
@@ -117,6 +137,12 @@ const Card = ({ _id, title, image, description, liveurl }: Project) => {
           <h3 className="text-xl font-bold text-white mb-2 drop-shadow-lg">{title}</h3>
           <p className="text-white/80 text-sm mb-4 line-clamp-3 drop-shadow-md">{description}</p>
           <div className="flex gap-2">
+          {/* <button
+              onClick={handleReadMore}
+              className="bg-white/10 text-white px-4 py-2 rounded-lg hover:bg-white/20 transition font-semibold text-sm backdrop-blur-sm"
+            >
+              Read More
+            </button> */}
             {liveurl && (
               <a
                 href={liveurl}
@@ -128,7 +154,7 @@ const Card = ({ _id, title, image, description, liveurl }: Project) => {
                 <ArrowUpRight className="inline ml-2 size-4 align-text-bottom" />
               </a>
             )}
-            {/* Add more buttons if needed */}
+          
           </div>
         </div>
       </div>

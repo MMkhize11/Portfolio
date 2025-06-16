@@ -26,7 +26,7 @@ export const HoverImageLink = ({
     >
       <div className="flex-1 w-full">
         <div className="flex items-center justify-between w-full">
-          <h4 className="relative z-10 block text-2xl sm:text-4xl font-bold md:text-neutral-50 text-neutral-900 transition-colors duration-500 md:text-5xl">
+          <h4 className="relative z-10 block text-2xl sm:text-4xl font-bold text-white transition-colors duration-500 md:text-5xl">
             {heading}
           </h4>
           {imgSrc && (
