@@ -53,7 +53,7 @@ export default function BlogPage() {
             >
               <ArrowLeft className="w-10 h-10 md:w-12 md:h-12" />
             </Link>
-            <SlideIn className="text-3xl md:text-4xl">Welcome to my blog</SlideIn>
+            <SlideIn className="text-3xl md:text-4xl">From My Desk</SlideIn>
           </div>
         </SectionHeading>
 
