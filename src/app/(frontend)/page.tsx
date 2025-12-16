@@ -18,6 +18,7 @@ import { ContactUs } from "@/components/contact-us";
 import Link from "next/link";
 import { Hero } from "@/components/hero";
 import { promises as fs } from 'fs';
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Mpumelelo Mkhize - Tech Translator & Full-Stack Developer',
@@ -72,8 +73,49 @@ export default async function Home() {
       </Transition>
       <Header social={social_handles} />
       <Hero about={about} />
+
+      {/* ===BIG PROFILE IMAGE SECTION=== */}
+      <section className="py-16 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto">
+          <Transition>
+            <Image
+              src={about.avatar.url || '/placeholder-image.jpg'}
+              width={800}
+              height={800}
+              alt={about.name1}
+              className="rounded-2xl w-full aspect-[4/3] object-cover"
+              priority
+            />
+          </Transition>
+        </div>
+      </section>
+
+      {/* ===SERVICES SECTION=== */}
+      <section className="px-2 py-20 relative" id="services">
+        <span className="blob absolute top-[20%] right-0 w-1/3 h-5/6 blur-[100px] rotate-180 -z-10" />
+        <SectionHeading className="md:pl-16 overflow-hidden">
+          <SlideIn className="text-white/40">Here&apos;s how</SlideIn> <br />
+          <SlideIn>I can help you</SlideIn>
+        </SectionHeading>
+        <div className="mx-auto pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl">
+          {services.map((service) => (
+            <Transition key={service._id}>
+              <HoverImageLink
+                heading={service.name}
+                href="#"
+                price={service.charge}
+                imgSrc={service.image.url}
+                subheading={service.desc}
+              />
+            </Transition>
+          ))}
+        </div>
+      </section>
+
+      {/* ===ABOUT/PROVERBS SECTION=== */}
       <About about={about} timeline={timeline} />
       <Experience timeline={timeline} />
+
       {/* ===SKILLS SECTION=== */}
       <section id="skills">
         <ParallaxText baseVelocity={-5}>
@@ -118,32 +160,6 @@ export default async function Home() {
               ) : null
             )}
         </ParallaxText>
-      </section>
-      {/* ===SERVICES SECTION=== */}
-      <section className="px-2 py-20 relative" id="services">
-        <span className="blob absolute top-[20%] right-0 w-1/3 h-5/6 blur-[100px] rotate-180 -z-10" />
-        <SectionHeading className="md:pl-16 overflow-hidden">
-          <SlideIn className="text-white/40">Here&apos;s how</SlideIn> <br />
-          <SlideIn>I can help you</SlideIn>
-        </SectionHeading>
-        <div className="mx-auto pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl">
-          {services.map((service) => (
-            <Transition key={service._id}>
-              <HoverImageLink
-                heading={service.name}
-                href="#"
-                price={service.charge}
-                imgSrc={service.image.url}
-                subheading={service.desc}
-              />
-            </Transition>
-          ))}
-        </div>
-        {/* <Transition className="flex items-center py-10 md:hidden">
-          <div className="p-4 rounded-full border border-white/50">
-            <span>Discuss the project</span>
-          </div>
-        </Transition> */}
       </section>
       {/* ===PROJECTS SECTION=== */}
       <Projects data={projects} />

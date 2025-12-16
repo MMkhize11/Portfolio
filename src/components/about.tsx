@@ -1,9 +1,8 @@
 "use client";
 
 import { About as AboutType, Timeline } from "@/utils/interfaces";
-import Image from "next/image";
 import { Dispatch, SetStateAction, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { formatDate } from "@/utils";
 import { SectionHeading, SlideIn, Transition } from "./ui";
 
@@ -21,14 +20,14 @@ const About = ({ about, timeline }: AboutProps) => {
 
   return (
     <section
-      className="grid md:grid-cols-[1.8fr_1fr] gap-x-10 py-20 px-4 md:px-8 relative"
+      className="py-20 px-4 md:px-8 relative"
       id="about"
     >
-      <div>
+      <div className="max-w-5xl mx-auto">
         <h3 className="md:text-5xl text-2xl font-bold overflow-hidden uppercase pb-8">
           <SlideIn>{about.quote}</SlideIn>
           <p className="text-l md:text-4l text-foreground/50">
-       {about.scripture}
+            {about.scripture}
           </p>
         </h3>
         <Transition viewport={{ once: true }}>
@@ -37,11 +36,11 @@ const About = ({ about, timeline }: AboutProps) => {
           </p>
         </Transition>
         <div className="pt-10">
-        <SectionHeading className="pl-4 md:px-12 py-20">
-        <SlideIn className="text-white/40">Experience</SlideIn>
-        <br />
-        <SlideIn>History</SlideIn>
-      </SectionHeading>
+          <SectionHeading className="pl-4 md:px-12 py-20">
+            <SlideIn className="text-white/40">Experience</SlideIn>
+            <br />
+            <SlideIn>History</SlideIn>
+          </SectionHeading>
           <div className="py-10 overflow-hidden grid w-full">
             {education.map((edu, index) => (
               <Transition key={edu._id}>
@@ -54,19 +53,6 @@ const About = ({ about, timeline }: AboutProps) => {
               </Transition>
             ))}
           </div>
-        </div>
-      </div>
-      <div className="relative">
-        <div className="sticky top-6">
-          <Transition>
-            <Image
-              src={about.avatar.url || '/placeholder-image.jpg'}
-              width={400}
-              height={400}
-              alt={about.name1}
-              className="rounded-xl max-md:aspect-square object-cover"
-            />
-          </Transition>
         </div>
       </div>
     </section>
