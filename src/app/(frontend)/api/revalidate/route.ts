@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
     const { _type } = body;
 
     if (_type === 'post' || _type === 'category') {
-      revalidateTag('posts');
+      revalidateTag('posts', 'fetch');
     }
 
     return NextResponse.json({ revalidated: true, now: Date.now() });
