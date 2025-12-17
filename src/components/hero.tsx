@@ -12,50 +12,67 @@ export const Hero = ({ about }: { about: About }) => {
   const [hideLoader, setHideLoader] = useState(true);
 
   return (
-    <section className="h-dvh w-dvw overflow-hidden relative">
+    <section className="min-h-dvh w-full overflow-hidden relative">
       <span className="blob size-1/2 absolute top-20 left-0 blur-[100px]" />
       {hideLoader ? (
         <PageLoad hideLoader={hideLoader} setHideLoader={setHideLoader} />
       ) : (
-        <div className="relative h-full w-full">
-          <div className="flex items-center text-align-center justify-center flex-col h-full pb-10">
-            <Transition>
-              <Image
-                src={about.alternateAvatars?.[0]?.url || about.avatar.url || '/placeholder-image.jpg'}
-                width={200}
-                height={200}
-                alt={about.title}
-                className="rounded-full size-28 object-cover"
-              />
-            </Transition>
-            <div className="py-6 flex items-center flex-col">
-              <h2 className="md:text-7xl text-2xl font-bold overflow-hidden flex-wrap justify-center gap-2 px-0.5">
-                <SlideIn> {about.name1}</SlideIn>
-              </h2>
-              <h2 className="md:text-7xl text-2xl font-bold overflow-hidden flex-wrap justify-center gap-2 px-0.5">
-                <SlideIn> {about.name2}</SlideIn>
-              </h2>
-              <h1 className="md:text-7xl text-2xl overflow-hidden   flex-wrap justify-center gap-2 px-0.5">
-                <SlideIn>{about.title}</SlideIn>
-              </h1>
+        <div className="relative h-full w-full min-h-dvh">
+          {/* Split Screen Container - 60/40 split */}
+          <div className="grid grid-cols-1 lg:grid-cols-5 min-h-dvh">
+            {/* Left Side - Text Content (60%) */}
+            <div className="lg:col-span-3 flex flex-col justify-center items-center text-center px-6 md:px-12 lg:px-16 xl:px-24 py-24 lg:py-0 order-2 lg:order-1">
+
+              {/* Name - The Hero */}
+              <div className="mb-4">
+                <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-bold tracking-tight leading-[1]">
+                  <SlideIn>Khabazela</SlideIn>
+                </h1>
+              </div>
+
+              {/* Role */}
+              <Transition>
+                <p className="text-2xl sm:text-3xl md:text-4xl text-white/60 font-light">
+                  The Tech Translator
+                </p>
+              </Transition>
+
+              {/* Tagline */}
+              <Transition viewport={{ once: true }}>
+                <p className="text-white/40 text-base md:text-lg mt-8 max-w-sm leading-relaxed">
+                  Demystifying tech, one translation at a time.
+                </p>
+              </Transition>
+
+              {/* CTA */}
+              <Transition viewport={{ once: true }}>
+                <Link
+                  href={"#contact"}
+                  className="mt-10 px-7 py-4 rounded-full border border-white/50 flex items-center gap-4 group hover:bg-white hover:text-black transition-all duration-300"
+                >
+                  <TextReveal>Let&apos;s talk</TextReveal>
+                  <ArrowRight
+                    size={20}
+                    className="group-hover:translate-x-1 transition-transform"
+                  />
+                </Link>
+              </Transition>
             </div>
-            <Transition viewport={{ once: true }} className="w-full">
-              <p className="opacity-70 md:text-xl py-4 w-10/12 md:w-2/3 mx-auto flex flex-wrap justify-center gap-2">
-              {"Hello There  I'm Mpumelelo Mkhize"}
-              </p>
-            </Transition>
-            <Transition viewport={{ once: true }}>
-              <Link
-                href={"#contact"}
-                className="px-5 py-3 mt-4 rounded-full border border-white/50 flex items-center gap-4 group"
-              >
-                <TextReveal>Let&apos;s talk</TextReveal>
-                <ArrowRight
-                  size={20}
-                  className="group-hover:rotate-90 transition-transform"
-                />
-              </Link>
-            </Transition>
+
+            {/* Right Side - Large Image (40%) */}
+            <div className="lg:col-span-2 relative flex items-center justify-center p-4 lg:p-6 order-1 lg:order-2">
+              <Transition className="w-full h-full">
+                <div className="relative w-full h-[50vh] lg:h-[90vh] rounded-2xl lg:rounded-3xl overflow-hidden">
+                  <Image
+                    src={about.avatar.url || '/placeholder-image.jpg'}
+                    fill
+                    alt="Khabazela"
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </Transition>
+            </div>
           </div>
         </div>
       )}

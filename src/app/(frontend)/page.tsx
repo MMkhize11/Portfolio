@@ -4,13 +4,14 @@ import Header from "@/components/header";
 import Projects from "@/components/projects";
 import Testimonials from "@/components/testimonials";
 import {
-  HoverImageLink,
-  ParallaxText,
   SectionHeading,
   SlideIn,
   TextReveal,
   Transition,
 } from "@/components/ui";
+import { ServicesBento } from "@/components/services-bento";
+import { ClientLogosSection } from "@/components/logo-carousel";
+import { SkillsGrid } from "@/components/skills-grid";
 
 import { UserObject } from "@/utils/interfaces";
 import Experience from "@/components/experience";
@@ -18,7 +19,6 @@ import { ContactUs } from "@/components/contact-us";
 import Link from "next/link";
 import { Hero } from "@/components/hero";
 import { promises as fs } from 'fs';
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Mpumelelo Mkhize - Tech Translator & Full-Stack Developer',
@@ -74,41 +74,15 @@ export default async function Home() {
       <Header social={social_handles} />
       <Hero about={about} />
 
-      {/* ===BIG PROFILE IMAGE SECTION=== */}
-      <section className="py-16 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
-          <Transition>
-            <Image
-              src={about.avatar.url || '/placeholder-image.jpg'}
-              width={800}
-              height={800}
-              alt={about.name1}
-              className="rounded-2xl w-full aspect-[4/3] object-cover"
-              priority
-            />
-          </Transition>
-        </div>
-      </section>
-
       {/* ===SERVICES SECTION=== */}
-      <section className="px-2 py-20 relative" id="services">
+      <section className="px-4 md:px-8 py-20 relative" id="services">
         <span className="blob absolute top-[20%] right-0 w-1/3 h-5/6 blur-[100px] rotate-180 -z-10" />
         <SectionHeading className="md:pl-16 overflow-hidden">
           <SlideIn className="text-white/40">Here&apos;s how</SlideIn> <br />
           <SlideIn>I can help you</SlideIn>
         </SectionHeading>
-        <div className="mx-auto pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl">
-          {services.map((service) => (
-            <Transition key={service._id}>
-              <HoverImageLink
-                heading={service.name}
-                href="#"
-                price={service.charge}
-                imgSrc={service.image.url}
-                subheading={service.desc}
-              />
-            </Transition>
-          ))}
+        <div className="pt-10">
+          <ServicesBento services={services} />
         </div>
       </section>
 
@@ -117,52 +91,11 @@ export default async function Home() {
       <Experience timeline={timeline} />
 
       {/* ===SKILLS SECTION=== */}
-      <section id="skills">
-        <ParallaxText baseVelocity={-5}>
-          {skills
-            .sort((a, b) => a.sequence - b.sequence)
-            .map((skill) =>
-              skill.enabled ? (
-                <span
-                  key={skill._id+"-1"}
-                  className="md:text-7xl text-xl font-semibold uppercase text-white/30"
-                >
-                  {skill.name} •
-                </span>
-              ) : null
-            )}
-        </ParallaxText>
-        <ParallaxText baseVelocity={5}>
-          {skills
-            .sort((a, b) => a.sequence - b.sequence)
-            .map((skill) =>
-              skill.enabled ? (
-                <span
-                  key={skill._id+"5"}
-                  className="md:text-7xl text-xl font-semibold uppercase text-white/30"
-                >
-                  {skill.name} •
-                </span>
-              ) : null
-            )}
-        </ParallaxText>
-        <ParallaxText baseVelocity={-3}>
-          {skills
-            .sort((a, b) => a.sequence - b.sequence)
-            .map((skill) =>
-              skill.enabled ? (
-                <span
-                  key={skill._id+"-3"}
-                  className="md:text-7xl text-xl font-semibold uppercase text-white/30"
-                >
-                  {skill.name} •
-                </span>
-              ) : null
-            )}
-        </ParallaxText>
-      </section>
-      {/* ===PROJECTS SECTION=== */}
-      <Projects data={projects} />
+      <SkillsGrid skills={skills} />
+
+      {/* ===CLIENT LOGOS SECTION=== */}
+      <ClientLogosSection />
+
       {/* ===TESTIMONIALS SECTION=== */}
       <section className="md:p-8 p-4 relative" id="testimonials">
         <span className="blob size-1/2 absolute -top-20 left-0 blur-[100px] -z-10" />
@@ -181,8 +114,11 @@ export default async function Home() {
           speed="normal"
           direction="left"
         /> */}
-      
+
       </section>
+
+      {/* ===PROJECTS SECTION=== */}
+      <Projects data={projects} />
 
       {/* ===CONTACT US=== */}
       <div
