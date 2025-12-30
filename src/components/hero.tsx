@@ -44,18 +44,46 @@ export const Hero = ({ about }: { about: About }) => {
                 </p>
               </Transition>
 
-              {/* CTA */}
+              {/* CTAs */}
               <Transition viewport={{ once: true }}>
-                <Link
-                  href={"#contact"}
-                  className="mt-10 px-7 py-4 rounded-full border border-white/50 flex items-center gap-4 group hover:bg-white hover:text-black transition-all duration-300"
-                >
-                  <TextReveal>Let&apos;s talk</TextReveal>
-                  <ArrowRight
-                    size={20}
-                    className="group-hover:translate-x-1 transition-transform"
-                  />
-                </Link>
+                <div className="flex flex-col sm:flex-row items-center gap-4 mt-10">
+                  <Link
+                    href={"#contact"}
+                    className="px-7 py-4 rounded-full bg-primary text-black font-medium flex items-center gap-4 group hover:bg-primary/90 transition-all duration-300"
+                  >
+                    <TextReveal>Let&apos;s talk</TextReveal>
+                    <ArrowRight
+                      size={20}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
+                  </Link>
+                  <Link
+                    href={"/blog"}
+                    className="px-7 py-4 rounded-full border border-white/30 flex items-center gap-4 group hover:border-white/60 transition-all duration-300"
+                  >
+                    <TextReveal>View case studies</TextReveal>
+                    <ArrowRight
+                      size={20}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
+                  </Link>
+                </div>
+              </Transition>
+
+              {/* Trust Signals */}
+              <Transition viewport={{ once: true }}>
+                <div className="mt-12 pt-8 border-t border-white/10">
+                  <p className="text-white/40 text-sm mb-3">Trusted by</p>
+                  <div className="flex flex-wrap justify-center items-center gap-6 text-white/50">
+                    <span className="text-sm font-medium">Albany</span>
+                    <span className="text-white/20">|</span>
+                    <span className="text-sm font-medium">Value Ed</span>
+                    <span className="text-white/20">|</span>
+                    <span className="text-sm font-medium">Motherland Omni</span>
+                    <span className="text-white/20">|</span>
+                    <span className="text-sm font-medium">JD Creations</span>
+                  </div>
+                </div>
               </Transition>
             </div>
 

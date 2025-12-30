@@ -559,8 +559,9 @@
         "services": [
             {
                 "name": "App Development",
-                "charge": "Let's build together",
-                "desc": "",
+                "charge": "Your idea, translated into an app your users will love",
+                "desc": "From concept to App Store in weeks, not months",
+                "pricing": "From R50,000",
                 "enabled": true,
                 "_id": "65f1fd690556c3f887e9d94aApp",
                 "image": {
@@ -569,8 +570,9 @@
             },
             {
                 "name": "Web App Development",
-                "charge": "Let's build together",
-                "desc": "",
+                "charge": "From concept to click - your web app, translated from vision to reality",
+                "desc": "Modern, fast, and built to scale with your business",
+                "pricing": "From R25,000",
                 "image": {
                     "public_id": "portfolio3/1710357775748-9vwq4q.jpeg",
                     "url": ""
@@ -580,8 +582,9 @@
             },
             {
                 "name": "Automation",
-                "charge": "Let's build together",
-                "desc": "",
+                "charge": "Save 10+ hours weekly with smart automation",
+                "desc": "Less manual work, more results - your processes, translated into efficiency",
+                "pricing": "From R15,000",
                 "enabled": true,
                 "_id": "65f1fd690556c3f887e9d94aAut1",
                 "image": {
@@ -590,8 +593,9 @@
             },
             {
                 "name": "AI Integrations",
-                "charge": "Let's build together",
-                "desc": "",
+                "charge": "AI made simple - the hype translated into real business value",
+                "desc": "Add AI to your business without the complexity",
+                "pricing": "From R20,000",
                 "enabled": true,
                 "_id": "65f1fd690556c3f887e9d94aAut",
                 "image": {
@@ -600,8 +604,9 @@
             },
             {
                 "name": "Master of Ceremonies (MC)",
-                "charge": "Let's build together",
-                "desc": "",
+                "charge": "Events that flow seamlessly from start to finish",
+                "desc": "Professional hosting that keeps your audience engaged",
+                "pricing": "Custom quote",
                 "image": {
                     "public_id": "portfolio3/1710357775748publicSpeaking-9vwq4q.jpeg",
                     "url": ""                },
@@ -610,8 +615,9 @@
             },
             {
                 "name": "Public Speaking",
-                "charge": "Let's build together",
-                "desc": "",
+                "charge": "Tech topics, translated for any audience",
+                "desc": "Engaging talks that make complex ideas accessible",
+                "pricing": "Custom quote",
                 "image": {
                     "public_id": "portfolio3/1710357775748publicSpeaking-9vwq4q.jpeg",
                     "url": ""

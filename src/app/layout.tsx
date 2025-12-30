@@ -53,9 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
-          <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_TRACKING_ID} />
-        )}
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-YKMJBZ5M3E" />
         <StructuredData />
         {children}
       </body>

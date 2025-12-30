@@ -10,7 +10,9 @@ import { BackButton } from './back-button';
 import { ReadingProgress } from './reading-progress';
 import type { SanityPost } from '@/types/sanity';
 import type { Metadata } from 'next';
-import { Calendar, Clock, Tag } from 'lucide-react';
+import { Calendar, Clock, Tag, ArrowRight, MessageCircle } from 'lucide-react';
+import Link from 'next/link';
+import { EmailCapture } from '@/components/email-capture';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -185,6 +187,48 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
             </div>
           )}
+
+          {/* CTA Section */}
+          <div className="mt-12 pt-8 border-t border-white/10">
+            <div className="bg-gradient-to-br from-primary/10 to-blue-600/10 border border-white/10 rounded-2xl p-6 md:p-8">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="p-3 bg-primary/20 rounded-full">
+                  <MessageCircle size={24} className="text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+                    Want similar results for your business?
+                  </h3>
+                  <p className="text-white/60 mb-6">
+                    Let&apos;s discuss how I can help translate your ideas into solutions that deliver real value.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Link
+                      href="/#contact"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-black font-medium rounded-full hover:bg-primary/90 transition-colors"
+                    >
+                      Start a conversation
+                      <ArrowRight size={18} />
+                    </Link>
+                    <Link
+                      href="/blog"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-white/20 text-white font-medium rounded-full hover:border-white/40 transition-colors"
+                    >
+                      View more case studies
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Email Capture Section */}
+          <div className="mt-8">
+            <EmailCapture
+              title="Get notified of new case studies"
+              description="Subscribe to receive updates when I publish new project deep-dives and tech insights."
+            />
+          </div>
 
           {/* Bottom Navigation */}
           <div className="mt-12 pt-8 border-t border-white/10">

@@ -45,17 +45,22 @@ export default function BlogPage() {
       <span className="blob size-1/2 absolute top-1/2 right-0 blur-[100px] -z-10" />
       
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <SectionHeading className="md:pl-28 mb-12">
+        <SectionHeading className="md:pl-28 mb-6">
           <div className="flex items-center gap-6">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="hover:text-white/80 transition-colors"
             >
               <ArrowLeft className="w-10 h-10 md:w-12 md:h-12" />
             </Link>
-            <SlideIn className="text-3xl md:text-4xl">From My Desk</SlideIn>
+            <div>
+              <SlideIn className="text-3xl md:text-4xl">Case Studies & Insights</SlideIn>
+            </div>
           </div>
         </SectionHeading>
+        <p className="text-white/50 text-center max-w-2xl mx-auto mb-12">
+          Explore real projects, client success stories, and insights on how technology can solve business challenges.
+        </p>
 
         {/* Search input */}
         <div className="max-w-2xl mx-auto mb-8">
@@ -63,7 +68,7 @@ export default function BlogPage() {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-white/50" />
             <input
               type="text"
-              placeholder="Search posts..."
+              placeholder="Search case studies..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-white/5 border border-white/10 rounded-lg py-2 pl-10 pr-4 

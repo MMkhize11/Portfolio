@@ -8,6 +8,7 @@ interface Service {
   name: string;
   charge: string;
   desc: string;
+  pricing?: string;
   enabled: boolean;
   image?: {
     url: string;
@@ -108,12 +109,19 @@ export const ServicesBento = ({ services }: { services: Service[] }) => {
 
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end">
-                  <h3 className={`font-bold text-white mb-3 ${featured ? "text-2xl md:text-3xl lg:text-4xl" : "text-xl md:text-2xl"}`}>
+                  <h3 className={`font-bold text-white mb-2 ${featured ? "text-2xl md:text-3xl lg:text-4xl" : "text-xl md:text-2xl"}`}>
                     {service.name}
                   </h3>
-                  <p className={`text-white/60 leading-relaxed ${featured ? "text-base md:text-lg" : "text-sm md:text-base"}`}>
+                  <p className={`text-white/60 leading-relaxed mb-3 ${featured ? "text-base md:text-lg" : "text-sm md:text-base"}`}>
                     {details.description}
                   </p>
+                  {service.pricing && (
+                    <div className="inline-flex items-center gap-2">
+                      <span className="px-3 py-1 text-xs md:text-sm font-medium rounded-full bg-primary/20 text-primary border border-primary/30">
+                        {service.pricing}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Hover arrow indicator */}

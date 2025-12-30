@@ -4,8 +4,13 @@ import { NextResponse } from 'next/server';
 interface ContactFormData {
   name: string;
   from: string;
+  phone?: string;
+  company: string;
+  projectType: string;
+  timeline: string;
   subject: string;
   message: string;
+  referralSource?: string;
 }
 
 export async function POST(request: Request) {
@@ -13,7 +18,38 @@ export async function POST(request: Request) {
     const resend = new Resend(process.env.RESEND_API_KEY);
     console.log('Received request:', request);
     const body = await request.json();
-    const { name, from, subject, message } = body;
+    const { name, from, phone, company, projectType, timeline, subject, message, referralSource } = body;
+
+    // Format display values for dropdowns
+    const projectTypeLabels: Record<string, string> = {
+      'app-development': 'App Development',
+      'web-app': 'Web App Development',
+      'ai-integration': 'AI Integration',
+      'automation': 'Automation',
+      'chatbot': 'Chatbot / WhatsApp Bot',
+      'consulting': 'Consulting / Advisory',
+      'other': 'Other',
+    };
+
+    const timelineLabels: Record<string, string> = {
+      'asap': 'ASAP (within 2 weeks)',
+      '1-3-months': '1-3 months',
+      '3-6-months': '3-6 months',
+      'exploring': 'Just exploring',
+    };
+
+    const referralLabels: Record<string, string> = {
+      'linkedin': 'LinkedIn',
+      'google': 'Google Search',
+      'referral': 'Referral from someone',
+      'instagram': 'Instagram',
+      'portfolio': 'Saw my portfolio/case study',
+      'other': 'Other',
+    };
+
+    const displayProjectType = projectTypeLabels[projectType] || projectType;
+    const displayTimeline = timelineLabels[timeline] || timeline;
+    const displayReferral = referralSource ? (referralLabels[referralSource] || referralSource) : 'Not specified';
 
     // Extract metadata from request headers
     const userAgent = request.headers.get('user-agent') || 'Unknown';
@@ -226,11 +262,32 @@ export async function POST(request: Request) {
                   <span class="label">Name</span>
                   <span class="value">${name}</span>
 
+                  <span class="label">Company</span>
+                  <span class="value">${company}</span>
+
                   <span class="label">Email</span>
                   <span class="value email-link">${from}</span>
 
+                  <span class="label">Phone</span>
+                  <span class="value">${phone || 'Not provided'}</span>
+                </div>
+              </div>
+
+              <!-- Project Information -->
+              <div class="section">
+                <div class="section-title">Project Details</div>
+                <div class="info-grid">
+                  <span class="label">Project Type</span>
+                  <span class="value">${displayProjectType}</span>
+
+                  <span class="label">Timeline</span>
+                  <span class="value">${displayTimeline}</span>
+
                   <span class="label">Subject</span>
                   <span class="value">${subject}</span>
+
+                  <span class="label">Found via</span>
+                  <span class="value">${displayReferral}</span>
                 </div>
               </div>
 
