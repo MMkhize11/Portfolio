@@ -5,17 +5,31 @@ import { SlideIn, TextReveal, Transition } from "./ui";
 import { About } from "@/utils/interfaces";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { PageLoad } from "./ui/page-load";
 
 export const Hero = ({ about }: { about: About }) => {
-  const [hideLoader, setHideLoader] = useState(true);
+  const [hideLoader, setHideLoader] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const hasSeenLoader = sessionStorage.getItem("hasSeenLoader");
+    if (hasSeenLoader) {
+      setHideLoader(false);
+    } else {
+      setHideLoader(true);
+    }
+  }, []);
+
+  const handleLoaderComplete = (value: boolean) => {
+    setHideLoader(value);
+    sessionStorage.setItem("hasSeenLoader", "true");
+  };
 
   return (
     <section className="min-h-dvh w-full overflow-hidden relative">
       <span className="blob size-1/2 absolute top-20 left-0 blur-[100px]" />
-      {hideLoader ? (
-        <PageLoad hideLoader={hideLoader} setHideLoader={setHideLoader} />
+      {hideLoader === null ? null : hideLoader ? (
+        <PageLoad hideLoader={hideLoader} setHideLoader={handleLoaderComplete} />
       ) : (
         <div className="relative h-full w-full min-h-dvh">
           {/* Split Screen Container - 60/40 split */}

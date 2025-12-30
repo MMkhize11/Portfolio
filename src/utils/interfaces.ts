@@ -16,6 +16,8 @@ export interface User {
   social_handles: SocialHandle[];
   services: Service[];
   testimonials: Testimonial[];
+  faqs: FAQ[];
+  process: ProcessStep[];
   createdAt: string;
   updatedAt: string;
   refreshToken: string;
@@ -35,6 +37,12 @@ export interface About {
   phoneNumber: string;
   avatar: Avatar;
   alternateAvatars: any[];
+  location?: {
+    city: string;
+    country: string;
+    serviceAreas: string[];
+    remote: boolean;
+  };
 }
 
 export interface Avatar {
@@ -111,4 +119,23 @@ export interface Timeline {
   forEducation: boolean;
   enabled: boolean;
   _id: string;
+}
+
+export interface FAQ {
+  _id: string;
+  question: string;
+  answer: string;
+  category: 'Pricing' | 'Process' | 'Technical' | 'General';
+  enabled: boolean;
+  sequence: number;
+}
+
+export interface ProcessStep {
+  _id: string;
+  title: string;
+  description: string;
+  details: string[];
+  icon: string;
+  sequence: number;
+  enabled: boolean;
 }

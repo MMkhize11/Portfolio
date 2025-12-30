@@ -23,7 +23,13 @@
                     "public_id": "portfolio3/1713996156944-1hro1b.webp",
                     "url": "/assets/images/alternate-avatar.webp"
                 }
-            ]
+            ],
+            "location": {
+                "city": "Johannesburg",
+                "country": "South Africa",
+                "serviceAreas": ["South Africa", "Africa", "Global (Remote)"],
+                "remote": true
+            }
         },
         "_id": "65b3a22c01d900e96c4219ae",
         "username": "portfolio3",
@@ -691,6 +697,228 @@
                 "companyUrl": "https://www.linkedin.com/in/alungile-sixishe-2a9446a7/?originalSubdomain=za",
                 "enabled": true,
                 "_id": "AlungileOmni"
+            }
+        ],
+        "faqs": [
+            {
+                "_id": "faq-pricing-1",
+                "question": "How much does app development cost?",
+                "answer": "Every app is unique, so pricing depends on your specific requirements—features, complexity, integrations, and timeline all play a role. Rather than giving generic numbers that might not reflect your project, I prefer to understand your vision first. Book a discovery call and I'll provide a tailored quote based on exactly what you need.",
+                "category": "Pricing",
+                "enabled": true,
+                "sequence": 1
+            },
+            {
+                "_id": "faq-pricing-2",
+                "question": "How much does web development cost?",
+                "answer": "Web development costs vary based on the scope of your project—whether it's a simple landing page, a full web application, or something with custom integrations and e-commerce features. During our discovery call, we'll discuss your goals and requirements, and I'll provide a detailed quote tailored to your specific needs.",
+                "category": "Pricing",
+                "enabled": true,
+                "sequence": 2
+            },
+            {
+                "_id": "faq-pricing-3",
+                "question": "What are your payment terms?",
+                "answer": "Typically, I work with a 50% deposit to start the project and 50% on completion. For larger projects, we can arrange milestone-based payments. I'm flexible and open to discussing payment structures that work for both parties.",
+                "category": "Pricing",
+                "enabled": true,
+                "sequence": 3
+            },
+            {
+                "_id": "faq-pricing-4",
+                "question": "Do you offer maintenance packages?",
+                "answer": "Yes, I offer ongoing maintenance and support packages after project completion. These can include bug fixes, feature updates, server monitoring, and technical support. Packages are tailored to your needs and can be monthly or ad-hoc.",
+                "category": "Pricing",
+                "enabled": true,
+                "sequence": 4
+            },
+            {
+                "_id": "faq-process-1",
+                "question": "How long does a typical project take?",
+                "answer": "Project timelines depend entirely on the specific requirements of your project. These requirements will be outlined and defined after the discovery call and further conversations to fully understand your needs, goals, and scope. Once we have clarity on what you're building, I'll provide a realistic timeline tailored to your project.",
+                "category": "Process",
+                "enabled": true,
+                "sequence": 5
+            },
+            {
+                "_id": "faq-process-2",
+                "question": "What is your development process?",
+                "answer": "I follow a structured process: Discovery (understanding your needs), Planning (architecture and roadmap), Design (UI/UX), Development (building with regular updates), Testing (quality assurance), Launch (deployment), and Support (ongoing maintenance). This ensures transparency and quality at every stage.",
+                "category": "Process",
+                "enabled": true,
+                "sequence": 6
+            },
+            {
+                "_id": "faq-process-3",
+                "question": "How do we communicate during the project?",
+                "answer": "Communication is key to project success. I offer regular updates via your preferred channel—WhatsApp, email, Slack, or video calls. We'll have weekly check-ins and milestone reviews to ensure the project stays on track and aligned with your vision.",
+                "category": "Process",
+                "enabled": true,
+                "sequence": 7
+            },
+            {
+                "_id": "faq-process-4",
+                "question": "What happens after the project is complete?",
+                "answer": "After launch, I provide a thorough handoff including documentation, training sessions if needed, and all source code. I also offer optional ongoing support packages for maintenance, updates, and new feature development. You'll never be left without support.",
+                "category": "Process",
+                "enabled": true,
+                "sequence": 8
+            },
+            {
+                "_id": "faq-technical-1",
+                "question": "What technologies do you specialize in?",
+                "answer": "I specialize in Flutter for mobile apps (iOS & Android), React and Next.js for web applications, Node.js and Python for backend development, and Firebase/Supabase for databases. I also work with AI technologies for chatbots and intelligent integrations.",
+                "category": "Technical",
+                "enabled": true,
+                "sequence": 9
+            },
+            {
+                "_id": "faq-technical-2",
+                "question": "Can you integrate AI into my existing app?",
+                "answer": "Absolutely! I can add chatbots (like WhatsApp business bots), intelligent automation, natural language processing, and other AI features to your existing applications. I've built several AI-powered solutions including RAG-based chatbots. The cost depends on the type of integration and complexity—let's discuss your specific use case during a discovery call.",
+                "category": "Technical",
+                "enabled": true,
+                "sequence": 10
+            },
+            {
+                "_id": "faq-technical-3",
+                "question": "Do you build cross-platform or native apps?",
+                "answer": "I primarily build cross-platform apps using Flutter, which allows for a single codebase that runs on both iOS and Android. This approach is cost-effective, faster to develop, and easier to maintain while still delivering near-native performance and beautiful UIs.",
+                "category": "Technical",
+                "enabled": true,
+                "sequence": 11
+            },
+            {
+                "_id": "faq-general-1",
+                "question": "Where are you based?",
+                "answer": "I'm based in Johannesburg, South Africa. I work with clients both locally and internationally. For local clients, in-person meetings are possible. For remote clients, I use video calls and collaborative tools to ensure seamless communication.",
+                "category": "General",
+                "enabled": true,
+                "sequence": 13
+            },
+            {
+                "_id": "faq-general-2",
+                "question": "Do you work with international clients?",
+                "answer": "Yes, I work with clients globally. Remote collaboration is seamless with modern tools like Zoom, Slack, and project management platforms. Time zone differences are manageable—I'm flexible with meeting times to accommodate different regions.",
+                "category": "General",
+                "enabled": true,
+                "sequence": 14
+            },
+            {
+                "_id": "faq-general-3",
+                "question": "How do I get started?",
+                "answer": "Getting started is easy! Book a discovery call through my calendar or fill out the contact form with your project details. We'll discuss your needs, I'll provide recommendations, and if we're a good fit, I'll send over a proposal with timeline and pricing.",
+                "category": "General",
+                "enabled": true,
+                "sequence": 15
+            },
+            {
+                "_id": "faq-general-4",
+                "question": "What industries do you work with?",
+                "answer": "I've worked across various industries including education (Value Ed), fintech (TMEG), home services (Stuurmy), FMCG (Albany competition), and AI/tech startups. I enjoy diverse projects and bring cross-industry insights to each engagement.",
+                "category": "General",
+                "enabled": true,
+                "sequence": 16
+            }
+        ],
+        "process": [
+            {
+                "_id": "process-1",
+                "title": "Discovery",
+                "description": "Understanding your vision, goals, and requirements",
+                "details": [
+                    "Initial consultation call to understand your business",
+                    "Gather requirements and define project scope",
+                    "Identify target users and key success metrics",
+                    "Discuss budget and timeline expectations"
+                ],
+                "icon": "Search",
+                "sequence": 1,
+                "enabled": true
+            },
+            {
+                "_id": "process-2",
+                "title": "Planning",
+                "description": "Creating architecture, roadmap, and technical specifications",
+                "details": [
+                    "Define technical architecture and tech stack",
+                    "Create project roadmap with milestones",
+                    "Document feature specifications",
+                    "Establish communication and review cadence"
+                ],
+                "icon": "ClipboardList",
+                "sequence": 2,
+                "enabled": true
+            },
+            {
+                "_id": "process-3",
+                "title": "Design",
+                "description": "UI/UX design, prototyping, and user flow mapping",
+                "details": [
+                    "Create wireframes and user flows",
+                    "Design intuitive user interfaces",
+                    "Build interactive prototypes for feedback",
+                    "Iterate based on your input"
+                ],
+                "icon": "Palette",
+                "sequence": 3,
+                "enabled": true
+            },
+            {
+                "_id": "process-4",
+                "title": "Development",
+                "description": "Building your solution with regular progress updates",
+                "details": [
+                    "Agile development with sprint cycles",
+                    "Regular demos and progress updates",
+                    "Continuous integration and testing",
+                    "Transparent communication throughout"
+                ],
+                "icon": "Code",
+                "sequence": 4,
+                "enabled": true
+            },
+            {
+                "_id": "process-5",
+                "title": "Testing",
+                "description": "Comprehensive QA, bug fixes, and performance optimization",
+                "details": [
+                    "Thorough quality assurance testing",
+                    "Performance optimization",
+                    "User acceptance testing (UAT)",
+                    "Bug fixes and refinements"
+                ],
+                "icon": "TestTube",
+                "sequence": 5,
+                "enabled": true
+            },
+            {
+                "_id": "process-6",
+                "title": "Launch",
+                "description": "Deployment, app store submission, and go-live support",
+                "details": [
+                    "Deploy to production environment",
+                    "App store submission (iOS/Android)",
+                    "Go-live support and monitoring",
+                    "Knowledge transfer and documentation"
+                ],
+                "icon": "Rocket",
+                "sequence": 6,
+                "enabled": true
+            },
+            {
+                "_id": "process-7",
+                "title": "Support",
+                "description": "Ongoing maintenance, updates, and feature additions",
+                "details": [
+                    "Ongoing technical support",
+                    "Bug fixes and updates",
+                    "New feature development",
+                    "Performance monitoring and optimization"
+                ],
+                "icon": "HeartHandshake",
+                "sequence": 7,
+                "enabled": true
             }
         ],
         "createdAt": "2024-01-26T12:14:36.514Z",
