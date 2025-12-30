@@ -115,21 +115,23 @@ export const ServicesBento = ({ services }: { services: Service[] }) => {
                   <p className={`text-white/60 leading-relaxed mb-3 ${featured ? "text-base md:text-lg" : "text-sm md:text-base"}`}>
                     {details.description}
                   </p>
-                  {service.pricing && (
-                    <div className="inline-flex items-center gap-2">
-                      <span className="px-3 py-1 text-xs md:text-sm font-medium rounded-full bg-primary/20 text-primary border border-primary/30">
-                        {service.pricing}
-                      </span>
-                    </div>
-                  )}
+                  <a
+                    href="#contact"
+                    className="w-fit px-3 py-1 text-xs md:text-sm font-medium rounded-full bg-primary/20 text-primary border border-primary/30 hover:bg-primary hover:text-black transition-colors"
+                  >
+                    Let&apos;s Chat
+                  </a>
                 </div>
 
                 {/* Hover arrow indicator */}
-                <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                <a
+                  href="#contact"
+                  className="absolute bottom-6 right-6 md:bottom-8 md:right-8 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 hover:bg-white/20"
+                >
                   <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </div>
+                </a>
               </div>
             </div>
           </Transition>
