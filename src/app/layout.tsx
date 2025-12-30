@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 // import './globals.css'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import Clarity from '@/components/Clarity'
 import StructuredData from '@/components/StructuredData'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -54,6 +55,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <GoogleAnalytics GA_MEASUREMENT_ID="G-YKMJBZ5M3E" />
+        <Clarity projectId="utpyyc989u" />
         <StructuredData />
         {children}
       </body>
