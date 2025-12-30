@@ -28,7 +28,7 @@ export default function StructuredData() {
         'Technical Translation',
         'AI Integration'
       ],
-      description: 'Expert tech translator and full-stack developer specializing in Firebase, Flutter, Angular, and Python. Building innovative web and mobile solutions.',
+      description: 'Expert tech translator  specializing in Firebase, Flutter, Angular, and Python. Building innovative web and mobile solutions.',
       alumniOf: {
         '@type': 'Organization',
         name: 'University of Johannesburg',

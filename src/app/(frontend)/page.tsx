@@ -21,12 +21,12 @@ import { Hero } from "@/components/hero";
 import { promises as fs } from 'fs';
 
 export const metadata: Metadata = {
-  title: 'Mpumelelo Mkhize - Tech Translator & Full-Stack Developer',
-  description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator and full-stack developer specializing in AI, Automations, web and mobile development. View projects, services, and client testimonials.',
+  title: 'Mpumelelo Mkhize - Tech Translator ',
+  description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator  specializing in AI, Automations, web and mobile development. View projects, services, and client testimonials.',
   keywords: 'tech translator, full-stack developer, AI development, automation solutions, web development, mobile development, Firebase, Flutter, Angular, Python, chatbot development, AI integration',
   openGraph: {
-    title: 'Mpumelelo Mkhize - Tech Translator & Full-Stack Developer',
-    description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator and full-stack developer specializing in AI, Automations, web and mobile development.',
+    title: 'Mpumelelo Mkhize - Tech Translator ',
+    description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator  specializing in AI, Automations, web and mobile development.',
     type: 'website',
   }
 };
@@ -54,8 +54,8 @@ export default async function Home() {
     <main className="relative">
       {/* Hidden SEO content */}
       <div className="hidden">
-        <h1>Mpumelelo Mkhize - Tech Translator & Full-Stack Developer</h1>
-        <p>Professional tech translator and full-stack developer specializing in web and mobile development solutions.</p>
+        <h1>Mpumelelo Mkhize - Tech Translator </h1>
+        <p>Professional tech translator  specializing in web and mobile development solutions.</p>
         <h2>Services</h2>
         <p>Expert services in {services.map(s => s.name).join(', ')}</p>
         <h2>Skills</h2>

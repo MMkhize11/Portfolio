@@ -153,10 +153,10 @@ export async function POST(request: Request) {
     `;
 
     const data = await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>',
-      to: ['nkululekomkhize733@gmail.com'],
-      cc: ['mmkhize11@gmail.com'],
-      subject: `Contact Form: ${subject}`,
+      from: `Contact Form <info@mpumelelomkhize.com>`,
+      to: ['mmkhize11@gmail.com'],
+      cc: [],
+      subject: `Personal Website Contact Form: ${subject}`,
       html: emailContent,
       replyTo: from,
     });

@@ -38,6 +38,7 @@ export const ContactUs = ({ email, social_handle, about }: ContactProps) => {
 
   function handleSendEmail(data: FormData) {
     setLoading(true);
+    
     fetch('/api/email', {
       method: 'POST',
       headers: {

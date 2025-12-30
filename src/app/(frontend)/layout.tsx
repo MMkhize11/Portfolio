@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Mpumelelo Mkhize Khabazela the tech translator",
+  title: "Mpumelelo Khabazela Mkhize the tech translator",
   description: "Mpumelelo Mkhize's Portfolio",
 };
 
