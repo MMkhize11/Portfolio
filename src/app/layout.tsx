@@ -9,11 +9,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.mpumelelomkhize.com'),
-  title: 'Mpumelelo Khabazela Mkhize - Tech Translator ',
-  description: 'Mpumelelo Mkhize - Expert tech translator  specializing in AI, Automations, Firebase, Flutter, Angular, and Python. Building innovative web, mobile, and AI-powered solutions.',
+  title: 'Mpumelelo Khabazela Mkhize - The Tech Translator',
+  description: 'Mpumelelo Mkhize, The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI for small businesses, teams & ministries.',
   openGraph: {
-    title: 'Mpumelelo Khabazela Mkhize - Tech Translator ',
-    description: 'Mpumelelo Mkhize - Expert tech translator  specializing in AI, Automations, Firebase, Flutter, Angular, and Python. Building innovative web, mobile, and AI-powered solutions.',
+    title: 'Mpumelelo Khabazela Mkhize - The Tech Translator',
+    description: 'Mpumelelo Mkhize, The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI for small businesses, teams & ministries.',
     url: 'https://www.mpumelelomkhize.com',
     siteName: 'Mpumelelo Mkhize Portfolio',
     locale: 'en_ZA',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mpumelelo Khabazela Mkhize - Tech Translator ',
-    description: 'Mpumelelo Mkhize - Expert tech translator  specializing in AI, Automations, Firebase, Flutter, Angular, and Python. Building innovative web, mobile, and AI-powered solutions.',
+    title: 'Mpumelelo Khabazela Mkhize - The Tech Translator',
+    description: 'Mpumelelo Mkhize, The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI for small businesses, teams & ministries.',
     creator: '@mpumi_khabazela',
   },
   robots: {

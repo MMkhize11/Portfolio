@@ -13,8 +13,8 @@ interface SEOProps {
 }
 
 const defaultSEO = {
-  title: 'Mpumelelo Khabazela Mkhize - Tech Translator ',
-  description: 'Mpumelelo Mkhize - Expert tech translator  specializing in Firebase, Flutter, Angular, and Python. Building innovative web and mobile solutions.',
+  title: 'Mpumelelo Khabazela Mkhize - The Tech Translator',
+  description: 'Mpumelelo Mkhize, The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI for small businesses, teams & ministries.',
   ogImage: 'https://www.mpumelelomkhize.com/og-image.jpg',
   ogType: 'website' as const,
   twitterCard: 'summary_large_image' as const,
@@ -52,7 +52,7 @@ export function generateMetadata({
           url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: 'Mpumelelo Mkhize - Tech Translator ',
+          alt: 'Mpumelelo Mkhize - The Tech Translator',
         },
       ],
       locale: 'en_ZA',

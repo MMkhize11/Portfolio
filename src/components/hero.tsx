@@ -54,7 +54,9 @@ export const Hero = ({ about }: { about: About }) => {
               {/* Tagline */}
               <Transition viewport={{ once: true }}>
                 <p className="text-white/40 text-base md:text-lg mt-8 max-w-sm leading-relaxed">
-                  Demystifying tech, one translation at a time.
+                  Translating everyday struggles into working systems —
+                  bookings, automations &amp; apps that free you to focus on
+                  your calling.
                 </p>
               </Transition>
 

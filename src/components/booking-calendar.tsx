@@ -1,64 +1,103 @@
 "use client";
 
-import { Calendar, Clock, Video, ArrowRight } from "lucide-react";
+import { useEffect } from "react";
+import { Calendar, ArrowRight } from "lucide-react";
 
 interface BookingCalendarProps {
-  calendarUrl?: string;
+  calLink?: string;
+}
+
+declare global {
+  interface Window {
+    Cal?: any;
+  }
 }
 
 export const BookingCalendar = ({
-  // Replace with your actual Cal.com or Calendly link
-  // calendarUrl = "https://cal.com/khabazela/discovery",
-  calendarUrl = "https://cal.com/mpumelelo-mkhize/15min",
+  calLink = "mpumelelo-mkhize/15min",
 }: BookingCalendarProps) => {
+  useEffect(() => {
+    // Cal.com embed initialization - must create stub before loading script
+    (function (C: any, A: string, L: string) {
+      const p = function (a: any, ar: any) {
+        a.q.push(ar);
+      };
+      const d = C.document;
+      C.Cal =
+        C.Cal ||
+        function () {
+          const cal = C.Cal;
+          const ar = arguments;
+          if (!cal.loaded) {
+            cal.ns = {};
+            cal.q = cal.q || [];
+            d.head.appendChild(d.createElement("script")).src = A;
+            cal.loaded = true;
+          }
+          if (ar[0] === L) {
+            const api = function () {
+              p(api, arguments);
+            };
+            const namespace = ar[1];
+            (api as any).q = (api as any).q || [];
+            if (typeof namespace === "string") {
+              cal.ns[namespace] = cal.ns[namespace] || api;
+              p(cal.ns[namespace], ar);
+              p(cal, ["initNamespace", namespace]);
+            } else p(cal, ar);
+            return;
+          }
+          p(cal, ar);
+        };
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+
+    // Initialize the calendar
+    window.Cal("init", "15min", { origin: "https://app.cal.com" });
+
+    window.Cal.ns["15min"]("inline", {
+      elementOrSelector: "#my-cal-inline-15min",
+      config: { layout: "month_view", useSlotsViewOnSmallScreen: "true" },
+      calLink: calLink,
+    });
+
+    window.Cal.ns["15min"]("ui", {
+      theme: "dark",
+      cssVarsPerTheme: {
+        dark: {
+          "cal-brand": "#c76000",
+          "cal-bg": "hsl(240, 10%, 8%)",
+          "cal-bg-emphasis": "hsl(240, 10%, 12%)",
+          "cal-bg-subtle": "hsl(240, 10%, 10%)",
+          "cal-bg-muted": "hsl(240, 10%, 6%)",
+          "cal-bg-inverted": "hsl(240, 5.79%, 76.27%)",
+          "cal-text": "hsl(240, 5.79%, 76.27%)",
+          "cal-text-emphasis": "hsl(0, 0%, 98%)",
+          "cal-text-subtle": "hsl(240, 5%, 60%)",
+          "cal-text-muted": "hsl(240, 5%, 45%)",
+          "cal-border": "hsl(37, 18%, 25%)",
+          "cal-border-emphasis": "hsl(37, 18%, 35%)",
+          "cal-border-subtle": "hsl(240, 10%, 15%)",
+        },
+      },
+      hideEventTypeDetails: false,
+      layout: "month_view",
+    });
+  }, [calLink]);
+
   return (
-    <div className="bg-gradient-to-br from-blue-600/10 to-primary/10 border border-white/10 rounded-2xl p-6 md:p-8">
-      <div className="text-center">
-        <div className="inline-flex items-center justify-center p-4 bg-primary/20 rounded-full mb-4">
-          <Calendar size={32} className="text-primary" />
-        </div>
-
-        <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
-          Book a Free Discovery Call
-        </h3>
-
-        <p className="text-white/60 mb-6 max-w-md mx-auto">
-          Let&apos;s discuss your project in a quick 15-minute call. No pressure, just a conversation about your goals.
-        </p>
-
-        {/* Benefits */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 text-sm text-white/50">
-          <div className="flex items-center justify-center gap-2">
-            <Clock size={16} className="text-primary" />
-            <span>15 minutes</span>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <Video size={16} className="text-primary" />
-            <span>Google Meet / Zoom</span>
-          </div>
-        </div>
-
-        <a
-          href={calendarUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-black font-medium rounded-full hover:bg-primary/90 transition-colors text-lg"
-        >
-          Schedule a call
-          <ArrowRight size={20} />
-        </a>
-
-        <p className="text-white/40 text-sm mt-4">
-          Pick a time that works for you
-        </p>
-      </div>
+    <div className="w-full">
+      {/* Cal.com Inline Embed */}
+      <div
+        id="my-cal-inline-15min"
+        className="w-full min-h-[500px] rounded-lg overflow-hidden"
+      />
     </div>
   );
 };
 
 // Compact version for use alongside the contact form
 export const BookingCalendarCompact = ({
-  calendarUrl = "https://cal.com/khabazela/discovery",
+  calLink = "mpumelelo-mkhize/15min",
 }: BookingCalendarProps) => {
   return (
     <div className="flex flex-col items-center text-center p-6 border border-white/10 rounded-xl bg-white/5">
@@ -72,7 +111,7 @@ export const BookingCalendarCompact = ({
         Book a free 15-min discovery call
       </p>
       <a
-        href={calendarUrl}
+        href={`https://cal.com/${calLink}`}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 px-5 py-2.5 border border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-black transition-colors text-sm"

@@ -21,12 +21,12 @@ import { Hero } from "@/components/hero";
 import { promises as fs } from 'fs';
 
 export const metadata: Metadata = {
-  title: 'Mpumelelo Mkhize - Tech Translator ',
-  description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator  specializing in AI, Automations, web and mobile development. View projects, services, and client testimonials.',
-  keywords: 'tech translator, full-stack developer, AI development, automation solutions, web development, mobile development, Firebase, Flutter, Angular, Python, chatbot development, AI integration',
+  title: 'Mpumelelo Mkhize - The Tech Translator',
+  description: 'Mpumelelo Mkhize, The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI for small businesses, teams & ministries. View projects, services, and client testimonials.',
+  keywords: 'tech translator, systems builder, business automation, booking systems, small business apps, AI development, automation solutions, web development, mobile development, AI integration',
   openGraph: {
-    title: 'Mpumelelo Mkhize - Tech Translator ',
-    description: 'Professional portfolio of Mpumelelo Mkhize, a tech translator  specializing in AI, Automations, web and mobile development.',
+    title: 'Mpumelelo Mkhize - The Tech Translator',
+    description: 'Mpumelelo Mkhize, The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI for small businesses, teams & ministries.',
     type: 'website',
   }
 };
@@ -54,8 +54,8 @@ export default async function Home() {
     <main className="relative">
       {/* Hidden SEO content */}
       <div className="hidden">
-        <h1>Mpumelelo Mkhize - Tech Translator </h1>
-        <p>Professional tech translator  specializing in web and mobile development solutions.</p>
+        <h1>Mpumelelo Mkhize - The Tech Translator</h1>
+        <p>Systems builder turning manual chaos into working systems — websites, apps, automations and AI integrations for small businesses, teams and ministries.</p>
         <h2>Services</h2>
         <p>Expert services in {services.map(s => s.name).join(', ')}</p>
         <h2>Skills</h2>

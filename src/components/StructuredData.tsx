@@ -8,7 +8,7 @@ export default function StructuredData() {
       '@context': 'https://schema.org',
       '@type': 'Person',
       name: 'Mpumelelo Mkhize',
-      jobTitle: 'Full-Stack Developer & Tech Translator',
+      jobTitle: 'Systems Builder & Tech Translator',
       url: 'https://www.mpumelelomkhize.com',
       sameAs: [
         'https://linkedin.com/in/mpumelelohowardmkhize',
@@ -28,7 +28,7 @@ export default function StructuredData() {
         'Technical Translation',
         'AI Integration'
       ],
-      description: 'Expert tech translator  specializing in Firebase, Flutter, Angular, and Python. Building innovative web and mobile solutions.',
+      description: 'The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI integrations for small businesses, teams, and ministries.',
       alumniOf: {
         '@type': 'Organization',
         name: 'University of Johannesburg',
@@ -36,7 +36,7 @@ export default function StructuredData() {
       },
       worksFor: {
         '@type': 'Organization',
-        name: 'Freelance Developer & Tech Translator',
+        name: 'Freelance Systems Builder & Tech Translator',
         url: 'https://www.mpumelelomkhize.com'
       }
     }

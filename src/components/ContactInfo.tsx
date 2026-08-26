@@ -21,7 +21,7 @@ export default function ContactInfo({ email, phone, address }: ContactInfoProps)
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Mpumelelo Mkhize',
-    jobTitle: 'Full-Stack Developer & Tech Translator',
+    jobTitle: 'Systems Builder & Tech Translator',
     url: 'https://www.mpumelelomkhize.com',
     sameAs: [
       'https://linkedin.com/in/mpumelelohowardmkhize',
