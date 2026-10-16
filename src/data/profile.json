@@ -538,6 +538,89 @@
                 "projectImages": [],
                 "_id": "65b3d9c8d017f6b49c778ca9",
                 "enabled": true
+            },
+            {
+                "liveurl": "/blog/sweet-tooth-dessert-experience-website",
+                "githuburl": "#",
+                "title": "Sweet Tooth",
+                "sequence": 9,
+                "image": {
+                    "public_id": "sweet-tooth-dessert-experience-website-banner",
+                    "url": "/assets/images/projects/sweet-tooth-dessert-experience-website/sweet-tooth-dessert-experience-website-banner.png"
+                },
+                "description": "Website for a Johannesburg dessert chef who hosts tasting experiences, with event pages, Quicket ticketing, tailored enquiry forms and personal invite links. Tech Stack: Next.js, Tailwind CSS, Resend, Cloudflare",
+                "techStack": [
+                    "Next.js",
+                    "Tailwind CSS",
+                    "Email Integration",
+                    "Cloudflare"
+                ],
+                "projectImages": [
+                    {
+                        "public_id": "sweet-tooth-dessert-experience-website-home",
+                        "url": "/assets/images/projects/sweet-tooth-dessert-experience-website/home.jpg"
+                    },
+                    {
+                        "public_id": "sweet-tooth-dessert-experience-website-event",
+                        "url": "/assets/images/projects/sweet-tooth-dessert-experience-website/event.jpg"
+                    },
+                    {
+                        "public_id": "sweet-tooth-dessert-experience-website-tickets",
+                        "url": "/assets/images/projects/sweet-tooth-dessert-experience-website/tickets.jpg"
+                    },
+                    {
+                        "public_id": "sweet-tooth-dessert-experience-website-enquiry",
+                        "url": "/assets/images/projects/sweet-tooth-dessert-experience-website/enquiry.jpg"
+                    },
+                    {
+                        "public_id": "sweet-tooth-dessert-experience-website-invite",
+                        "url": "/assets/images/projects/sweet-tooth-dessert-experience-website/invite.jpg"
+                    }
+                ],
+                "_id": "sweet-tooth-dessert-experience-website",
+                "enabled": true
+            },
+            {
+                "liveurl": "/blog/footgolf-south-africa-platform-story",
+                "githuburl": "#",
+                "title": "FootGolf SA Platform",
+                "sequence": 10,
+                "image": {
+                    "public_id": "footgolf-south-africa-platform-story-banner",
+                    "url": "/assets/images/projects/footgolf-south-africa-platform-story/footgolf-south-africa-platform-story-banner.png"
+                },
+                "description": "The national federation system for FootGolf South Africa: memberships and PayFast payments, tournament entry, hole-by-hole scoring, rankings and club governance. Tech Stack: Next.js, NestJS, PostgreSQL, Redis",
+                "techStack": [
+                    "Next.js",
+                    "NestJS",
+                    "PostgreSQL",
+                    "Redis",
+                    "Tailwind CSS"
+                ],
+                "projectImages": [
+                    {
+                        "public_id": "footgolf-south-africa-platform-story-members-status",
+                        "url": "/assets/images/projects/footgolf-south-africa-platform-story/members-status.png"
+                    },
+                    {
+                        "public_id": "footgolf-south-africa-platform-story-governance-exam",
+                        "url": "/assets/images/projects/footgolf-south-africa-platform-story/governance-exam.png"
+                    },
+                    {
+                        "public_id": "footgolf-south-africa-platform-story-scoring-phone",
+                        "url": "/assets/images/projects/footgolf-south-africa-platform-story/scoring-phone.png"
+                    },
+                    {
+                        "public_id": "footgolf-south-africa-platform-story-national-ranking",
+                        "url": "/assets/images/projects/footgolf-south-africa-platform-story/national-ranking.png"
+                    },
+                    {
+                        "public_id": "footgolf-south-africa-platform-story-elite-tour-leaderboard",
+                        "url": "/assets/images/projects/footgolf-south-africa-platform-story/elite-tour-leaderboard.png"
+                    }
+                ],
+                "_id": "footgolf-south-africa-platform-story",
+                "enabled": true
             }
         ],
         "social_handles": [
