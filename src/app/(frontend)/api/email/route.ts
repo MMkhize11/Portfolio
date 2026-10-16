@@ -104,7 +104,7 @@ export async function POST(request: Request) {
             }
             .header {
               background: linear-gradient(135deg, #1a1a1a 0%, #111111 100%);
-              color: #F5C046;
+              color: #F97316;
               padding: 32px 24px;
               text-align: center;
               border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -114,7 +114,7 @@ export async function POST(request: Request) {
               font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
               font-weight: 700;
               font-size: 26px;
-              color: #F5C046;
+              color: #F97316;
               letter-spacing: 0.5px;
             }
             .header-subtitle {
@@ -124,8 +124,8 @@ export async function POST(request: Request) {
             }
             .timestamp-badge {
               display: inline-block;
-              background: rgba(245, 192, 70, 0.15);
-              color: #F5C046;
+              background: rgba(249, 115, 22, 0.15);
+              color: #F97316;
               padding: 6px 14px;
               border-radius: 20px;
               font-size: 12px;
@@ -139,7 +139,7 @@ export async function POST(request: Request) {
               margin-bottom: 24px;
               background: rgba(255,255,255,0.02);
               border-radius: 16px;
-              border-left: 4px solid #F5C046;
+              border-left: 4px solid #F97316;
               padding: 20px;
               box-shadow: 0 2px 8px rgba(0,0,0,0.10);
             }
@@ -148,7 +148,7 @@ export async function POST(request: Request) {
               background: rgba(255,255,255,0.01);
             }
             .section-title {
-              color: #F5C046;
+              color: #F97316;
               font-family: 'Montserrat', sans-serif;
               font-size: 13px;
               font-weight: 700;
@@ -180,7 +180,7 @@ export async function POST(request: Request) {
               word-break: break-word;
             }
             .value.email-link {
-              color: #F5C046;
+              color: #60A5FA;
             }
             .value.small {
               font-size: 13px;
@@ -211,8 +211,9 @@ export async function POST(request: Request) {
             }
             .reply-btn {
               display: inline-block;
-              background: #F5C046;
-              color: #000000;
+              background-color: #F97316;
+              background-image: linear-gradient(90deg, #F97316, #2563EB);
+              color: #FFFFFF;
               padding: 12px 32px;
               border-radius: 8px;
               text-decoration: none;
