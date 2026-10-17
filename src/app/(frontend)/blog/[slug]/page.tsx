@@ -76,7 +76,8 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   const readingTime = calculateReadingTime(post.content);
-  const coverImageUrl = post.coverImage?.asset?._ref
+  // The query expands asset-> into the full asset doc, so there's no _ref to check
+  const coverImageUrl = post.coverImage?.asset
     ? urlForImage(post.coverImage).width(1920).height(1080).url()
     : null;
 

@@ -20,12 +20,16 @@ export function ArticleNav({ headings }: { headings: Heading[] }) {
     const onScroll = () => {
       setScrolled(window.scrollY > window.innerHeight * 0.6);
 
-      // Active chapter = last heading that has crossed the top third of the screen
+      // Active chapter = last heading that has reached the top of the screen
       let current: string | null = null;
       for (const { id } of headings) {
         const el = document.getElementById(id);
-        if (el && el.getBoundingClientRect().top < window.innerHeight / 3) current = id;
+        if (el && el.getBoundingClientRect().top < 120) current = id;
       }
+      // A short final chapter may never reach the top, so mark it once the page bottoms out
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      if (atBottom && headings.length) current = headings[headings.length - 1].id;
       setActive(current);
     };
 
