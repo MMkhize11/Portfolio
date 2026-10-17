@@ -1,7 +1,19 @@
 import { PortableTextComponents } from '@portabletext/react';
+import type { PortableTextBlock } from '@portabletext/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { urlForImage } from './image';
+
+export const blockText = (block: PortableTextBlock) =>
+  block.children.map((child) => ('text' in child ? child.text : '')).join('');
+
+// Anchor id for a heading, e.g. "The Elite Tour" -> "the-elite-tour"
+// ponytail: duplicate heading text gives duplicate ids; dedupe if a post ever repeats one
+export const headingId = (block: PortableTextBlock) =>
+  blockText(block)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
 
 export const portableTextComponents: PortableTextComponents = {
   types: {
@@ -10,6 +22,9 @@ export const portableTextComponents: PortableTextComponents = {
         return null;
       }
 
+      // Sanity refs carry the real size ("image-<id>-2365x2200-png"); reserving it stops the page jumping as images load
+      const [, w = 16, h = 9] = /-(\d+)x(\d+)-/.exec(value.asset._ref)?.map(Number) ?? [];
+
       return (
         <figure className="my-10">
           <div className="relative rounded-2xl overflow-hidden border border-white/10">
@@ -17,7 +32,7 @@ export const portableTextComponents: PortableTextComponents = {
               src={urlForImage(value).width(1200).url()}
               alt={value.alt || ''}
               width={1200}
-              height={675}
+              height={Math.round((1200 * h) / w)}
               className="w-full h-auto"
             />
           </div>
@@ -98,8 +113,11 @@ export const portableTextComponents: PortableTextComponents = {
         {children}
       </h1>
     ),
-    h2: ({ children }) => (
-      <h2 className="text-2xl md:text-3xl font-bold text-white mt-12 mb-4 pb-2 border-b border-white/10">
+    h2: ({ children, value }) => (
+      <h2
+        id={headingId(value)}
+        className="text-2xl md:text-3xl font-bold text-white mt-12 mb-4 pb-2 border-b border-white/10 scroll-mt-8"
+      >
         {children}
       </h2>
     ),

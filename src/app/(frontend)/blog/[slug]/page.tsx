@@ -4,10 +4,11 @@ import { PortableText } from '@portabletext/react';
 import Image from 'next/image';
 import { sanityFetch } from '@/lib/sanity/client';
 import { postBySlugQuery, postSlugsQuery } from '@/lib/sanity/queries';
-import { portableTextComponents } from '@/lib/sanity/portable-text';
+import { portableTextComponents, blockText, headingId } from '@/lib/sanity/portable-text';
 import { urlForImage } from '@/lib/sanity/image';
 import { BackButton } from './back-button';
 import { ReadingProgress } from './reading-progress';
+import { ArticleNav } from './article-nav';
 import type { SanityPost } from '@/types/sanity';
 import type { Metadata } from 'next';
 import { Calendar, Clock, Tag, ArrowRight, MessageCircle } from 'lucide-react';
@@ -79,10 +80,17 @@ export default async function BlogPostPage({ params }: Props) {
     ? urlForImage(post.coverImage).width(1920).height(1080).url()
     : null;
 
+  const headings = post.content
+    .filter((block) => block._type === 'block' && block.style === 'h2')
+    .map((block) => ({ id: headingId(block), text: blockText(block) }));
+
   return (
     <main className="relative min-h-screen">
       {/* Reading Progress Bar */}
       <ReadingProgress />
+
+      {/* Chapter list + back to top */}
+      <ArticleNav headings={headings} />
 
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
