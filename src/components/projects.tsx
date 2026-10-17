@@ -2,6 +2,7 @@
 
 import { Project } from "@/utils/interfaces";
 import Image from "next/image";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -91,7 +92,7 @@ const ProjectContainer = () => {
   );
 };
 
-const Card = ({ _id, title, image, description, liveurl, techStack, projectImages }: Project) => {
+const Card = ({ _id, title, image, description, liveurl, caseStudy, techStack, projectImages }: Project) => {
   const [hover, setHover] = useState(false);
   const { setVariant } = useCursorVariants();
   const { setSingleProject } = useProjects();
@@ -137,13 +138,21 @@ const Card = ({ _id, title, image, description, liveurl, techStack, projectImage
           <h3 className="text-xl font-bold text-white mb-2 drop-shadow-lg">{title}</h3>
           <p className="text-white/80 text-sm mb-4 line-clamp-3 drop-shadow-md">{description}</p>
           <div className="flex gap-2">
+            {caseStudy && (
+              <Link
+                href={`/blog/${caseStudy}`}
+                className="bg-white/10 text-white px-4 py-2 rounded-lg hover:bg-white/20 transition font-semibold text-sm backdrop-blur-sm"
+              >
+                Read the case study
+              </Link>
+            )}
           {/* <button
               onClick={handleReadMore}
               className="bg-white/10 text-white px-4 py-2 rounded-lg hover:bg-white/20 transition font-semibold text-sm backdrop-blur-sm"
             >
               Read More
             </button> */}
-            {liveurl && (
+            {liveurl && !caseStudy && (
               <a
                 href={liveurl}
                 target="_blank"

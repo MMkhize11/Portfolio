@@ -1,0 +1,334 @@
+[
+  {
+    "slug": "web-development",
+    "name": "Web Development",
+    "title": "Web Developer in Johannesburg: Websites & Web Apps",
+    "metaDescription": "Websites and web apps for small businesses and organisations in Johannesburg and across South Africa. Built to be found on Google, explained plainly.",
+    "h1": "Web developer in Johannesburg for websites and web apps",
+    "intro": "I build websites and web apps for small businesses, teams and organisations in Johannesburg and across South Africa. Some clients need a clear website that tells their story and shows up when people search. Others need a working system behind it: enquiry forms, ticketing, memberships, payments. I'll help you work out which one you actually need, and I'll explain every choice in plain language.",
+    "sections": [
+      {
+        "heading": "Website or web app? The difference in plain terms",
+        "body": [
+          "A website mostly informs. It tells people who you are, what you offer and how to reach you. A web app lets people do things: register, pay, enter a tournament, check a score, log in to see their own information.",
+          "Many projects start as the first and grow into the second. Where most people see a website project, I look at the system underneath: the bookings, the follow-ups, the manual steps your team repeats every week. That is often where a website can save you the most time."
+        ]
+      },
+      {
+        "heading": "What this looks like in real projects",
+        "body": [
+          "TMEG Financial Solutions came to me with no website at all. They wanted to put capital in the hands of township entrepreneurs and needed a way to explain that to strangers. I built pages for their story, values, co-founders, services, partners and outreach, with contact forms that land straight in their inbox and links to loan calculators and application systems. The site is live and receiving client submissions and loan applications.",
+          "Sweet Tooth is the brand of a Johannesburg dessert chef who hosts tasting experiences. Her site has a page for each event with the Quicket ticket widget built in, so visitors can buy a ticket without leaving the site. The enquiry form asks what kind of enquiry it is first (tasting event, private experience, corporate event, collaboration) and then shows only the questions that matter. The site is live at itssweettooth.co.za.",
+          "At the bigger end, I built the national federation system for FootGolf South Africa, which I'm currently taking live: memberships and PayFast payments, tournament entry, hole-by-hole scoring, rankings and club governance, all in one platform."
+        ]
+      },
+      {
+        "heading": "Built to be found on Google",
+        "body": [
+          "A website nobody finds doesn't do much. Good search visibility isn't about stuffing keywords into pages. It's about being clear about who you are, what you do and where you do it, and giving Google that information in a form it can read.",
+          "On the Sweet Tooth site, for example, every page carries structured data: a short, machine-readable description of the business, each event with its venue and tickets, the FAQ and the page's place in the site. There is a generated sitemap and a canonical address on every page so Google doesn't get confused by duplicates. I build with fast, modern tools like Next.js and Tailwind CSS so pages load quickly on a phone."
+        ]
+      },
+      {
+        "heading": "How we'll work together",
+        "body": [
+          "Every project follows the same steps: discovery, planning, design, development, testing, launch and support. You get regular updates on the channel you prefer (WhatsApp, email, Slack or video calls) and weekly check-ins, so nothing surprises you at the end.",
+          "If your message is still taking shape, that's normal. With TMEG I built a rough skeleton first so they could see how the pages might flow, then we moved things around together until it felt like them. When the design kept changing, the fix was a clearer conversation about the brand, not more redesigns."
+        ]
+      },
+      {
+        "heading": "Based in Johannesburg, working across South Africa",
+        "body": [
+          "I'm based in Johannesburg, so in-person meetings are possible for local clients. I also work with clients across South Africa and internationally over video calls and shared tools."
+        ]
+      }
+    ],
+    "deliverables": [
+      "A responsive website or web app that works properly on phones",
+      "Contact and enquiry forms that deliver to your inbox",
+      "Search-friendly setup: structured data, sitemap and clean page addresses",
+      "Connections to tools you already use, such as ticketing, payments or email",
+      "Handoff with documentation, training if needed, and all source code",
+      "Optional maintenance and support after launch"
+    ],
+    "caseStudies": ["tmeg-financial-website", "sweet-tooth", "FGSA-Footgolf-South-Africa"],
+    "faqs": [
+      {
+        "q": "How much does a website cost?",
+        "a": "It depends on scope: a simple site, a full web app, or something with custom integrations and payments. On a discovery call we'll talk through your goals, and I'll send a quote based on what you actually need."
+      },
+      {
+        "q": "What are your payment terms?",
+        "a": "Usually a 50% deposit to start and 50% on completion. Larger projects can be split into milestone payments."
+      },
+      {
+        "q": "Do I get the code when the project is done?",
+        "a": "Yes. After launch you get a full handoff with documentation, training if needed, and all the source code."
+      }
+    ]
+  },
+  {
+    "slug": "app-development",
+    "name": "App Development",
+    "title": "Mobile App Developer South Africa: Flutter iOS & Android",
+    "metaDescription": "Flutter mobile apps for iPhone and Android, built in Johannesburg for South African businesses and organisations. One codebase, clear costs.",
+    "h1": "Mobile app development in South Africa, for iPhone and Android",
+    "intro": "I build mobile apps for iPhone and Android using Flutter, which means one set of code runs on both. That keeps the build and the upkeep more affordable than paying for two separate apps. I work with founders and organisations who have an app idea, or who have a community scattered across WhatsApp groups and need one place to bring it all together.",
+    "sections": [
+      {
+        "heading": "One app, both kinds of phone",
+        "body": [
+          "Flutter lets me write the app once and release it on both iOS and Android. It's faster to build, easier to maintain and still feels smooth to use. For most small businesses and organisations, that's the sensible choice.",
+          "I learned this the hard way. When I started building Stuurmy, I used Kotlin, which only targets Android. A few weeks in I realised I was cutting out every iPhone user, so I deleted the code and started again in Flutter. It hurt, but it was the right call, and it's why I recommend Flutter today."
+        ]
+      },
+      {
+        "heading": "From scattered chats to one place",
+        "body": [
+          "As CTO at Value Ed, I inherited a familiar problem. Session information lived in WhatsApp groups, and announcements got buried under everyday messages. Members had to ask around just to find out when the next session was.",
+          "I built the Value Ed app to fix that. Members open it to a calendar of upcoming sessions and events. Fifteen minutes before a session, a push notification reminds them. One tap takes them straight into the Zoom room. Instead of building a second database that would drift out of sync, the app pulls its information from Value Ed's existing Wix website, so one update shows up everywhere. I brought in a UX/UI designer to shape the screens while I focused on making the technical side sound."
+        ]
+      },
+      {
+        "heading": "Apps that do real work in the background",
+        "body": [
+          "Stuurmy was a home services app. A customer picks a service, such as cleaning, gardening or a car wash, and a map searches for the nearest available provider. If that provider doesn't respond in time, the request moves on to the next closest person. Firebase handled the messages, crash reports, data and the logic running on the server.",
+          "I'll be honest about how it went: Stuurmy reached testing with 5 service providers and 17 customers, then stalled and never fully launched. The technology worked. The lesson I took from it was to get a working version into real hands early and improve it from real feedback, instead of polishing in private. I bring that into every app I build now."
+        ]
+      },
+      {
+        "heading": "Thinking about running costs, not just launch",
+        "body": [
+          "Every app has costs that carry on after launch: servers, notifications, maps. On Stuurmy, every live location update hit the database, so I spent weeks finding the balance between feeling live and staying affordable. On Value Ed, tools like Firebase and the existing Wix site were chosen so the app would stay cheap to keep running.",
+          "I'll walk you through these trade-offs before you commit, so there are no surprises later."
+        ]
+      },
+      {
+        "heading": "From idea to app store",
+        "body": [
+          "We start with discovery to understand your users and goals, then plan the features and milestones. Next come wireframes and a clickable prototype you can react to before any real building starts. Development happens in short cycles with regular demos, followed by testing, including testing with your own users. Then I handle launch and app store submission for iOS and Android, and stay on for support.",
+          "Before freelancing, I worked on mobile apps at Argility using Ionic, including moving apps from one push notification provider (OneSignal) to Firebase, so I know what keeping an app alive over time involves."
+        ]
+      }
+    ],
+    "testimonial": {
+      "quote": "Working with Mpumelelo has been outstanding. His expertise, swift responses, and commitment to resolving our tech issues have been invaluable. I highly recommend him for anyone seeking dependable and effective tech support.",
+      "name": "Tshego Sebogodi",
+      "role": "CEO Value Ed"
+    },
+    "deliverables": [
+      "A Flutter app for both iPhone and Android",
+      "Wireframes and a clickable prototype before building starts",
+      "Login, data storage and push notifications (Firebase or Supabase)",
+      "Connections to what you already use, such as your website, Zoom or maps",
+      "App store submission for iOS and Android",
+      "Documentation, source code and optional ongoing support"
+    ],
+    "caseStudies": ["value-ed-educational-app", "stuurmy-home-services-marketplace"],
+    "faqs": [
+      {
+        "q": "Do you build cross-platform or native apps?",
+        "a": "Mostly cross-platform with Flutter. One codebase runs on iOS and Android, which is more cost-effective, faster to build and easier to maintain, while still performing close to a native app."
+      },
+      {
+        "q": "How long does it take to build an app?",
+        "a": "It depends on what the app needs to do. After the discovery call and a few conversations about scope, I'll give you a realistic timeline for your project."
+      }
+    ]
+  },
+  {
+    "slug": "automation",
+    "name": "Business Automation",
+    "title": "Business Automation & WhatsApp Bots in South Africa",
+    "metaDescription": "WhatsApp bots, automated workflows and booking and enquiry systems for South African small businesses and teams. Less copying and pasting, more real work.",
+    "h1": "Business automation, WhatsApp bots and booking systems in South Africa",
+    "intro": "Automation means getting software to handle the repetitive steps your team does by hand: capturing entries, saving files, sending confirmations, moving information from one place to another. I build automations, WhatsApp bots and booking and enquiry flows for small businesses, teams and organisations in South Africa, usually on top of tools you already use.",
+    "sections": [
+      {
+        "heading": "Signs you're ready for automation",
+        "body": [
+          "You might be ready if someone on your team copies details from WhatsApp into a spreadsheet, chases people for the same information every week, answers the same questions every day, or keeps files spread across phones and inboxes.",
+          "None of that is a technology problem at first glance. It's manual chaos, and it quietly eats the time your team needs for the work that actually matters. My job is to break it into small, buildable pieces and replace them one at a time."
+        ]
+      },
+      {
+        "heading": "WhatsApp bots: meet people where they already are",
+        "body": [
+          "Almost everyone in South Africa has WhatsApp. It's how people talk to family and do business. A WhatsApp bot doesn't ask anyone to download an app, create an account or learn something new.",
+          "When JD Creations brought me in on the Albany Ntofo Ntofo radio competition for Motherland Omni, launch was only a week or two away. I built a WhatsApp bot that walked entrants through five steps: consent to capture their details (POPI compliance matters), first name, surname, a photo of their Albany bread as proof of purchase, and how they heard about the competition. Each photo was converted and saved to a Google Drive folder automatically, and each entrant's details went into Google Sheets. The organisers checked entries in tools they already knew, with no training needed.",
+          "The biggest lesson: if you make the gap between wanting to do something and doing it small enough, people take part."
+        ]
+      },
+      {
+        "heading": "Use the tools you already have",
+        "body": [
+          "Good automation doesn't always need a big custom build. The Albany bot ran on the WhatsApp Business API, Botpress for the conversation and Make.com to process and route the data. There were no servers to manage.",
+          "At Value Ed I also built automation routines for data input processes, so the team spent less time on manual capture. Where your tools can be connected, I'll connect them before suggesting anything new."
+        ]
+      },
+      {
+        "heading": "Booking, enquiry and registration flows",
+        "body": [
+          "A lot of admin comes down to people asking to book, register or pay, and someone replying one message at a time. On the Sweet Tooth website, the enquiry form asks what kind of enquiry it is first, then shows only the questions that matter, and each submission arrives as a neatly organised email. Event tickets are sold through a Quicket widget inside the site.",
+          "For FootGolf South Africa, tournament entry and membership payments through PayFast happen in the same system that handles scoring and rankings. The idea scales down well: people choose, the system captures the right details and confirms, and your team stops doing it by hand."
+        ]
+      },
+      {
+        "heading": "How I approach an automation project",
+        "body": [
+          "First I map how the work happens today, step by step, before writing any code. My B2B integration work for Value Ed and Deviare taught me that time spent understanding requirements upfront saves a lot of rework later. Then I build the smallest version that helps, test it with real people, and adjust. You get documentation and a handover so your team can run it without me."
+        ]
+      }
+    ],
+    "testimonial": {
+      "quote": "Mpumelelo Mkhize and his team were crucial to the success of our Albany Superior Brown Bread Competition campaign. They developed an exceptional WhatsApp bot that was user-friendly and efficiently managed many entries. The team met tight deadlines, adapted well to changes, and created a seamless user experience, significantly contributing to the campaign's success. We highly recommend their services for similar digital projects.",
+      "name": "Alungile Sixishe",
+      "role": "CEO - Motherland Omni"
+    },
+    "deliverables": [
+      "A walkthrough of your current process to find what's worth automating",
+      "A WhatsApp bot or automated workflow built for that process",
+      "Connections to Google Sheets, Drive, email or your existing tools",
+      "Consent and data-capture steps wherever personal information is collected",
+      "Booking, enquiry or registration forms that ask the right questions",
+      "Documentation and a handover so your team can manage it"
+    ],
+    "caseStudies": ["Albany-ntofo-ntofo", "sweet-tooth", "FGSA-Footgolf-South-Africa"],
+    "faqs": [
+      {
+        "q": "Do I have to replace the tools I already use?",
+        "a": "Often not. The Albany competition bot stored everything in Google Sheets and Google Drive so the organisers could keep working in tools they knew."
+      },
+      {
+        "q": "How much does automation cost?",
+        "a": "It depends on how many steps and tools are involved. On a discovery call we'll look at your process, and I'll send a tailored quote."
+      }
+    ]
+  },
+  {
+    "slug": "ai-integrations",
+    "name": "AI Integrations",
+    "title": "AI Integrations & Chatbots for South African Businesses",
+    "metaDescription": "Practical AI for South African businesses: WhatsApp and website chatbots that answer from your own documents, and AI added to the apps you already use.",
+    "h1": "AI integrations and chatbots for South African businesses",
+    "intro": "AI is useful when it solves a specific problem, like answering the same questions all day or turning a long document into quick answers. I add AI to websites, apps and WhatsApp for businesses and organisations in South Africa. I'll also tell you honestly when a simpler tool would do the job better.",
+    "sections": [
+      {
+        "heading": "What AI can actually do for a small team",
+        "body": [
+          "Most businesses don't need a custom AI model. They need AI pointed at one clear job. That might be a chatbot that answers questions from your own documents, a form that turns a few details into a polished first draft, or an assistant on WhatsApp that helps people outside office hours.",
+          "Cebo Bot is an example of the last one: a WhatsApp business assistant that uses AI to help business owners with the questions they have. I can also add chatbots, smart automation and language features to an app or website you already have."
+        ]
+      },
+      {
+        "heading": "Answers from your own documents",
+        "body": [
+          "The approach I use most is called retrieval-augmented generation, or RAG. In plain terms: instead of training an AI on your material, which is expensive and usually overkill, your documents become a library. When someone asks a question, the system finds the relevant sections and uses AI to answer in normal, conversational language.",
+          "Before the 2024 elections I built a WhatsApp chatbot that did this with a political manifesto, using Rise Mzansi's as the test case. Voters could type a question like they'd ask a friend and get a summary pulled from the actual document, built on WhatsApp and Botpress. It was a personal project, not a client job, built because I believed it should exist."
+        ]
+      },
+      {
+        "heading": "Doing the prompting for you",
+        "body": [
+          "Getting good results from tools like ChatGPT depends on how you ask, and most people don't have time to learn that. Prompt Pulse was my answer: pick a task such as writing an email or a caption, fill in a short form, and the platform builds a detailed prompt behind the scenes. I built it with Next.js, the OpenAI API and Firebase.",
+          "It became an internal tool for a digital agency and is now on the shelf. The core idea worked, but some streaming responses cut off mid-sentence. The lesson I kept: real users find problems faster than internal testing, so ship sooner and fix what breaks."
+        ]
+      },
+      {
+        "heading": "The running cost nobody mentions",
+        "body": [
+          "AI services charge for every request, based on how much text goes in and comes out. The best prompts are often the longest, which makes each request more expensive. If people love your tool and use it all day, those costs add up quickly.",
+          "On Prompt Pulse we spent real time balancing prompts that gave good results against keeping each request affordable. I plan for this from the start so the bill doesn't surprise you."
+        ]
+      },
+      {
+        "heading": "Accuracy and trust come first",
+        "body": [
+          "An AI that sounds confident and gets things wrong can do real damage, especially with sensitive information. The manifesto bot was built to say so when the document didn't cover a question, rather than guess. I treat \"I'm not sure about that\" as a valid answer.",
+          "Where a chatbot collects personal details, it should ask for consent first, the same way the Albany competition bot did."
+        ]
+      }
+    ],
+    "deliverables": [
+      "An honest assessment of whether AI is the right fit for your problem",
+      "A chatbot on WhatsApp or your website",
+      "A knowledge base built from your own documents",
+      "AI features added to an app or website you already have",
+      "A plan for usage costs before launch",
+      "Testing for accuracy, with clear answers when the bot doesn't know"
+    ],
+    "caseStudies": ["voting-manifesto-whatsapp-chatbot", "prompt-pulse-ai-prompt-engineering"],
+    "faqs": [
+      {
+        "q": "Can you add AI to my existing app?",
+        "a": "Yes. I can add chatbots, including WhatsApp business bots, intelligent automation and other AI features to existing applications. The cost depends on the type of integration, so we'll talk through your use case on a discovery call."
+      }
+    ]
+  },
+  {
+    "slug": "church-ministry-websites",
+    "name": "Church & Ministry Websites",
+    "title": "Church Website Developer: Websites & Systems for Ministries",
+    "metaDescription": "Church websites, event registration, WhatsApp bots and member apps for ministries in South Africa. Faith-driven work, built so volunteers can run it.",
+    "h1": "Church website developer: websites and systems for churches and ministries",
+    "intro": "I build websites and systems for churches and ministries in South Africa. My work is driven by faith: building things that serve people, and serving God through what I build. A ministry's real calling is people, not admin, so the aim is simple: take the manual work off your team so they can give their time to that calling.",
+    "sections": [
+      {
+        "heading": "Why this work matters to me",
+        "body": [
+          "Where most people see a website project, I see the system underneath: the registrations, reminders, follow-ups and spreadsheets that someone in your ministry handles every week, often a volunteer giving their evenings.",
+          "The verse I keep close is Proverbs 1:5: \"Let the wise hear and increase in learning, and the one who understands obtain guidance.\" For me that means listening first, understanding how your ministry actually runs, and only then deciding what to build."
+        ]
+      },
+      {
+        "heading": "What a church website should do",
+        "body": [
+          "Most visitors to a church website want a few simple things: service times, where you are, what's coming up and how to get in touch. They're usually on a phone. A good site puts those answers in front of them quickly.",
+          "It should also be found. When someone nearby searches for a church, structured data (a short description Google can read, covering who you are, where you meet and your events) helps you show up properly. I build this in from the start.",
+          "Contact forms can do more than collect a message. The enquiry form I built for Sweet Tooth asks what kind of enquiry it is first and then shows only the relevant questions. The same idea could route a volunteering offer, a prayer request or an event question to the right person."
+        ]
+      },
+      {
+        "heading": "The systems behind the website",
+        "body": [
+          "I haven't published a church case study yet. The projects linked below come from other sectors, but they solve the same problems ministries deal with every week.",
+          "If announcements get buried in WhatsApp groups, the Value Ed app is the closest example. Members open a calendar of upcoming sessions, get a reminder fifteen minutes before each one, and join online sessions with one tap.",
+          "For conferences, camps and events, Sweet Tooth sells tickets through a Quicket widget on its own event pages, and the FootGolf South Africa platform handles tournament entry alongside memberships and PayFast payments.",
+          "For registrations and common questions, a WhatsApp bot can collect details step by step, as the Albany competition bot did, or answer questions from your own documents, as my manifesto chatbot did."
+        ]
+      },
+      {
+        "heading": "Built for volunteers, not developers",
+        "body": [
+          "Many ministries run on volunteers and lean budgets, so the tools have to be easy to use and cheap to keep running. The Albany organisers checked every entry in Google Sheets and Google Drive with no training. The Value Ed app pulls from the organisation's existing website, so one update shows everywhere and nobody has to keep two systems in sync.",
+          "Cost-effectiveness is part of the design. A tool your team can afford to maintain is one that keeps working long after launch."
+        ]
+      },
+      {
+        "heading": "How we would start",
+        "body": [
+          "We start with a conversation about how your ministry runs from week to week and where the manual work piles up. From there I'll recommend the smallest useful step, often a clear website, and plan what could follow. I build a rough version first so you can see it and shape it, then refine it with you. At the end you get documentation and training for whoever will look after it, plus optional ongoing support."
+        ]
+      }
+    ],
+    "deliverables": [
+      "A church or ministry website with service times, location, events and contact",
+      "Search-friendly setup so people nearby can find you",
+      "Event registration and ticketing pages",
+      "A WhatsApp bot for registrations or common questions",
+      "A member or community app with reminders, if you need one",
+      "Training and documentation for the volunteers who will run it"
+    ],
+    "caseStudies": ["value-ed-educational-app", "sweet-tooth", "Albany-ntofo-ntofo"],
+    "faqs": [
+      {
+        "q": "Can we start with just a website?",
+        "a": "Yes. Many projects start as a website and grow into a fuller system later. We'll plan the website so that registrations, reminders or an app can be added when you're ready."
+      },
+      {
+        "q": "How do payments work?",
+        "a": "Usually a 50% deposit to start and 50% on completion. Larger projects can be split into milestone payments."
+      }
+    ]
+  }
+]

@@ -7,6 +7,7 @@ export interface SanityPost {
   slug: { current: string };
   excerpt: string;
   publishedAt: string;
+  _updatedAt?: string;
   coverImage: Image & { alt?: string };
   categories: string[];
   tags?: string[];

@@ -364,6 +364,7 @@
         "projects": [
             {
                 "liveurl": "/blog/stuurmy-home-services-marketplace",
+                "caseStudy": "stuurmy-home-services-marketplace",
                 "githuburl": "#",
                 "title": "Stuurmy",
                 "sequence": 1,
@@ -408,6 +409,7 @@
             },
             {
                 "liveurl": "/blog/prompt-pulse-ai-prompt-engineering",
+                "caseStudy": "prompt-pulse-ai-prompt-engineering",
                 "githuburl": "#",
                 "title": "Prompt Pulse",
                 "sequence": 2,
@@ -445,6 +447,7 @@
             },
             {
                 "liveurl": "/blog/Albany-ntofo-ntofo",
+                "caseStudy": "Albany-ntofo-ntofo",
                 "githuburl": "#",
                 "title": "Albany Ntofo Ntofo",
                 "sequence": 4,
@@ -464,6 +467,7 @@
             },
             {
                 "liveurl": "/blog/voting-manifesto-whatsapp-chatbot",
+                "caseStudy": "voting-manifesto-whatsapp-chatbot",
                 "githuburl": "#",
                 "title": "Voting Manifesto Chatbot",
                 "sequence": 5,
@@ -484,6 +488,7 @@
             },
             {
                 "liveurl": "/blog/value-ed-educational-app",
+                "caseStudy": "value-ed-educational-app",
                 "githuburl": "#",
                 "title": "Value Ed App",
                 "sequence": 6,
@@ -503,6 +508,7 @@
             },
             {
                 "liveurl": "/blog/tmeg-financial-website",
+                "caseStudy": "tmeg-financial-website",
                 "githuburl": "https://www.tmeg.co.za/",
                 "title": "TMEG Website",
                 "sequence": 7,
@@ -522,6 +528,7 @@
             },
             {
                 "liveurl": "/blog/value-ed-deviare-b2b-integration-apis",
+                "caseStudy": "value-ed-deviare-b2b-integration-apis",
                 "githuburl": "https://github.com/mpumelelo-mkhize/value-ed-api-backend",
                 "title": "Value Ed & Deviare Integration APIs",
                 "sequence": 8,
@@ -541,6 +548,7 @@
             },
             {
                 "liveurl": "/blog/sweet-tooth",
+                "caseStudy": "sweet-tooth",
                 "githuburl": "#",
                 "title": "Sweet Tooth",
                 "sequence": 9,
@@ -582,6 +590,7 @@
             },
             {
                 "liveurl": "/blog/FGSA-Footgolf-South-Africa",
+                "caseStudy": "FGSA-Footgolf-South-Africa",
                 "githuburl": "#",
                 "title": "FootGolf SA Platform",
                 "sequence": 10,
@@ -1006,7 +1015,6 @@
         ],
         "createdAt": "2024-01-26T12:14:36.514Z",
         "updatedAt": "2024-05-08T17:53:29.758Z",
-        "__v": 74,
-        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWIzYTIyYzAxZDkwMGU5NmM0MjE5YWUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTUxOTA4MDksImV4cCI6MTcyMjk2NjgwOX0.k-tY_xIiJ9e9nvtyjVPeY6-1Cij9kkvCEC53WmSX72M"
+        "__v": 74
     }
 }

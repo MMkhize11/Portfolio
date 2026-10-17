@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.mpumelelomkhize.com
-
-# Sitemaps
-Sitemap: https://www.mpumelelomkhize.com/sitemap.xml

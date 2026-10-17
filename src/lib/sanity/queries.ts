@@ -7,6 +7,7 @@ export const postsQuery = groq`
     slug,
     excerpt,
     publishedAt,
+    _updatedAt,
     coverImage {
       asset->,
       alt
@@ -23,6 +24,7 @@ export const postBySlugQuery = groq`
     slug,
     excerpt,
     publishedAt,
+    _updatedAt,
     coverImage {
       asset->,
       alt

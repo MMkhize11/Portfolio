@@ -20,7 +20,6 @@ export interface User {
   process: ProcessStep[];
   createdAt: string;
   updatedAt: string;
-  refreshToken: string;
 }
 
 export interface About {
@@ -62,6 +61,7 @@ export interface Skill {
 
 export interface Project {
   liveurl: string;
+  caseStudy?: string;
   githuburl: string;
   title: string;
   sequence: number;

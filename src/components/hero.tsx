@@ -28,6 +28,10 @@ export const Hero = ({ about }: { about: About }) => {
   return (
     <section className="min-h-dvh w-full overflow-hidden relative">
       <span className="blob size-1/2 absolute top-20 left-0 blur-[100px]" />
+      {/* ponytail: the visible hero only mounts client-side after the loader check, so the H1 lives here to stay in server HTML */}
+      <h1 className="sr-only">
+        Khabazela (Mpumelelo Mkhize), The Tech Translator: web, app, automation &amp; AI developer in Johannesburg
+      </h1>
       {hideLoader === null ? null : hideLoader ? (
         <PageLoad hideLoader={hideLoader} setHideLoader={handleLoaderComplete} />
       ) : (
@@ -39,9 +43,9 @@ export const Hero = ({ about }: { about: About }) => {
 
               {/* Name - The Hero */}
               <div className="mb-4">
-                <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-bold tracking-tight leading-[1]">
+                <p aria-hidden="true" className="text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-bold tracking-tight leading-[1]">
                   <SlideIn>Khabazela</SlideIn>
-                </h1>
+                </p>
               </div>
 
               {/* Role */}

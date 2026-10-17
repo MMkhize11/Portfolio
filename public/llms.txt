@@ -1,0 +1,32 @@
+# Mpumelelo Mkhize — The Tech Translator
+
+> Mpumelelo "Khabazela" Mkhize is a developer and systems builder in Johannesburg, South Africa. He turns manual chaos into working systems: websites, apps, automations and AI integrations for small businesses, teams and ministries.
+
+## Services
+- App Development
+- Web App Development
+- Automation
+- AI Integrations
+
+## Who it is for
+Small businesses, teams and ministries (South Africa and remote worldwide) that need non-technical-friendly tools: bookings, automations, apps and websites.
+
+## Links
+- [Home](https://www.mpumelelomkhize.com/)
+- [Services](https://www.mpumelelomkhize.com/services)
+- [Case studies](https://www.mpumelelomkhize.com/blog)
+- [FAQ](https://www.mpumelelomkhize.com/faq)
+
+## Case studies
+- [Albany Ntofo Ntofo](https://www.mpumelelomkhize.com/blog/Albany-ntofo-ntofo)
+- [FGSA Footgolf South Africa](https://www.mpumelelomkhize.com/blog/FGSA-Footgolf-South-Africa)
+- [Prompt Pulse: AI prompt engineering](https://www.mpumelelomkhize.com/blog/prompt-pulse-ai-prompt-engineering)
+- [Stuurmy home services marketplace](https://www.mpumelelomkhize.com/blog/stuurmy-home-services-marketplace)
+- [Sweet Tooth](https://www.mpumelelomkhize.com/blog/sweet-tooth)
+- [TMEG financial website](https://www.mpumelelomkhize.com/blog/tmeg-financial-website)
+- [Value-Ed Deviare B2B integration APIs](https://www.mpumelelomkhize.com/blog/value-ed-deviare-b2b-integration-apis)
+- [Value-Ed educational app](https://www.mpumelelomkhize.com/blog/value-ed-educational-app)
+- [Voting manifesto WhatsApp chatbot](https://www.mpumelelomkhize.com/blog/voting-manifesto-whatsapp-chatbot)
+
+## Contact
+mmkhize11@gmail.com

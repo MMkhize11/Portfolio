@@ -21,14 +21,9 @@ import { Hero } from "@/components/hero";
 import { promises as fs } from 'fs';
 
 export const metadata: Metadata = {
-  title: 'Mpumelelo Mkhize - The Tech Translator',
+  title: { absolute: 'Web & App Developer Johannesburg | Mpumelelo Mkhize – The Tech Translator' },
   description: 'Mpumelelo Mkhize, The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI for small businesses, teams & ministries. View projects, services, and client testimonials.',
-  keywords: 'tech translator, systems builder, business automation, booking systems, small business apps, AI development, automation solutions, web development, mobile development, AI integration',
-  openGraph: {
-    title: 'Mpumelelo Mkhize - The Tech Translator',
-    description: 'Mpumelelo Mkhize, The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI for small businesses, teams & ministries.',
-    type: 'website',
-  }
+  alternates: { canonical: '/' },
 };
 
 export default async function Home() {
@@ -52,20 +47,6 @@ export default async function Home() {
 
   return (
     <main className="relative">
-      {/* Hidden SEO content */}
-      <div className="hidden">
-        <h1>Mpumelelo Mkhize - The Tech Translator</h1>
-        <p>Systems builder turning manual chaos into working systems — websites, apps, automations and AI integrations for small businesses, teams and ministries.</p>
-        <h2>Services</h2>
-        <p>Expert services in {services.map(s => s.name).join(', ')}</p>
-        <h2>Skills</h2>
-        <p>Technical expertise in {skills.filter(s => s.enabled).map(s => s.name).join(', ')}</p>
-        <h2>Projects</h2>
-        <p>Portfolio of successful projects in web and mobile development</p>
-        <h2>Testimonials</h2>
-        <p>Client testimonials and success stories</p>
-      </div>
-
       <Transition className="fixed md:top-8 top-6 md:left-8 left-6 z-30 hover:text-white/80 text-white/40">
         <Link href={"/"}>
           <TextReveal className="font-semibold ">The Tech Translator</TextReveal>

@@ -54,9 +54,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) return {};
 
+  const image = post.coverImage?.asset
+    ? urlForImage(post.coverImage).width(1200).height(630).url()
+    : null;
+
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: { canonical: `/blog/${slug}` },
+    openGraph: {
+      type: 'article',
+      title: post.title,
+      description: post.excerpt,
+      url: `/blog/${slug}`,
+      publishedTime: post.publishedAt,
+      modifiedTime: post._updatedAt,
+      authors: ['Mpumelelo Mkhize'],
+      images: [image ? { url: image, width: 1200, height: 630, alt: post.coverImage?.alt || post.title } : '/og'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [image || '/og'],
+    },
   };
 }
 
@@ -87,6 +108,23 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <main className="relative min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: post.title,
+            description: post.excerpt,
+            datePublished: post.publishedAt,
+            dateModified: post._updatedAt || post.publishedAt,
+            image: coverImageUrl ? [coverImageUrl] : undefined,
+            author: { '@id': 'https://www.mpumelelomkhize.com/#person' },
+            publisher: { '@id': 'https://www.mpumelelomkhize.com/#business' },
+            mainEntityOfPage: `https://www.mpumelelomkhize.com/blog/${slug}`,
+          }).replace(/</g, '\\u003c'),
+        }}
+      />
       {/* Reading Progress Bar */}
       <ReadingProgress />
 

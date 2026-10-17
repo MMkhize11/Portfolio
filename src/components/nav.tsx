@@ -90,7 +90,7 @@ export const navLinks = [
   },
   {
     title: "Services",
-    href: "#services",
+    href: "/services",
   },
   {
     title: "Projects",
