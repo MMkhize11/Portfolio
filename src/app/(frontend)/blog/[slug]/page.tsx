@@ -92,35 +92,21 @@ export default async function BlogPostPage({ params }: Props) {
       {/* Chapter list + back to top */}
       <ArticleNav headings={headings} />
 
-      {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
-        {/* Background Image */}
-        {coverImageUrl ? (
-          <Image
-            src={coverImageUrl}
-            alt={post.coverImage?.alt || post.title}
-            fill
-            className="object-cover"
-            priority
-          />
-        ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-blue-600/20" />
-        )}
+      {/* Ambient glow, one layer behind header and body so there's no seam between them */}
+      <span className="blob w-[70vw] h-[90vh] absolute -top-[20vh] -right-[20vw] blur-[120px] -z-10 opacity-40 pointer-events-none" />
+      <span className="blob w-[60vw] h-[80vh] absolute top-[70vh] -left-[25vw] blur-[120px] -z-10 opacity-25 pointer-events-none" />
 
-        {/* Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/40 to-transparent" />
+      {/* Back Button */}
+      <div className="absolute top-6 left-4 md:left-8 z-20">
+        <BackButton />
+      </div>
 
-        {/* Back Button */}
-        <div className="absolute top-6 left-4 md:left-8 z-20">
-          <BackButton />
-        </div>
-
-        {/* Hero Content */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 lg:p-16">
-          <div className="max-w-4xl mx-auto">
+      <article className="relative">
+        <div className="max-w-3xl mx-auto px-4 md:px-8 pb-16">
+          {/* Header, sharing the body's column so title and text line up */}
+          <header className="pt-28 md:pt-36">
             {/* Categories */}
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex flex-wrap gap-2 mb-6">
               {post.categories.map((category) => (
                 <span
                   key={category}
@@ -132,13 +118,13 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
 
             {/* Title */}
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+            <h1 className="text-[2rem] md:text-5xl lg:text-[3.25rem] font-bold text-white mb-6 leading-[1.1] tracking-[-0.015em] [text-wrap:balance]">
               {post.title}
             </h1>
 
             {/* Excerpt */}
             {post.excerpt && (
-              <p className="text-lg md:text-xl text-white/70 mb-6 max-w-2xl leading-relaxed">
+              <p className="text-lg md:text-xl text-white/70 mb-8 leading-relaxed">
                 {post.excerpt}
               </p>
             )}
@@ -160,17 +146,24 @@ export default async function BlogPostPage({ params }: Props) {
                 <span>{readingTime} min read</span>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Decorative Blobs */}
-      <span className="blob size-1/2 absolute top-[60vh] left-0 blur-[100px] -z-10 opacity-50" />
-      <span className="blob size-1/2 absolute top-[100vh] right-0 blur-[100px] -z-10 opacity-50" />
+            {coverImageUrl && (
+              <div className="relative aspect-video mt-10 rounded-2xl overflow-hidden border border-white/10">
+                <Image
+                  src={coverImageUrl}
+                  alt={post.coverImage?.alt || post.title}
+                  fill
+                  sizes="(min-width: 768px) 768px, 100vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            )}
 
-      {/* Article Content */}
-      <article className="relative">
-        <div className="max-w-3xl mx-auto px-4 md:px-8 py-12 md:py-16">
+            {/* Hand-off from header to body */}
+            <div className="h-px mt-10 mb-10 md:mb-12 bg-gradient-to-r from-orange-500/60 via-blue-600/40 to-transparent" />
+          </header>
+
           {/* Content */}
           <div className="prose prose-invert prose-lg max-w-none">
             <PortableText value={post.content} components={portableTextComponents} />

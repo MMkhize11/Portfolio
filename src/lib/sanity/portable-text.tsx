@@ -116,7 +116,7 @@ export const portableTextComponents: PortableTextComponents = {
     h2: ({ children, value }) => (
       <h2
         id={headingId(value)}
-        className="text-2xl md:text-3xl font-bold text-white mt-12 mb-4 pb-2 border-b border-white/10 scroll-mt-8"
+        className="text-2xl md:text-3xl font-bold text-white mt-12 mb-4 pb-2 border-b border-white/10 scroll-mt-8 first:mt-0"
       >
         {children}
       </h2>
