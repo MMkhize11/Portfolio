@@ -106,7 +106,7 @@ export const EmailCapture = ({
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="flex flex-col sm:flex-row gap-3">
+              <div className="flex flex-col gap-3">
                 <input
                   type="email"
                   value={email}

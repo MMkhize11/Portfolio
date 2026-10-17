@@ -202,7 +202,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <p className="text-white/60 mb-6">
                     Let&apos;s discuss how I can help translate your ideas into solutions that deliver real value.
                   </p>
-                  <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
+                  <div className="flex flex-col gap-3">
                     <Link
                       href="/#contact"
                       className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-black font-medium rounded-full hover:bg-primary/90 transition-colors"
