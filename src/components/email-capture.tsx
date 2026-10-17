@@ -86,12 +86,12 @@ export const EmailCapture = ({
   }
 
   return (
-    <div className="bg-gradient-to-br from-blue-600/10 to-primary/10 border border-white/10 rounded-2xl p-6 md:p-8">
-      <div className="flex items-start gap-4">
+    <div className="h-full bg-gradient-to-br from-blue-600/10 to-primary/10 border border-white/10 rounded-2xl p-6 md:p-8">
+      <div className="flex flex-col items-start gap-4">
         <div className="p-3 bg-blue-500/20 rounded-full shrink-0">
           <Mail size={24} className="text-blue-400" />
         </div>
-        <div className="flex-1">
+        <div className="w-full">
           <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
             {title}
           </h3>

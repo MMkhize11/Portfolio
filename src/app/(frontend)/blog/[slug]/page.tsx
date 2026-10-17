@@ -188,10 +188,10 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           )}
 
-          {/* CTA Section */}
-          <div className="mt-12 pt-8 border-t border-white/10">
-            <div className="bg-gradient-to-br from-primary/10 to-blue-600/10 border border-white/10 rounded-2xl p-6 md:p-8">
-              <div className="flex items-start gap-4 mb-4">
+          {/* CTA + Email Capture, side by side from md up */}
+          <div className="mt-12 pt-8 border-t border-white/10 grid md:grid-cols-2 gap-6">
+            <div className="h-full bg-gradient-to-br from-primary/10 to-blue-600/10 border border-white/10 rounded-2xl p-6 md:p-8">
+              <div className="flex flex-col items-start gap-4">
                 <div className="p-3 bg-primary/20 rounded-full">
                   <MessageCircle size={24} className="text-primary" />
                 </div>
@@ -202,7 +202,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <p className="text-white/60 mb-6">
                     Let&apos;s discuss how I can help translate your ideas into solutions that deliver real value.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
                     <Link
                       href="/#contact"
                       className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-black font-medium rounded-full hover:bg-primary/90 transition-colors"
@@ -220,10 +220,7 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Email Capture Section */}
-          <div className="mt-8">
             <EmailCapture
               title="Get notified of new case studies"
               description="Subscribe to receive updates when I publish new project deep-dives and tech insights."
