@@ -105,18 +105,26 @@ export const TestimonialDialog = ({ showDialog, setShowDialog }: DialogProps) =>
                       {singleTestimonial.position}
                     </p>
 
-                    {/* Company Link */}
-                    {singleTestimonial.companyUrl && (
-                      <Link
-                        href={singleTestimonial.companyUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white/80 hover:bg-white/20 hover:text-white transition-all duration-200 text-sm"
-                      >
-                        <ExternalLink size={16} />
-                        Visit Company
-                      </Link>
-                    )}
+                    {/* LinkedIn & Website Links */}
+                    <div className="flex flex-wrap justify-center md:justify-start gap-3">
+                      {[
+                        { href: singleTestimonial.linkedinUrl, label: singleTestimonial.linkedinUrl?.includes("instagram.com") ? "Show Instagram" : "Show LinkedIn" },
+                        { href: singleTestimonial.websiteUrl, label: "Show Website" },
+                      ].map(({ href, label }) =>
+                        href ? (
+                          <Link
+                            key={label}
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white/80 hover:bg-white/20 hover:text-white transition-all duration-200 text-sm"
+                          >
+                            <ExternalLink size={16} />
+                            {label}
+                          </Link>
+                        ) : null
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

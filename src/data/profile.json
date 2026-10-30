@@ -735,7 +735,8 @@
                 "summary": "He is a man who believes in doing, contributing and adding value. He is reliable and dependable and can mingle and associate with many different types of people. He is punctual and plies his trade very well in the digital and technical field.",
                 "position": "Founder of Value Ed",
                 "enabled": true,
-                "companyUrl": "https://www.linkedin.com/in/vikelarankin/",
+                "linkedinUrl": "https://www.linkedin.com/in/vikelarankin/",
+                "websiteUrl": "https://valueed.co.za",
                 "_id": "Vik1"
             },
             {
@@ -748,7 +749,8 @@
                 "summary": "He consistently goes above and beyond. His expertise, quick response time, and dedication have been invaluable to our team",
                 "position": "CEO Value Ed",
                 "enabled": true,
-                "companyUrl": "https://www.linkedin.com/in/tshego-sebogodi/",
+                "linkedinUrl": "https://www.linkedin.com/in/tshego-sebogodi/",
+                "websiteUrl": "https://valueed.co.za",
                 "_id": "Tshego1"
             },
             {
@@ -760,7 +762,8 @@
                 "review": "Collaborating with Mpumi at JD Creations has been a delight. His technical skill, reliability, and dedication have greatly contributed to our success. Mpumi's passion for technology and commitment to positive impact are inspiring. He's not just a skilled developer but a visionary who values collaboration and community. I highly recommend Mpumi for exceptional results and a big-picture focus",
                 "summary": "His technical expertise, reliability, and trustworthiness have consistently driven our success. He's not just a skilled developer but also a visionary who understands the power of collaboration and community.",
                 "position": "CEO JD Creations",
-                "companyUrl": "https://www.linkedin.com/in/iamjoshdylan/",
+                "linkedinUrl": "https://www.linkedin.com/in/iamjoshdylan/",
+                "websiteUrl": "https://jdcreations.co.za",
                 "enabled": true,
                 "_id": "Josh1"
             },
@@ -773,7 +776,8 @@
                 "review": "Working with Mpumelelo was an absolute delight. His professionalism and technical prowess were evident from day one. He consistently delivered top-notch code and went above and beyond to ensure the success of our project. I highly recommend him for any development endeavor",
                 "summary": "Mpumelelo's collaborative spirit, openness to new ideas, and infectious positivity make him a joy to work with. He brings heart and humor to everything he does",
                 "position": "Co-founder - DIW",
-                "companyUrl": "",
+                "linkedinUrl": "",
+                "websiteUrl": "https://digiinnovation.co.za",
                 "enabled": true,
                 "_id": "Lesedi1"
             },
@@ -786,9 +790,52 @@
                 "review": "Mpumelelo Mkhize and his team were crucial to the success of our Albany Superior Brown Bread Competition campaign. They developed an exceptional WhatsApp bot that was user-friendly and efficiently managed many entries. The team met tight deadlines, adapted well to changes, and created a seamless user experience, significantly contributing to the campaign's success. We highly recommend their services for similar digital projects.",
                 "summary": "Mpumelelo Mkhize and his team were crucial to the success of our Albany Superior Brown Bread Competition campaign. They developed an exceptional WhatsApp bot that was user-friendly and efficiently managed many entries. The team met tight deadlines, adapted well to changes, and created a seamless user experience, significantly contributing to the campaign's success. We highly recommend their services for similar digital projects.",
                 "position": "CEO - Motherland Omni",
-                "companyUrl": "https://www.linkedin.com/in/alungile-sixishe-2a9446a7/?originalSubdomain=za",
+                "linkedinUrl": "https://www.linkedin.com/in/alungile-sixishe-2a9446a7/?originalSubdomain=za",
+                "websiteUrl": "https://motherlandomni.co.za/",
                 "enabled": true,
                 "_id": "AlungileOmni"
+            },
+            {
+                "image": {
+                    "public_id": "BerniceMultiply",
+                    "url": "/assets/icons/Testimonials/bernice.jpeg"
+                },
+                "name": "Bernice Katako",
+                "review": "I’m genuinely grateful for how God has used your gifts and skills to bring the Multiply website to life. What started as a Figma layout, you transformed into a functional, efficient and impactful platform that has become an important part of how we communicate and market Multiply. I’m so grateful for your creativity, technical expertise and willingness to use what God has given you to serve the vision. Thank you for being such a blessing to Multiply! 🙏🏽✨😍",
+                "summary": "What started as a Figma layout, you transformed into a functional, efficient and impactful platform that has become an important part of how we communicate and market Multiply.",
+                "position": "Founder of Multiply",
+                "linkedinUrl": "https://www.linkedin.com/in/bernice-katako-586313248/",
+                "websiteUrl": "https://www.multiply.org.za/",
+                "enabled": true,
+                "_id": "BerniceMultiply"
+            },
+            {
+                "image": {
+                    "public_id": "NormanFGSA",
+                    "url": "/assets/icons/Testimonials/norman.jpeg"
+                },
+                "name": "Norman Mphake",
+                "review": "What distinguishes his contribution is his ability to translate the operational and governance requirements of a national sporting organisation into practical technological solutions. His work reflects an appreciation that digital infrastructure must do more than facilitate administration; it must support accountability, reliable record-keeping, operational efficiency and the institutional development of the sport.",
+                "summary": "What distinguishes his contribution is his ability to translate the operational and governance requirements of a national sporting organisation into practical technological solutions.",
+                "position": "Footgolf South Africa Federation Head",
+                "linkedinUrl": "https://www.linkedin.com/in/norman-moemise-mphake-55267a16/",
+                "websiteUrl": "https://system.footgolfsa.co.za/",
+                "enabled": true,
+                "_id": "NormanFGSA"
+            },
+            {
+                "image": {
+                    "public_id": "JabulilePrimmy",
+                    "url": "/assets/icons/Testimonials/jabulile.webp"
+                },
+                "name": "Jabulile Primrose Mabena",
+                "review": "Mpumelelo Mkhize did an excellent job creating the Primmy Sport website. He was reliable, professional and attentive to my requirements, delivering exactly what I envisioned. His communication and commitment throughout the process were commendable. I highly recommend his services to anyone looking for quality website development!",
+                "summary": "He was reliable, professional and attentive to my requirements, delivering exactly what I envisioned. His communication and commitment throughout the process were commendable.",
+                "position": "Head of Primmy Sports",
+                "linkedinUrl": "https://www.instagram.com/mcburner_jabulile/",
+                "websiteUrl": "https://www.primmysports.co.za/",
+                "enabled": true,
+                "_id": "JabulilePrimmy"
             }
         ],
         "faqs": [

@@ -102,7 +102,8 @@ export interface Testimonial {
   review: string;
   position: string;
   enabled: boolean;
-  companyUrl: string;
+  linkedinUrl: string;
+  websiteUrl: string;
   _id: string;
 }
 

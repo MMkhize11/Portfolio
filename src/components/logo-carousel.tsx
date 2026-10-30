@@ -16,6 +16,10 @@ const clients: Client[] = [
   { name: "Deviare", logo: "/assets/icons/clients/deviare.png", url: "https://deviare.africa/the-company" },
   { name: "Digi Innovation", logo: "/assets/icons/clients/DIW.jpeg", url: "https://digiinnovation.co.za" },
   { name: "JD Creations", logo: "/assets/icons/clients/jd-creations.avif", url: "https://jdcreations.co.za" },
+  { name: "Sweet Tooth", logo: "/assets/icons/clients/sweet-tooth.png", url: "https://www.itssweettooth.co.za/" },
+  { name: "IPGS", logo: "/assets/icons/clients/ipgs.png", url: "https://www.ipgs.co.za" },
+  { name: "Multiply", logo: "/assets/icons/clients/multiply.png", url: "https://www.multiply.org.za/" },
+  { name: "Footgolf South Africa", logo: "/assets/icons/clients/fgsa.png", url: "https://footgolfsa.co.za" },
 ];
 
 interface LogoCarouselProps {
@@ -56,6 +60,8 @@ export const LogoCarousel = ({
               <img
                 src={client.logo}
                 alt={client.name}
+                loading="lazy"
+                decoding="async"
                 className="h-[52px] md:h-[73px] w-auto max-w-[156px] md:max-w-[208px] object-contain opacity-60 hover:opacity-100 transition-opacity"
               />
             ) : (
@@ -78,6 +84,8 @@ export const LogoCarousel = ({
               <img
                 src={client.logo}
                 alt={client.name}
+                loading="lazy"
+                decoding="async"
                 className="h-[52px] md:h-[73px] w-auto max-w-[156px] md:max-w-[208px] object-contain opacity-60 hover:opacity-100 transition-opacity"
               />
             ) : (

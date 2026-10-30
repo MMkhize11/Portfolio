@@ -102,6 +102,16 @@ export const Hero = ({ about }: { about: About }) => {
                     <span className="text-sm font-medium">Motherland Omni</span>
                     <span className="text-white/20">|</span>
                     <span className="text-sm font-medium">JD Creations</span>
+                    <span className="text-white/20">|</span>
+                    <span className="text-sm font-medium">Sweet Tooth</span>
+                    <span className="text-white/20">|</span>
+                    <span className="text-sm font-medium">IPGS</span>
+                    <span className="text-white/20">|</span>
+                    <span className="text-sm font-medium">Multiply</span>
+                    <span className="text-white/20">|</span>
+                    <span className="text-sm font-medium">Footgolf South Africa</span>
+                    <span className="text-white/20">|</span>
+                    <span className="text-sm font-medium">Primmy Sports</span>
                   </div>
                 </div>
               </Transition>
@@ -114,7 +124,8 @@ export const Hero = ({ about }: { about: About }) => {
                   <Image
                     src={about.avatar.url || '/placeholder-image.jpg'}
                     fill
-                    alt="Khabazela"
+                    alt="Mpumelelo Mkhize, web and app developer in Johannesburg"
+                    sizes="(min-width: 1024px) 40vw, 100vw"
                     className="object-cover"
                     priority
                   />
