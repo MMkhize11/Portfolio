@@ -4,14 +4,14 @@ import { cn } from "@/utils/cn";
 import { motion, HTMLMotionProps } from "framer-motion";
 import { ReactNode, useState } from "react";
 
-interface SectionHeadingProps extends HTMLMotionProps<"h3"> {}
+interface SectionHeadingProps extends HTMLMotionProps<"h2"> {}
 
 export const SectionHeading = ({
   className,
   ...props
 }: SectionHeadingProps) => {
   return (
-    <motion.h3
+    <motion.h2
       className={cn(
         "text-4xl md:text-6xl font-semibold md:px-4 px-2 pb-10 mx-auto",
         className

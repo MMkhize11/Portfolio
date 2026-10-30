@@ -24,12 +24,12 @@ const About = ({ about, timeline }: AboutProps) => {
       id="about"
     >
       <div className="max-w-5xl mx-auto">
-        <h3 className="md:text-5xl text-2xl font-bold overflow-hidden uppercase pb-8">
+        <div className="md:text-5xl text-2xl font-bold overflow-hidden uppercase pb-8">
           <SlideIn>{about.quote}</SlideIn>
           <p className="text-l md:text-4l text-foreground/50">
             {about.scripture}
           </p>
-        </h3>
+        </div>
         <Transition viewport={{ once: true }}>
           <p className="text-xl md:text-4xl text-foreground/50">
             {about.description}

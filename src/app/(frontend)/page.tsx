@@ -21,8 +21,8 @@ import { Hero } from "@/components/hero";
 import { promises as fs } from 'fs';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Web & App Developer Johannesburg | Mpumelelo Mkhize – The Tech Translator' },
-  description: 'Mpumelelo Mkhize, The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI for small businesses, teams & ministries. View projects, services, and client testimonials.',
+  title: { absolute: 'Web & App Developer Johannesburg | Mpumelelo Mkhize' },
+  description: 'Mpumelelo Mkhize, The Tech Translator: Johannesburg web & mobile app developer building websites, apps, automations and AI for small businesses and ministries.',
   alternates: { canonical: '/' },
 };
 

@@ -14,6 +14,7 @@ export default function BlogCard({ post }: BlogCardProps) {
           <Image
             src={post.coverImage || '/placeholder-image.jpg'} 
             alt={post.title}
+            sizes="(min-width: 768px) 33vw, 100vw"
             fill
             className="object-cover rounded-t-lg"
           />

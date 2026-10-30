@@ -9,17 +9,17 @@ import StructuredData from "@/components/StructuredData";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 const description =
-  "Mpumelelo Mkhize, The Tech Translator — turning manual chaos into working systems: websites, apps, automations & AI for small businesses, teams & ministries.";
+  "Mpumelelo Mkhize, The Tech Translator: Johannesburg web & mobile app developer building websites, apps, automations and AI for small businesses and ministries.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mpumelelomkhize.com"),
   title: {
     default:
-      "Web & App Developer Johannesburg | Mpumelelo Mkhize – The Tech Translator",
+      "Web & App Developer Johannesburg | Mpumelelo Mkhize",
     template: "%s | Mpumelelo Mkhize",
   },
   description,

@@ -164,6 +164,7 @@ const TestimonialsContent = ({ pauseOnHover }: { pauseOnHover?: boolean }) => {
                           <Image
                             src={testimonial.image.url}
                             alt={testimonial.name}
+                            sizes="56px"
                             fill
                             className="object-cover"
                           />
@@ -177,12 +178,12 @@ const TestimonialsContent = ({ pauseOnHover }: { pauseOnHover?: boolean }) => {
 
                     {/* Name & Position */}
                     <div className="flex-1 min-w-0">
-                      <h4 className={`
+                      <p className={`
                         font-semibold text-white truncate
                         ${isCenter ? 'text-base md:text-lg' : 'text-sm'}
                       `}>
                         {testimonial.name}
-                      </h4>
+                      </p>
                       <p className={`
                         text-white/50 truncate
                         ${isCenter ? 'text-sm' : 'text-xs'}

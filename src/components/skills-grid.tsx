@@ -59,6 +59,7 @@ export const SkillsGrid = ({ skills }: SkillsGridProps) => {
                     <Image
                       src={skill.image.url}
                       alt={skill.name}
+                      sizes="80px"
                       fill
                       className="object-contain"
                     />
