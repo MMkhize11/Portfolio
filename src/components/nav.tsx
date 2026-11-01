@@ -97,6 +97,10 @@ export const navLinks = [
     href: "#projects",
   },
   {
+    title: "Serving",
+    href: "/serving",
+  },
+  {
     title: "Resources",
     href: "/blog",
   },
